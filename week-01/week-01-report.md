@@ -26,3 +26,19 @@ web server python php
 **να αλλάξω τα μηνυματα του κώδικα! 
 
 
+## gia php
+
+https://windows.php.net/download/  install php
+
+δημιουργία φακελου PHP στο path C:\Users\PHP, extract all files there
+
+
+στον ίδιο φάκελο δημιουργείς αρχείο index.php all files με τον κώδικα php
+
+
+extension php on visual code
+
+
+στο cmd -> cd C:\Users... ekei pou einai o fakelos 
+
+παιρνεις το localhost και το περνάς στον browser και εμφανιζει τα μηνύματα
