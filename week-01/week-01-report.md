@@ -60,7 +60,6 @@ Navigate to the project directory:
 
 ```bash
 cd C:\Project_Folder
-
 python app.py
 ```
 
