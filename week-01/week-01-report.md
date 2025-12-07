@@ -161,7 +161,7 @@ The following sections describe the installation steps for **MySQL** and **Apach
 
 ### 2. Run the Installer
 
-- Open the downloaded file and choose **Full** -> **Next** → **Execute**
+- Open the downloaded file and choose **Full** → **Next** → **Execute**
 
 
 This installs:
