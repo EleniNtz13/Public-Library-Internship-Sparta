@@ -291,6 +291,8 @@ These lines tell Apache how to load the PHP module and where to find the PHP con
 #### Install Apache as a service:
 ```
 cd C:\Apache24\bin
+```
+```
 httpd.exe -k install
 ```
 
@@ -321,6 +323,16 @@ Make sure that php and Apache24 are both located on the C:\ drive, since the con
 C:\php
 C:\Apache24
 ```
+
+
+**Note**: All servers run on localhost and are only accessible from your local machine. They are not exposed to the internet.
+
+
+| Server | Technology | Port |
+| ------ | ---------- | ---- |
+| Flask  | Python     | 5000 |
+| PHP    | Built-in   | 8080 |
+| Apache | PHP        | 80   |
 
 
 
