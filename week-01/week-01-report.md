@@ -99,7 +99,7 @@ C:\
 
 After extraction, your folder should look like:
 
-C:\php\
+`C:\php\`
 
 ### 2. Create the PHP File (index.php)
 
@@ -108,8 +108,8 @@ Select **"All Files"** when saving, and paste the PHP code provided in the **wee
 
 Example structure:
 
-C:\php\
-   └── index.php
+`C:\php\`
+   └── `index.php`
 
 ### 3. Install the PHP Extension in Visual Studio Code
 
@@ -226,21 +226,21 @@ Download the version compatible with your system.
 
 Create a new folder in the root of your C: drive:
 
-C:\Apache24
+`C:\Apache24`
 
 
 Extract all downloaded files into this folder so your structure becomes:
 
-C:\Apache24\bin
-C:\Apache24\conf
-C:\Apache24\htdocs
-...
+`C:\Apache24\bin`
+`C:\Apache24\conf`
+`C:\Apache24\htdocs`
+`...`
 
 ### 3. Configure Apache to Work with PHP
 
 Navigate to:
 
-C:\Apache24\conf
+`C:\Apache24\conf`
 
 
 Open the file:
@@ -309,8 +309,8 @@ If Apache is running successfully, you should see the message:
 
 Make sure that php and Apache24 are both located on the C:\ drive, since the configuration paths depend on this structure:
 
-C:\php
-C:\Apache24
+`C:\php
+C:\Apache24`
 
 
 
