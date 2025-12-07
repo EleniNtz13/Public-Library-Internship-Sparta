@@ -4,7 +4,7 @@ During the first week of the internship, we set up the basic tools to create sim
 
 - **Python (Flask)**: Lightweight server for displaying messages and handling HTML templates (```localhost:5000```).
 
-- **PHP**: Runs via the built-in PHP server (localhost:8080) or through Apache for a more production-like setup (localhost:80).
+- **PHP**: Runs via the built-in PHP server (```localhost:8080```) or through Apache for a more production-like setup (```localhost:80```).
 
 - **Apache HTTP Server**: Provides a stable environment to serve PHP pages.
 
@@ -12,14 +12,14 @@ During the first week of the internship, we set up the basic tools to create sim
 
 Together, these tools form a simple development stack that allows message display, data management, and local web server operation — forming the foundation for more advanced features in the library system.
 
-Below are the steps to install and set up the development environments for both Python and PHP.
+Below are the steps to install and set up the development environments for **both Python and PHP**.
 
 ## 1️⃣ Python Setup
 ### 1. Create the Project Folder
 
-Create a folder named **Project_Folder** in the path:
+Create a folder named ```Project_Folder``` in the path:
 
-```C:\```
+```bashC:\```
 
 ### 2. Create the Python File (app.py)
 
