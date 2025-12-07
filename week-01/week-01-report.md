@@ -137,19 +137,67 @@ You should now see the displayed messages:
 
 ---
 
+After setting up the basic web servers using Python and PHP, the next step was to prepare the environment required for data storage and dynamic content management. For this purpose, a relational database system was introduced, using MySQL, which allows the application to store, retrieve, and manage library-related data efficiently (such as book information, categories, and user activity).
+
+Additionally, the setup process included the installation and configuration of the Apache HTTP Server, which provides a stable, production-level environment for serving PHP applications. Apache enables the web server to deliver PHP pages reliably and is commonly used in combination with MySQL to create full-stack web applications.
+
+The following sections describe the installation steps for MySQL and Apache, as well as how they integrate with the overall project architecture.
 
 
-## MySQLDB
-για την αποθηκευση των δεδομένων των βιβλίων 
+### 3️⃣ MySQL Database (MySQL Server)
 
-steps:
-site: https://dev.mysql.com/downloads/installer/   install last
+**MySQL** is one of the most widely used relational database systems, ideal for web applications like the ones developed during this project.
+
+### Installation Steps (Windows)
+#### 1. Download MySQL Installer
+
+Visit the official MySQL download page:
+
+*https://dev.mysql.com/downloads/installer/*
 
 
-open file, select: full, steps: next, execute in order to be installed products
+Download the *latest MySQL Installer* for Windows.
+
+#### 2. Run the Installer
+
+Open the downloaded file and choose:
+
+*Full*
 
 
-create your account and finish the installation
+This installs:
+
+- MySQL Server
+
+- MySQL Workbench
+
+- MySQL Shell
+
+- Utilities and connectors required for development
+
+Then click:
+
+*Next → Execute*
+
+This installs all selected products.
+
+#### 3. Complete Configuration
+
+During the setup:
+
+Create your **MySQL root account** (username + password)
+
+Choose the default configuration options
+
+Finalize the installation
+
+When the process finishes, MySQL Workbench will be available for use.
+
+
+
+
+
+
 
 
 ## Apache, without XAMPP and WAMP
