@@ -20,7 +20,7 @@ Inside **Project_Folder**, create a new folder named **templates**.
 Open Notepad again and create a file named **index.html**.
 Paste the corresponding HTML code (also available in the **week-01** folder), select **"All Files"**, and save it inside the **templates** folder.
 
-#### 4. Install Flask
+### 4. Install Flask
 
 Open **Command Prompt** and install Flask by running:
 
@@ -30,19 +30,19 @@ Then set the Flask application environment variable:
 
 *set FLASK_APP=app.py*
 
-#### 5. Install Python Extension in Visual Studio Code
+### 5. Install Python Extension in Visual Studio Code
 
 If Visual Studio Code is not installed, download and install it.
 Inside VS Code, go to **Extensions** (left sidebar) and install the **Python extension**.
 
-#### 6. Run the Application
+### 6. Run the Application
 
 Open the **app.py** file in VS Code and run one of the following commands:
 
-##### Option A: Through Visual Studio Code terminal
+#### Option A: Through Visual Studio Code terminal
 *python app.py*
 
-##### Option B: Through Command Prompt
+#### Option B: Through Command Prompt
 
 Navigate to the project directory:
 
@@ -52,7 +52,7 @@ Then run:
 
 *python app.py*
 
-#### 7. Access the Web Page
+### 7. Access the Web Page
 
 If everything is set up correctly, the terminal will display a line similar to:
 
@@ -73,8 +73,8 @@ Open that URL in your browser, and the page will display the messages:
 
 
 
-### 2️⃣ PHP Setup
-#### 1. Download and Install PHP
+## 2️⃣ PHP Setup
+### 1. Download and Install PHP
 
 Go to the official PHP for Windows download page:
 
@@ -89,7 +89,7 @@ After extraction, your folder should look like:
 
 C:\php\
 
-#### 2. Create the PHP File (index.php)
+### 2. Create the PHP File (index.php)
 
 Inside the C:\php folder, create a new file named **index.php** using Notepad.
 Select **"All Files"** when saving, and paste the PHP code provided in the **week-01** folder.
@@ -99,12 +99,12 @@ Example structure:
 C:\php\
    └── index.php
 
-#### 3. Install the PHP Extension in Visual Studio Code
+### 3. Install the PHP Extension in Visual Studio Code
 
 Open Visual Studio Code → Go to **Extensions** → Install the extension named **"PHP"**
 (This enables syntax highlighting and support for PHP code.)
 
-#### 4. Run the PHP Development Server
+### 4. Run the PHP Development Server
 
 Open **Command Prompt** and navigate to the PHP folder:
 
@@ -118,7 +118,7 @@ Start the built-in PHP development server:
 
 If everything is correct, the server will start on port 8080.
 
-#### 5. Open the Web Page in Your Browser
+### 5. Open the Web Page in Your Browser
 
 Open your browser and visit:
 
@@ -144,12 +144,12 @@ Additionally, the setup process included the installation and configuration of t
 The following sections describe the installation steps for MySQL and Apache, as well as how they integrate with the overall project architecture.
 
 
-### 3️⃣ MySQL Database (MySQL Server)
+## 3️⃣ MySQL Database (MySQL Server)
 
 **MySQL** is one of the most widely used relational database systems, ideal for web applications like the ones developed during this project.
 
-### Installation Steps (Windows)
-#### 1. Download MySQL Installer
+## Installation Steps (Windows)
+### 1. Download MySQL Installer
 
 Visit the official MySQL download page:
 
@@ -158,7 +158,7 @@ Visit the official MySQL download page:
 
 Download the *latest MySQL Installer* for Windows.
 
-#### 2. Run the Installer
+### 2. Run the Installer
 
 Open the downloaded file and choose:
 
@@ -181,7 +181,7 @@ Then click:
 
 This installs all selected products.
 
-#### 3. Complete Configuration
+### 3. Complete Configuration
 
 During the setup:
 
@@ -196,12 +196,12 @@ When the process finishes, MySQL Workbench will be available for use.
 
 
 
-### 4️⃣ Apache HTTP Server Setup (Without XAMPP/WAMP)
+## 4️⃣ Apache HTTP Server Setup (Without XAMPP/WAMP)
 
 **Apache** is one of the most widely used web servers globally and serves as the backbone for running PHP applications in a stable, production-style environment. In this project, Apache is used to process and serve PHP pages directly from the local machine, creating a fully functional local web server setup.
 
-### Installation Steps:
-#### 1. Download Apache
+## Installation Steps:
+### 1. Download Apache
 
 Visit the Apache Lounge download page:
 
@@ -210,7 +210,7 @@ Visit the Apache Lounge download page:
 
 Download the version compatible with your system.
 
-#### 2. Extract Apache Files
+### 2. Extract Apache Files
 
 Create a new folder in the root of your C: drive:
 
@@ -224,7 +224,7 @@ C:\Apache24\conf
 C:\Apache24\htdocs
 ...
 
-#### 3. Configure Apache to Work with PHP
+### 3. Configure Apache to Work with PHP
 
 Navigate to:
 
@@ -238,7 +238,7 @@ Open the file:
 
 Make the following adjustments:
 
-#### ✔ Update the ServerRoot path
+### ✔ Update the ServerRoot path
 
 Locate:
 
@@ -249,7 +249,7 @@ Change it to:
 
 *Define SRVROOT "c:/Apache24"*
 
-#### ✔ Enable PHP module and configuration
+### ✔ Enable PHP module and configuration
 
 Ensure that the following lines exist **without the # symbol** (uncommented):
 
@@ -262,24 +262,24 @@ These lines tell Apache how to load the PHP module and where to find the PHP con
 
 Save the file.
 
-#### 4. Install and Start the Apache Service
+### 4. Install and Start the Apache Service
 
 Open **Command Prompt as Administrator** and run:
 
-##### Install Apache as a service:
+#### Install Apache as a service:
 *cd C:\Apache24\bin*
 *httpd.exe -k install*
 
 
 This registers Apache as a Windows service.
 
-##### Start the Apache server:
+#### Start the Apache server:
 *httpd.exe -k start*
 
 
 If everything is correct, the server will start without errors.
 
-#### 5. Test the Installation
+### 5. Test the Installation
 
 Open your browser and visit:
 
@@ -290,7 +290,7 @@ If Apache is running successfully, you should see the message:
 
 **It works!**
 
-#### ✔ Important Note
+### ✔ Important Note
 
 Make sure that php and Apache24 are both located on the C:\ drive, since the configuration paths depend on this structure:
 
