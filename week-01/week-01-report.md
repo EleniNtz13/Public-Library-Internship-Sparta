@@ -19,18 +19,18 @@ Below are the steps to install and set up the development environments for **bot
 
 Create a folder named ```Project_Folder``` in the path:
 
-```bashC:\```
+```C:\```
 
-### 2. Create the Python File (app.py)
+### 2. Create the Python File (```app.py```)
 
-Using Notepad, create a new file named **app.py** and paste the Python code shown in the folder **week-01** of this repository.
-Save the file inside **Project_Folder**, making sure to select **"All Files"** before saving.
+Using Notepad, create a new file named ```app.py``` and paste the Python code shown in the folder ```week-01``` of this repository.
+Save the file inside ```Project_Folder```, making sure to select **"All Files"** before saving.
 
 ### 3. Create the Templates Folder and HTML File
 
-Inside **Project_Folder**, create a new folder named **templates**.
-Open Notepad again and create a file named **index.html**.
-Paste the corresponding HTML code (also available in the **week-01** folder), select **"All Files"**, and save it inside the **templates** folder.
+Inside **Project_Folder**, create a new folder named ```templates```.
+Open Notepad again and create a file named ```index.html```.
+Paste the corresponding HTML code (also available in the ```week-01``` folder), select **"All Files"**, and save it inside the ```templates``` folder.
 
 ### 4. Install Flask
 
@@ -49,7 +49,7 @@ Inside VS Code, go to **Extensions** (left sidebar) and install the **Python ext
 
 ### 6. Run the Application
 
-Open the **app.py** file in VS Code and run one of the following commands:
+Open the ```app.py``` file in VS Code and run one of the following commands:
 
 #### Option A: Through Visual Studio Code terminal
 ```python app.py```
@@ -58,7 +58,7 @@ Open the **app.py** file in VS Code and run one of the following commands:
 
 Navigate to the project directory:
 
-```
+```bash
 cd C:\Project_Folder
 
 python app.py
