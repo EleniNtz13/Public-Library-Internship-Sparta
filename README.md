@@ -97,8 +97,9 @@ This setup forms the **foundation for building more advanced features** in the l
 
 ---  
 
-Alongside the tasks mentioned above, I also worked with Excel to record data for books 📚 that had not yet been cataloged, so that they could later be added to the database. Additionally, I gained experience with the RFID system, which allows for quick identification and tracking of books 📖 based on the unique identifier stored on their tags 🔖. 
 
 ## 🧠 Tools Used 
 - ChatGPT AI Tool for assistance and code optimization
 - Copilot for assistance
+
+Alongside the tasks mentioned above, I also worked with Excel to record data for books 📚 that had not yet been cataloged, so that they could later be added to the database. Additionally, I gained experience with the RFID system, which allows for quick identification and tracking of books 📖 based on the unique identifier stored on their tags 🔖. 
