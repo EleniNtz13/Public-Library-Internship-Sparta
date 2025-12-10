@@ -79,6 +79,10 @@ cmd ->python --version an einai ok tote einai egkatestimenh h python diaforetika
 στο ιδιο cmd as admin python -m venv venv 
 venv\scripts\activate
 
+
+cd C:\Users\...
+
+
 pip install django
 
 αν κατεβηκε επιτυχώς τοτε django_admin startproject myproject που το myproject ειναι ο καινουριος φακελος που δημιουργήθηκε στο path που ειναι ο cmd 
