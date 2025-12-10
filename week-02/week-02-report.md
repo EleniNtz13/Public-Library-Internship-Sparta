@@ -104,6 +104,11 @@ python manage.py startapp my_app το οποιο δημιουργεί φακελ
 
 με την εντολη: code .      
 
+
+
+
+να φτιαξω μια πρριληψη που θα συνδεει ολο το report auto 
+
 ανοιγει ο φακελος myapp kai myproject στο vs code 
 
 
