@@ -163,8 +163,19 @@ python manage.py migrate
 
 στο cmd 
 python manage.py startapp library 
+για να γινει νεος φακελος με ονομα library στο αντίστοιχο path 
 
 
+
+στα settings βρες το INSTALLED_APPS. και προσθεσε τη γραμμή 
+**'library_db',      
+???**
+
+
+στο τέλος και save 
+
+
+στον φακελο library που δημιουργήθηκε βρες το models.py και ανοιξε το στο vs code και αντικατεστησε το με τον κωδικα:
 
 
 from django.db import models
@@ -189,6 +200,13 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+
+
+και save
+
+στο cmd
+python manage.py makemigrations 
+python manage.py migrate
 
 
 ---
