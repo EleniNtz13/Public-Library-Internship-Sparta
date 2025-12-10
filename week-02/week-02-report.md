@@ -98,6 +98,8 @@ python manage.py runserver
 
 
 ## επιμενο βημα 
+με ctrl & c εμφανιζει επομενη γραμμη 
+
 python manage.py startapp my_app το οποιο δημιουργεί φακελο μεσα στο myproject
 
 με την εντολη: code .      
