@@ -92,12 +92,8 @@ cd myproject
 
 python manage.py runserver
 
-
-
 παιρνεις την διεύθυνση ip που θα σου δωσει και θα σου εμφανισει δτο browser την αρχικη της Django εναν πύραυλο 
-
-
-## επιμενο βημα 
+ 
 με ctrl & c εμφανιζει επομενη γραμμη 
 
 python manage.py startapp my_app το οποιο δημιουργεί φακελο μεσα στο myproject
@@ -105,6 +101,10 @@ python manage.py startapp my_app το οποιο δημιουργεί φακελ
 με την εντολη: code .       
 
 ανοιγει ο φακελος myapp kai myproject στο vs code 
+
+
+## επιμενο βημα για την δημιουργία φόρμας
+
 
 
 
