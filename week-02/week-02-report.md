@@ -12,7 +12,7 @@ C:\Apache24\conf
 
 Open the file ```httpd.conf``` and locate the line you previously added for ```AddType```.
 
-Before that line, add:
+Instead of that line, type:
 
 ```
 AddHandler application/x-httpd-php .php
