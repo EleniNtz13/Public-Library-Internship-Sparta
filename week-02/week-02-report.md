@@ -355,7 +355,7 @@ python manage.py migrate
 
 *ν ελέγχω ταβηματα αν ειανι σωστά*
 *να φτιαξω μια πρριληψη που θα συνδεει ολο το report auto*
-*να αναφερθούν τα ονοματα των παιδιων που συνεργαστηκαμε μαζι για το ολο αυτο project?*
+
 
 
 from django.core.management.base import BaseCommand
