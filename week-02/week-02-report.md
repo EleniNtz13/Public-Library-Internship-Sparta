@@ -198,10 +198,8 @@ class Book(models.Model):
     column1 = models.CharField(max_length=255, blank=True, null=True)  # Στήλη 1
     column2 = models.CharField(max_length=255, blank=True, null=True)  # Στήλη 2
 
-    
     def __str__(self):
-       
-        return self.title
+       return self.title
 
 
 και save
