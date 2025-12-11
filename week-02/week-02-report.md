@@ -1,3 +1,171 @@
+## ⚙️ PHP Configuration & phpMyAdmin Setup
+### 1️⃣ Configure PHP in Apache
+
+#### 🔧 Update Apache Configuration (```httpd.conf```)
+
+Navigate to:
+
+```C:\Apache24\conf```
+
+
+Open the file httpd.conf and locate the line you previously added for AddType.
+
+Before that line, add:
+
+AddHandler application/x-httpd-php .php
+
+
+Save the file when finished.
+
+🔄 (Optional) Restart Apache via Windows Services
+
+Press Start
+
+Type services.msc
+
+Find Apache24
+
+Right-click → Restart
+
+2️⃣ Create an info.php Test File
+
+Navigate to:
+
+C:\Apache24\htdocs
+
+
+Create a new file named info.php using Notepad.
+
+Insert:
+
+<?php
+phpinfo();
+?>
+
+
+Save it as:
+
+info.php
+(All Files)
+
+▶️ Test in Browser
+
+Open:
+
+http://localhost/info.php
+
+
+If everything is correct, you will see the PHP Information Page.
+
+3️⃣ phpMyAdmin Installation
+📥 Download phpMyAdmin
+
+Go to the official site
+
+Download the All Languages ZIP version
+
+📁 Extract Files
+
+Create a folder inside htdocs named:
+
+C:\Apache24\htdocs\phpmyadmin
+
+
+Extract all ZIP contents directly inside it
+⚠️ Make sure no double folder is created (e.g. phpmyadmin/phpmyadmin).
+
+⚙️ Configure phpMyAdmin
+
+Inside the phpmyadmin folder:
+
+Copy config.sample.inc.php
+
+Paste → rename to:
+
+config.inc.php
+
+
+Open it and on line 16, add a random 32-character secret key:
+
+$cfg['blowfish_secret'] = 'your32charactersecretkeyhere';
+
+4️⃣ Register phpMyAdmin in Apache
+
+Open:
+
+C:\Apache24\conf\httpd.conf
+
+
+Scroll to the end and add:
+
+Alias /phpmyadmin "C:/Apache24/htdocs/phpmyadmin"
+<Directory "C:/Apache24/htdocs/phpmyadmin">
+    AllowOverride All
+    Require all granted
+</Directory>
+
+
+💾 Save the file.
+
+5️⃣ Restart Apache
+
+Open Command Prompt as Administrator:
+
+cd C:\Apache24\bin
+httpd -k restart
+
+6️⃣ Access phpMyAdmin
+
+Open:
+
+http://localhost/phpmyadmin
+
+
+If configured correctly, the login page will appear.
+Enter your MySQL username and password.
+
+🗄️ 7️⃣ Create a Database in phpMyAdmin
+➕ Create New Database
+
+Left sidebar → New
+
+Enter a name
+
+Choose collation:
+
+utf8mb4_general_ci
+
+
+Click Create
+
+📤 8️⃣ Import Data (CSV)
+
+If you have Excel data:
+
+Convert Excel file to .csv
+
+Open phpMyAdmin → select your database
+
+Go to Import
+
+Upload your CSV file
+
+⚠️ If columns appear incorrect
+
+Change separator:
+
+Replace , with ;
+
+Then import again.
+
+
+
+
+
+
+
+
+---
 
 
 
