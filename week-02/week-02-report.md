@@ -120,7 +120,7 @@ Alias /phpmyadmin "C:/Apache24/htdocs/phpmyadmin"
 
 💾 Save the file.
 
-#### Set Default Directory Index
+#### ⚙️ Set Default Directory Index
 Still inside:
 ```
 C:\Apache24\conf
@@ -132,7 +132,7 @@ DirectoryIndex index.php index.html
 This ensures Apache loads index.php first when a folder is accessed.
 💾 Save the file
 
-#### Configure PHP Extensions
+#### ⚙️ Configure PHP Extensions
 Navigate to the PHP installation folder:
 ```
 C:\php
