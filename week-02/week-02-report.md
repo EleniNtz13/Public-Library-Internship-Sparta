@@ -123,7 +123,7 @@ Alias /phpmyadmin "C:/Apache24/htdocs/phpmyadmin"
 in the path C:\Apache24\conf add the line at the end of the code: DirectoryIndex index.php index.html
 
 in the path C:\php copy php.ini-production and rename the new one to php.ini. there with ctrl&f remove the ; from the commands extension=mysqli and extension=pdo_mysql
-
+and save
 
 #### Restart Apache
 
