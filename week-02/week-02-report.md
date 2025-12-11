@@ -214,3 +214,27 @@ python manage.py migrate
 *ν ελέγχω ταβηματα αν ειανι σωστά*
 *να φτιαξω μια πρριληψη που θα συνδεει ολο το report auto*
 *να αναφερθούν τα ονοματα των παιδιων που συνεργαστηκαμε μαζι για το ολο αυτο project?*
+
+
+from django.core.management.base import BaseCommand
+import pandas as pd
+from main.models import Person
+
+class Command(BaseCommand):
+    help = "Import Excel data into PostgreSQL"
+
+    def handle(self, *args, **options):
+        df = pd.read_excel('main/excel_data/data.xlsx')
+
+        objects = [
+            Person(
+                name=row['Name'],
+                age=row['Age'],
+                city=row['City']
+            )
+            for _, row in df.iterrows()
+        ]
+
+        Person.objects.bulk_create(objects)
+
+        self.stdout.write(self.style.SUCCESS("✔ Excel import completed!"))
