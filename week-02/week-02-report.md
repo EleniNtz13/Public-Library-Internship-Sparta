@@ -82,6 +82,7 @@ C:\Apache24\htdocs\phpmyadmin
 ```
 
 2. Extract **all ZIP contents** *directly inside it*
+
 ⚠️ Make sure no double folder is created (e.g. phpmyadmin/phpmyadmin).
 
 #### ⚙️ Configure phpMyAdmin
