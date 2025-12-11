@@ -5,14 +5,18 @@
 
 Navigate to:
 
-```C:\Apache24\conf```
+```
+C:\Apache24\conf
+```
 
 
 Open the file ```httpd.conf``` and locate the line you previously added for ```AddType```.
 
 Before that line, add:
 
-```AddHandler application/x-httpd-php .php```
+```
+AddHandler application/x-httpd-php .php
+```
 
 
 Save the file when finished.
@@ -31,7 +35,9 @@ Right-click → **Restart**
 
 Navigate to:
 
-```C:\Apache24\htdocs```
+```
+C:\Apache24\htdocs
+```
 
 
 Create a new file named ```info.php``` using Notepad.
@@ -53,7 +59,9 @@ info.php
 
 Open:
 
-```http://localhost/info.php```
+```
+http://localhost/info.php
+```
 
 
 If everything is correct, you will see the **PHP Information Page**.
