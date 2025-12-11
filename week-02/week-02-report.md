@@ -143,7 +143,7 @@ http://localhost/phpmyadmin
 If configured correctly, the **login page** will appear.
 Enter your **MySQL username and password**.
 
-#### 🗄️3️⃣ Create a Database in phpMyAdmin
+### 🗄️3️⃣ Create a Database in phpMyAdmin
 ➕ Create New Database
 
 1. Left sidebar → **New**
@@ -154,7 +154,7 @@ utf8mb4_general_ci
 ```
 4. Click **Create**
 
-### 📤 Import Data (CSV)
+#### 📤 Import Data (CSV)
 
 If you have Excel data:
 
