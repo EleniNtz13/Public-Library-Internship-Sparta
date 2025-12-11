@@ -1,107 +1,96 @@
-# Internship at Sparta Public Library 
+📚 Internship at Sparta Public Library
+🏫 Internship Overview – Library System Project
 
+Welcome to the repository documenting my internship experience!
 
-# 🏫 Internship Overview – Library System Project
+📅 Internship Details
 
-Welcome to the repository documenting my internship experience!  
+Organization / Company: Sparta Public Library
 
----
+Location: Sparta, Lakonia
 
-## 📅 Internship Details
+Start Date: 01/12/2025
 
-- **Organization / Company:** [Sparta Public Library]  
-- **Location:** [Sparta, Lakonia]  
-- **Start Date:** [01/12/2025]  
-- **End Date:** [28/02/2026]  
-- **Duration:** [12 weeks/3 months]  
-- **Supervisor / Mentor:** [Library Director]  
+End Date: 28/02/2026
 
----
+Duration: 12 weeks / 3 months
 
-## 🛠️ Tools & Technologies Used
+Supervisor / Mentor: Library Director
 
-During the internship, I worked with the following technologies to build a complete web development environment:
+🛠️ Tools & Technologies Used
 
-| Technology / Tool | Purpose | Emoji |
-| ---------------- | ------- | ----- |
-| 🐍 **Python (Flask)** | Lightweight web server to display messages and handle HTML templates | `localhost:5000` |
-| 🐘 **PHP** | Runs via built-in PHP server or Apache for dynamic web pages | `localhost:8080 / 80` |
-| ⚡ **Apache HTTP Server** | Serves PHP pages in a stable, production-like environment | `localhost:80` |
-| 💾 **MySQL Database** | Stores and manages data such as books, users, and categories | Database management |
-| 🖥️ **Visual Studio Code** | Main IDE for development | Code editing & extensions |
-| 🔌 **VS Code Extensions** | Python, PHP extensions | Syntax highlighting & tools |
-| 🐳 **Command Prompt / Terminal** | Running servers, installing packages | CLI commands |
+During the internship, I worked with several technologies to build a complete web development environment and support the library’s internal system:
 
----
+Technology / Tool	Purpose	Emoji
+🐍 Python (Flask)	Basic web server displaying messages and templates	🌐
+🐘 PHP	Dynamic pages via built-in PHP server and Apache	💻
+⚡ Apache HTTP Server	Stable environment for running PHP applications	🔧
+💾 MySQL Database	Manages data such as books, categories, and users	🗄️
+🧱 Django Framework	Python-based web application environment	🚀
+🐘 PostgreSQL	Relational database used with Django	🐘
+🖥️ Visual Studio Code	Main IDE for code development	✏️
+🔌 VS Code Extensions	Python & PHP tools for development	🔌
+🐳 Command Prompt / Terminal	Running servers & package installations	💬
+📊 Excel	Recording uncatalogued book data	📑
+📡 RFID System	Identifying books via tag-based IDs	🔖
+📖 Project Overview
 
-## 📖 Project Overview
+The main focus of the internship was to set up a complete development environment for a simple library management system.
+This included:
 
-The internship involved setting up a **development stack** for a simple library system:
+Creating two basic web servers (Python Flask & PHP)
 
-1. **Python (Flask)**:  
-   - Lightweight server to display messages  
-   - Handles HTML templates in the `templates` folder  
-   - Runs on `localhost:5000`
+Running PHP through Apache for a stable local setup
 
-2. **PHP**:  
-   - Can run via the built-in server (`localhost:8080`)  
-   - Can also be served via Apache (`localhost:80`) for a production-like setup  
+Setting up and managing a MySQL database
 
-3. **MySQL Database**:  
-   - Stores book records, categories, and user activity  
-   - Provides structured data access for web applications  
+Working with Django and PostgreSQL for future system expansion
 
-4. **Apache HTTP Server**:  
-   - Serves PHP applications reliably  
-   - Provides a stable local web server environment  
+Using Excel to organize library book data
 
-This setup forms the **foundation for building more advanced features** in the library management system.  
+Learning to operate the RFID system, used for fast identification and tracking of library materials
 
----
+Together, these tools form the foundation of a system capable of handling book records, user activity, and dynamic website content.
 
-## ⚙️ Setup Summary
+⚙️ Setup Summary (High-Level)
 
-- **Python / Flask**:  
-  - Install Python → Install Flask → Run `app.py`  
-  - Access web page: `http://localhost:5000`
+Python / Flask: Built a lightweight server for testing HTML responses
 
-- **PHP**:  
-  - Install PHP → Create `index.php` → Run PHP server  
-  - Access web page: `http://localhost:8080`
+PHP & Apache: Served PHP pages both locally and through Apache
 
-- **MySQL**:  
-  - Install MySQL Server & Workbench  
-  - Configure root account & default options
+MySQL: Created and managed local databases for book records
 
-- **Apache**:  
-  - Install Apache → Configure `httpd.conf` for PHP → Start server  
-  - Access web page: `http://localhost`
+Django & PostgreSQL: Prepared environment for future development
 
----
+Excel & CSV: Organized uncatalogued book data for import
 
-## 📌 Notes
+RFID: Used tag identifiers to locate books efficiently
 
-- All servers run on **localhost** and are **only accessible from the local machine**  
-- Paths for PHP and Apache are set to `C:\php` and `C:\Apache24`  
-- Python Flask server runs independently and can coexist with Apache + PHP  
+(Detailed installation steps will be documented in a separate README.)
 
----
+🎯 Goals Achieved
 
-## 🎯 Goals Achieved
+✔️ Built a functional development environment
 
-- ✅ Set up a working development environment  
-- ✅ Built basic Python and PHP web servers  
-- ✅ Connected servers to a MySQL database  
-- ✅ Ran Apache to serve PHP pages  
-- ✅ Learned the integration of web server, database, and dynamic content  
+✔️ Created simple web servers in Python and PHP
 
----  
+✔️ Connected the system to a MySQL database
 
+✔️ Configured Apache to serve PHP pages
 
-## 🧠 Tools Used 
-- ChatGPT AI Tool for assistance and code optimization
-- Copilot for assistance
+✔️ Prepared Django + PostgreSQL for next steps
 
----
+✔️ Assisted in library cataloging through Excel
 
-Alongside the tasks mentioned above, we also worked with **Excel** to *record data for books 📚* that had not yet been cataloged, so that they could later be added to the database. Additionally, we gained experience with the **RFID system**, which allows for *quick identification and tracking of books 📖* based on the unique identifier stored on their tags 🔖. 
+✔️ Worked with RFID book identification technology
+
+🧠 Tools Used
+
+ChatGPT – assistance with code and documentation
+
+GitHub Copilot – development support
+
+📌 Additional Work
+
+Alongside the technical setup, I worked extensively with Excel to record books that were not yet cataloged so they could later be added to the database.
+I also gained experience with the RFID tracking system, which allows quick identification of books using the unique ID stored on each tag.
