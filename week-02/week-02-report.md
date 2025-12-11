@@ -23,13 +23,13 @@ Save the file when finished.
 
 #### 🔄 (Optional) Restart Apache via Windows Services
 
-Press **Start**
+1. Press **Start**
 
-Type **services.msc**
+2. Type **services.msc**
 
-Find **Apache24**
+3. Find **Apache24**
 
-Right-click → **Restart**
+4. Right-click → **Restart**
 
 2️⃣ Create an info.php Test File
 
