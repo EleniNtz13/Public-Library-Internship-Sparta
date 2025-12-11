@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 ## ρυθμιση php 
 
 sto path C:\Apache24\conf to file httpd antikatastasi sthn proteleytaia grammi poy prosthesame prin toy AddTupe me AddHandler
