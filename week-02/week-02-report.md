@@ -120,10 +120,38 @@ Alias /phpmyadmin "C:/Apache24/htdocs/phpmyadmin"
 
 💾 Save the file.
 
-in the path C:\Apache24\conf add the line at the end of the code: DirectoryIndex index.php index.html
+#### Set Default Directory Index
+Still inside:
+```
+C:\Apache24\conf
+```
+Open ```httpd.conf``` and add this line at the very end:
+```
+DirectoryIndex index.php index.html
+```
+This ensures Apache loads index.php first when a folder is accessed.
+💾 Save the file
 
-in the path C:\php copy php.ini-production and rename the new one to php.ini. there with ctrl&f remove the ; from the commands extension=mysqli and extension=pdo_mysql
-and save
+#### Configure PHP Extensions
+Navigate to the PHP installation folder:
+```
+C:\php
+```
+1. Copy the file ```php.ini-production```
+2. Paste and rename the copy to:
+```
+php.ini
+```
+3. Open php.ini
+4. Press **Ctrl + F** and search for the following extensions:
+- extension=mysqli
+- extension=pdo_mysql
+5. Remove the semicolon ```;``` in front of them so they become:
+```
+extension=mysqli
+extension=pdo_mysql
+```
+💾 Save the php.ini file.
 
 #### Restart Apache
 
