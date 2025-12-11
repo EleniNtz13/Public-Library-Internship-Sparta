@@ -194,16 +194,13 @@ If you have Excel data:
 
 4. Upload your CSV file
 
-#### ⚠️ If columns appear incorrect
+#### 💡 Tip: CSV Import Notes
 
-Change separator:
+When importing your .csv file into phpMyAdmin:
 
-- Replace ```,``` with ```;```
-
-Then import again.
-
-
-
+- Make sure that the **column names in the CSV match exactly** the fields in your database table (same order, same spelling, no extra spaces).
+- If the data does not appear correctly aligned after import, change the **Field Separator** from ```,``` to ```;```.
+- Ensure the file is saved in **UTF-8** encoding to avoid incorrect characters.
 
 
 
