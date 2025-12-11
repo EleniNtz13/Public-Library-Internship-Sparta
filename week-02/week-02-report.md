@@ -24,11 +24,8 @@ Save the file when finished.
 #### 🔄 (Optional) Restart Apache via Windows Services
 
 1. Press **Start**
-
 2. Type **services.msc**
-
 3. Find **Apache24**
-
 4. Right-click → **Restart**
 
 2️⃣ Create an info.php Test File
