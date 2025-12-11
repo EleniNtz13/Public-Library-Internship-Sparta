@@ -20,7 +20,9 @@ Below are the steps to install and set up the development environments for **bot
 
 Create a folder named ```Project_Folder``` in the path:
 
-```C:\```
+```
+C:\
+```
 
 ### 2. Create the Python File (```app.py```)
 
@@ -37,11 +39,15 @@ Paste the corresponding HTML code (also available in the ```week-01``` folder), 
 
 Open **Command Prompt** 💻 and install Flask by running:
 
-```pip install flask```
+```
+pip install flask
+```
 
 Then set the Flask application environment variable:
 
-```set FLASK_APP=app.py```
+```
+set FLASK_APP=app.py
+```
 
 ### 5. Install Python Extension in Visual Studio Code
 
@@ -53,13 +59,15 @@ Inside VS Code, go to **Extensions** 🔌 (left sidebar) and install the **Pytho
 Open the ```app.py``` file in VS Code and run one of the following commands:
 
 #### Option A: Through Visual Studio Code terminal
-```python app.py```
+```
+python app.py
+```
 
 #### Option B: Through Command Prompt
 
 Navigate to the project directory:
 
-```bash
+```
 cd C:\Project_Folder
 python app.py
 ```
@@ -68,7 +76,9 @@ python app.py
 
 If everything is set up correctly, the terminal will display a line similar to:
 
-```Running on http://localhost:5000/```
+```
+Running on http://localhost:5000/
+```
 
 
 Open that URL in your browser, and the page will display the messages:
@@ -85,11 +95,15 @@ Open that URL in your browser, and the page will display the messages:
 
 Go to the official PHP for Windows download page:
 
-```https://windows.php.net/download/```
+```
+https://windows.php.net/download/
+```
 
 Download the **Thread Safe ZIP package** and extract it into:
 
-```C:\php```
+```
+C:\php
+```
 
 ### 2. Create the PHP File (```index.php```)
 
@@ -123,7 +137,9 @@ If everything is correct, the server will start on port 8080.
 
 Open your browser and visit:
 
-```http://localhost:8080```
+```
+http://localhost:8080
+```
 
 
 You should now see the displayed messages:
@@ -154,7 +170,9 @@ The following sections describe the installation steps for **MySQL** and **Apach
 
 - Visit the official MySQL download page:
 
-```https://dev.mysql.com/downloads/installer/```
+```
+https://dev.mysql.com/downloads/installer/
+```
 
 
 - Download the **latest MySQL Installer** for Windows.
@@ -179,11 +197,9 @@ This installs all selected products.
 
 - During the setup:
 ```
-  Create your MySQL root account (username + password)
-
-  Choose the default configuration options
-
-  Finalize the installation
+  - Create your MySQL root account (username + password)
+  - Choose the default configuration options
+  - Finalize the installation
 ```
 
 When the process finishes, MySQL Workbench will be available for use.
@@ -201,7 +217,9 @@ When the process finishes, MySQL Workbench will be available for use.
 
 - Visit the Apache Lounge download page:
 
-```https://www.apachelounge.com/download/```
+```
+https://www.apachelounge.com/download/
+```
 
 
 - Download the version compatible with your system.
@@ -210,7 +228,9 @@ When the process finishes, MySQL Workbench will be available for use.
 
 - Create a new folder in the root of your C: drive:
 
-```C:\Apache24```
+```
+C:\Apache24
+```
 
 
 - Extract all downloaded files into this folder so your structure becomes:
@@ -226,7 +246,9 @@ C:\Apache24\htdocs
 
 - Navigate to:
 
-```C:\Apache24\conf```
+```
+C:\Apache24\conf
+```
 
 
 - Open the file:
@@ -240,12 +262,16 @@ C:\Apache24\htdocs
 
 - Locate:
 
-```Define SRVROOT "/Apache24"```
+```
+Define SRVROOT "/Apache24"
+```
 
 
 - Change it to:
 
-```Define SRVROOT "c:/Apache24"```
+```
+Define SRVROOT "c:/Apache24"
+```
 
 ### ✔ Enable PHP module and configuration
  
@@ -271,6 +297,7 @@ These lines tell Apache how to load the PHP module and where to find the PHP con
 ```
 cd C:\Apache24\bin
 ```
+And, then:
 ```
 httpd.exe -k install
 ```
@@ -279,7 +306,9 @@ httpd.exe -k install
 This registers Apache as a Windows service.
 
 #### Start the Apache server:
-```httpd.exe -k start```
+```
+httpd.exe -k start
+```
 
 
 If everything is correct, the server will start without errors.
@@ -288,7 +317,9 @@ If everything is correct, the server will start without errors.
 
 - Open your browser and visit:
 
-```http://localhost```
+```
+http://localhost
+```
 
 
 If Apache is running successfully, you should see the message:
@@ -298,6 +329,7 @@ If Apache is running successfully, you should see the message:
 ### ✔ Important Note
 
 Make sure that ```php``` and ```Apache24``` are both located on the ```C:\ drive```, since the configuration paths depend on this structure:
+
 ```
 C:\php
 C:\Apache24
