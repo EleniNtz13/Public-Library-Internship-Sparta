@@ -8,153 +8,157 @@ Navigate to:
 ```C:\Apache24\conf```
 
 
-Open the file httpd.conf and locate the line you previously added for AddType.
+Open the file ```httpd.conf``` and locate the line you previously added for ```AddType```.
 
 Before that line, add:
 
-AddHandler application/x-httpd-php .php
+```AddHandler application/x-httpd-php .php```
 
 
 Save the file when finished.
 
-🔄 (Optional) Restart Apache via Windows Services
+#### 🔄 (Optional) Restart Apache via Windows Services
 
-Press Start
+Press **Start**
 
-Type services.msc
+Type **services.msc**
 
-Find Apache24
+Find **Apache24**
 
-Right-click → Restart
+Right-click → **Restart**
 
 2️⃣ Create an info.php Test File
 
 Navigate to:
 
-C:\Apache24\htdocs
+```C:\Apache24\htdocs```
 
 
-Create a new file named info.php using Notepad.
+Create a new file named ```info.php``` using Notepad.
 
 Insert:
-
+```
 <?php
 phpinfo();
 ?>
-
+```
 
 Save it as:
-
+```
 info.php
 (All Files)
+```
 
-▶️ Test in Browser
+#### ▶️ Test in Browser
 
 Open:
 
-http://localhost/info.php
+```http://localhost/info.php```
 
 
-If everything is correct, you will see the PHP Information Page.
+If everything is correct, you will see the **PHP Information Page**.
 
-3️⃣ phpMyAdmin Installation
-📥 Download phpMyAdmin
+### 3️⃣ phpMyAdmin Installation
+#### 📥 Download phpMyAdmin
 
-Go to the official site
+- Go to the official site
 
-Download the All Languages ZIP version
+- Download the **All Languages ZIP** version
 
-📁 Extract Files
+#### 📁 Extract Files
 
-Create a folder inside htdocs named:
+1. Create a folder inside ```htdocs``` named:
 
+```
 C:\Apache24\htdocs\phpmyadmin
+```
 
-
-Extract all ZIP contents directly inside it
+2. Extract **all ZIP contents** *directly inside it*
 ⚠️ Make sure no double folder is created (e.g. phpmyadmin/phpmyadmin).
 
-⚙️ Configure phpMyAdmin
+#### ⚙️ Configure phpMyAdmin
 
-Inside the phpmyadmin folder:
+Inside the ```phpmyadmin``` folder:
 
-Copy config.sample.inc.php
+1. Copy ```config.sample.inc.php```
 
-Paste → rename to:
-
+2. Paste → rename to:
+```
 config.inc.php
+```
 
-
-Open it and on line 16, add a random 32-character secret key:
-
+3. Open it and on **line 16**, add a **random 32-character secret key**:
+```
 $cfg['blowfish_secret'] = 'your32charactersecretkeyhere';
+```
 
-4️⃣ Register phpMyAdmin in Apache
+### 4️⃣ Register phpMyAdmin in Apache
 
 Open:
-
+```
 C:\Apache24\conf\httpd.conf
-
+```
 
 Scroll to the end and add:
-
+```
 Alias /phpmyadmin "C:/Apache24/htdocs/phpmyadmin"
 <Directory "C:/Apache24/htdocs/phpmyadmin">
     AllowOverride All
     Require all granted
 </Directory>
-
+```
 
 💾 Save the file.
 
-5️⃣ Restart Apache
+### 5️⃣ Restart Apache
 
-Open Command Prompt as Administrator:
-
+Open **Command Prompt as Administrator**:
+```
 cd C:\Apache24\bin
 httpd -k restart
+```
 
-6️⃣ Access phpMyAdmin
+### 6️⃣ Access phpMyAdmin
 
 Open:
-
+```
 http://localhost/phpmyadmin
+```
 
+If configured correctly, the **login page** will appear.
+Enter your **MySQL username and password**.
 
-If configured correctly, the login page will appear.
-Enter your MySQL username and password.
-
-🗄️ 7️⃣ Create a Database in phpMyAdmin
+### 🗄️ 7️⃣ Create a Database in phpMyAdmin
 ➕ Create New Database
 
-Left sidebar → New
+1. Left sidebar → **New**
 
-Enter a name
+2. Enter a name
 
-Choose collation:
-
+3. Choose collation:
+```
 utf8mb4_general_ci
+```
 
+4. Click **Create**
 
-Click Create
-
-📤 8️⃣ Import Data (CSV)
+### 📤 8️⃣ Import Data (CSV)
 
 If you have Excel data:
 
-Convert Excel file to .csv
+1. Convert Excel file to **.csv**
 
-Open phpMyAdmin → select your database
+2. Open phpMyAdmin → select your database
 
-Go to Import
+3. Go to **Import**
 
-Upload your CSV file
+4. Upload your CSV file
 
-⚠️ If columns appear incorrect
+#### ⚠️ If columns appear incorrect
 
 Change separator:
 
-Replace , with ;
+- Replace ```,``` with ```;```
 
 Then import again.
 
