@@ -28,7 +28,7 @@ Save the file when finished.
 3. Find **Apache24**
 4. Right-click → **Restart**
 
-2️⃣ Create an info.php Test File
+#### 2️⃣ Create an info.php Test File
 
 Navigate to:
 
