@@ -34,7 +34,6 @@ During the internship, I worked with several technologies to build a complete we
 | 📡 **RFID System**               | Identifying books via tag-based IDs                | 🔖    |
 
 
----
 
 ### 📖 Project Overview
 
@@ -50,7 +49,6 @@ This included:
 
 Together, these tools form the foundation of a system capable of handling book records, user activity, and dynamic website content.
 
----
 
 ### ⚙️ Setup Summary (High-Level)
 
@@ -75,14 +73,12 @@ Together, these tools form the foundation of a system capable of handling book r
 - ✔️ Assisted in library cataloging through Excel
 - ✔️ Worked with RFID book identification technology
 
----
 
 ### 🧠 Tools Used
 
 - ChatGPT – assistance with code and documentation
 - GitHub Copilot – development support
 
----
 
 ### 📌 Additional Work
 
