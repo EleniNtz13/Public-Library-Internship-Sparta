@@ -285,8 +285,8 @@ Enter a **name** for your database.
 
 Click **Save**.
 
-5️⃣
-### 6️⃣🐘 Connecting Django with PostgreSQL
+5️⃣6️⃣
+### 4️⃣🐘 Connecting Django with PostgreSQL
 #### 🔌 Install PostgreSQL Driver
 
 Open the terminal **inside the folder where** ```manage.py``` **exists** and run:
