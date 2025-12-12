@@ -344,7 +344,108 @@ Enter a **name** for your database.
 Click **Save**.
 
 
+🐘📘 Connecting Django with PostgreSQL
 
+Complete guide for configuring your Django project to work with a PostgreSQL database.
+
+🔌 1. Install PostgreSQL Driver
+
+Open the terminal inside the folder where manage.py exists and run:
+
+pip install psycopg2-binary
+
+
+If the installation completes successfully, continue to the next step.
+
+🗄️ 2. Database Credentials
+
+Use the following settings (adjust values as needed):
+
+Database name: library_db
+
+User: postgres
+
+Password: (the password you set during PostgreSQL installation)
+
+Host: localhost
+
+Port: 5432
+
+⚙️ 3. Edit Django Settings (settings.py)
+
+Open the file:
+
+your_project/settings.py
+
+
+Find the DATABASES section and replace it with:
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'library_db',
+        'USER': 'postgres',
+        'PASSWORD': 'your_database_password',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+
+Save the file.
+
+🔄 4. Apply Initial Migrations
+
+In the same terminal:
+
+python manage.py migrate
+
+
+If everything is correct, Django will create the necessary tables in PostgreSQL.
+
+📁 5. Create a New Django App
+
+Run:
+
+python manage.py startapp library
+
+
+A new folder named library will be created inside your project.
+
+🧩 6. Register the App in Django
+
+Open settings.py again and find:
+
+INSTALLED_APPS = [
+
+
+Add your new app:
+
+'library',
+
+
+Save the file.
+
+📚 7. Define the Book Model
+
+Open:
+
+library/models.py
+
+
+Replace its content with:
+
+Save the file.
+
+🏗️ 8. Create and Apply Migrations for the New Model
+
+Run:
+
+python manage.py makemigrations
+python manage.py migrate
+
+
+This will create the Book table inside the PostgreSQL database according to your model.
 
 
 
