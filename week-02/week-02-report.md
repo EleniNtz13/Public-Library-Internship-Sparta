@@ -204,14 +204,105 @@ When importing your .csv file into phpMyAdmin:
 
 
 
-4️⃣ 3️⃣5️⃣ 6️⃣7️⃣8️⃣
+4️⃣ 5️⃣ 6️⃣7️⃣8️⃣
 
 ---
 
+### 🚀 Next Step: Installing & Setting Up Django
+#### Verify Python Installation
+
+Open **CMD** and run:
+```
+python --version
+```
+
+- If Python is **not installed**, download and install it from the official website.
+- If the command prints a version number, you're good to go. ✔️
+
+#### Create a Virtual Environment (Recommended)
+
+In **CMD (Run as Administrator)**, navigate to your desired directory and run:
+```
+python -m venv venv
+```
+
+Activate it:
+```
+venv\Scripts\activate
+```
+
+⚠️ The virtual environment must be active before installing Django.
+
+#### Install Django
+
+- Navigate to your working directory:
+```
+cd C:\Users\...
+```
+
+- Then install Django:
+```
+pip install django
+```
+
+- If installation completes successfully, continue to the next step. ✅
+
+4️⃣ Create a New Django Project
+
+Run:
+
+django-admin startproject myproject
+
+
+A new folder named myproject will be created in your current path.
+
+Move into the project directory:
+
+cd myproject
+
+5️⃣ Run the Development Server
+
+Start the Django server:
+
+python manage.py runserver
+
+
+You will receive a local URL such as:
+
+http://127.0.0.1:8000/
+
+
+Open it in your browser — you should see the default Django page with the rocket 🚀
+
+Stop the server anytime with:
+
+Ctrl + C
+
+6️⃣ Create a Django App
+
+Inside the project directory, run:
+
+python manage.py startapp my_app
+
+
+This will generate a new folder named my_app inside myproject.
+
+7️⃣ Open the Project in VS Code
+
+Run:
+
+code .
+
+
+This will open both myproject and my_app in Visual Studio Code for development. 💻✨
 
 
 
 
+
+
+
+---
 
 
 ## επομενο βημα:
