@@ -196,7 +196,7 @@ When importing your .csv file into phpMyAdmin:
 
 
 
- 5️⃣ 6️⃣7️⃣8️⃣
+  6️⃣7️⃣8️⃣
 
 ---
 
@@ -239,7 +239,7 @@ pip install django
 
 ✅ If installation completes successfully, continue to the next step. 
 
-#### Create a New Django Project
+#### 🗂️ Create a New Django Project
 
 Run:
 ```
@@ -291,6 +291,58 @@ code .
 This will open both **myproject** and **my_app** in Visual Studio Code for development. 
 
 
+### 5️⃣ Install & Configure PostgreSQL & pgAdmin4
+
+#### 🛠️ Install PostgreSQL (Windows)
+
+1. Download PostgreSQL for Windows from the official website.
+2. Run the installer → click **Yes** to all prompts.
+3. Leave all default components selected:
+   - PostgreSQL Server
+   - pgAdmin 4
+   - Stack Builder
+4. Choose the default installation directory.
+5. Set a **password** for the default user ```postgres```.
+6. Leave the default **port 5432**.
+7. Keep all other settings on default.
+8. Click **Next** → **Next** → **Install** → **Finish**.
+
+
+#### 🗃️ Close Stack Builder
+
+After installation finishes, Stack Builder will appear.
+
+➡️ Click **Cancel** and close it — not required for now.
+
+#### 🔄 Optional: Verify PostgreSQL Service
+
+You can optionally check that the PostgreSQL service is running:
+1. Open **Services** (Start → type Services).
+2. Locate **postgresql-x64-18** (or your installed version).
+3. Make sure the **Status** is Running.
+
+If it is stopped, right-click → **Start**.
+
+#### 🖥️ Open pgAdmin4
+
+Go to **Start** → **pgAdmin 4**.
+
+The program opens in your browser.
+
+In the left panel, expand **Servers** → **PostgreSQL 18**.
+
+Enter the password you set earlier.
+
+#### 🧱 Create a New Database
+
+In the left sidebar, right-click **Databases**.
+
+Select **Create** → **Database**…
+
+Enter a **name** for your database.
+
+Click **Save**.
+
 
 
 
@@ -302,36 +354,7 @@ This will open both **myproject** and **my_app** in Visual Studio Code for devel
 
 
 
-## επιμενο βημα για την δημιουργία φόρμας 
-
-
-εγκατάσταση postgresql απο το αντιστοιχο site για windows
-
-ανοίγεις το αρχειο, ναι σε ολα 
-
-αφηνεις επιλεγμενα τα by default οτι εμφανίσει δηλαδή 
-
-διαλέγεις φακελο εγκατάστασης οτι εμφανισει τον αντίστοιχο 
-
-βαζεις password 
-
-αφηνεις το port ως εχει 5432
-
-αφηνεις default 
-
-next, next, install and finish 
-
-
-στο πλαίσιο PostgresSQL 18(X64) on port 5432
-
-
-next cancel close
-
-sto start, pgAdmin4
-
-servers, password 
-
-στο databases δεξι κλικ create -> database δίνεις ονομα και save 
+ 
 
 ## συνδεση Django με postresql 
 
