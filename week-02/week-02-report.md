@@ -495,3 +495,15 @@ from . import views
 urlpatterns = [
     path('books/', views.book_list, name='book_list'),
 ]
+
+
+
+
+
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('', include('main.urls')),   # root -> main
+    path('admin/', admin.site.urls),
+]
