@@ -1,4 +1,4 @@
-## ⚙️ PHP Configuration & phpMyAdmin Setup
+## ⚙️ phpMyAdmin Setup
 
 
 ### 2️⃣ phpMyAdmin Installation
