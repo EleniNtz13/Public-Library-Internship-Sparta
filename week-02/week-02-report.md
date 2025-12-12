@@ -200,7 +200,7 @@ When importing your .csv file into phpMyAdmin:
 
 ---
 
-### 4️⃣ Next Step: Installing & Setting Up Django
+### 4️⃣ Installing & Setting Up Django
 #### 🚀 Verify Python Installation
 
 Open **CMD** and run:
@@ -299,35 +299,7 @@ This will open both **myproject** and **my_app** in Visual Studio Code for devel
 ---
 
 
-## επομενο βημα:
-εγκατάσταση Django 
-cmd ->python --version an einai ok tote einai egkatestimenh h python diaforetika tin katevazeis.
 
-στο ιδιο cmd as admin python -m venv venv 
-venv\scripts\activate
-(το venv χρειαζεται ωστε να ριναι ενεργοποιημένο)
-
-cd C:\Users\...
-
-
-pip install django
-
-αν κατεβηκε επιτυχώς τοτε django-admin startproject myproject που το myproject ειναι ο καινουριος φακελος που δημιουργήθηκε στο path που ειναι ο cmd 
-
-cd myproject
-
-
-python manage.py runserver
-
-παιρνεις την διεύθυνση ip που θα σου δωσει και θα σου εμφανισει δτο browser την αρχικη της Django εναν πύραυλο 
- 
-με ctrl & c εμφανιζει επομενη γραμμη 
-
-python manage.py startapp my_app το οποιο δημιουργεί φακελο μεσα στο myproject
-
-με την εντολη: code .       
-
-ανοιγει ο φακελος myapp kai myproject στο vs code 
 
 
 ## επιμενο βημα για την δημιουργία φόρμας
