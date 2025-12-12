@@ -37,16 +37,14 @@ C:\Apache24\htdocs
 ```
 
 
-- Create a new file named ```info.php``` using Notepad.
-
-Insert:
+- Create a new file named ```info.php``` using Notepad. Insert:
 ```
 <?php
 phpinfo();
 ?>
 ```
 
-Save it as:
+- Save it as:
 ```
 info.php
 (All Files)
