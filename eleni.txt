@@ -1,8 +1,4 @@
-C:\Users\spart\myproject\library
-
-
-
-models.py
+C:\Users\spart\myproject\library   ->  models.py, which context is:
 
 from django.db import models
 
@@ -27,10 +23,7 @@ class Book(models.Model):
     def __str__(self):
         return self.title
 
-
-
-
-views.py
+the file views.py, , which context is:
 
 from django.shortcuts import render, redirect
 from .models import Book
@@ -49,12 +42,7 @@ def add_book(request):
 
 ---
 
-
-C:\Users\spart\myproject\main
-
-
-
-forms.py
+C:\Users\spart\myproject\main -> forms.py, which context is:
 
 from django import forms
 from .models import Book
@@ -65,9 +53,7 @@ class BookForm(forms.ModelForm):
         fields = '__all__'
 
 
-
-
-models.py
+the file models.py, which context is:
 
 from django.db import models
 
@@ -93,10 +79,7 @@ class Book(models.Model):
         return self.title if self.title else "Book"
 
 
-
-
-
-urls.py
+the file urls.py, which context is:
 
 
 from django.urls import path
@@ -108,9 +91,7 @@ urlpatterns = [
 ]
 
 
-
-
-views.py 
+the file views.py, which context is: 
 
 from django.shortcuts import render, redirect
 from .models import Book
@@ -132,14 +113,7 @@ def add_book(request):
 
 
 
-
-
-
-C:\Users\spart\myproject\myproject
-
-
-
-settings.py
+C:\Users\spart\myproject\myproject -> settings.py, which context is:
 
 
 """
@@ -267,10 +241,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 
-
-
-
-urls.py
+the file urls.py, which context is:
 
 
 from django.contrib import admin
@@ -283,13 +254,7 @@ urlpatterns = [
 
 
 
-
-
-
-C:\Users\spart\myproject
-
-
-manage.py
+C:\Users\spart\myproject -> manage.py, which context is:
 
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
@@ -316,22 +281,11 @@ if __name__ == '__main__':
 
 
 
+C:\Users\spart\myproject\main\excel_data -> εκει μεσα δημιουργία αρχείου με ονομα data.xlsx -> data excel me ta dedomena poy theloyme
 
 
 
-
-C:\Users\spart\myproject\main\excel_data
-
-
-εκει μεσα δημιουργία αρχείου με ονομα data.xlsx -> data excel me ta dedomena poy theloyme
-
-
-
-
-
-C:\Users\spart\myproject\main\management\commands
-
-dhmiourgia arxeiou me onoma import_books.py
+C:\Users\spart\myproject\main\management\commands -> dhmiourgia arxeiou me onoma import_books.py, which context is:
 
 from django.core.management.base import BaseCommand
 import pandas as pd
@@ -390,12 +344,7 @@ class Command(BaseCommand):
 
 
 
-
-
-C:\Users\spart\myproject\main\templates
-
-
-add_book
+C:\Users\spart\myproject\main\templates -> the file add_book, which context is:
 
 {% if form.errors %}
   <div style="color:red;">
@@ -414,8 +363,7 @@ add_book
 
 
 
-
-book_list
+the file book_list, which context is:
 
 <!DOCTYPE html>
 <html>
@@ -479,4 +427,5 @@ book_list
 
 </body>
 </html>
+
 
