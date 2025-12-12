@@ -1,7 +1,7 @@
 ## ⚙️ PHP Configuration & phpMyAdmin Setup
 ### 1️⃣ Configure PHP in Apache
 
-#### 🔧1. Update Apache Configuration (```httpd.conf```)
+**🔧Update Apache Configuration** (```httpd.conf```)
 
 Navigate to:
 
@@ -194,10 +194,6 @@ When importing your .csv file into phpMyAdmin:
 - If the data does not appear correctly aligned after import, change the **Field Separator** from ```,``` to ```;```.
 - Ensure the file is saved in **UTF-8** encoding to avoid incorrect characters.
 
-
-
-  6️⃣7️⃣8️⃣
-
 ---
 
 ### 4️⃣ Installing & Setting Up Django
@@ -344,42 +340,34 @@ Enter a **name** for your database.
 Click **Save**.
 
 
-🐘📘 Connecting Django with PostgreSQL
+### 6️⃣🐘 Connecting Django with PostgreSQL
+#### 🔌 Install PostgreSQL Driver
 
-Complete guide for configuring your Django project to work with a PostgreSQL database.
-
-🔌 1. Install PostgreSQL Driver
-
-Open the terminal inside the folder where manage.py exists and run:
-
+Open the terminal **inside the folder where** ```manage.py``` **exists** and run:
+```
 pip install psycopg2-binary
-
-
+```
 If the installation completes successfully, continue to the next step.
 
-🗄️ 2. Database Credentials
+#### 🗄️ Database Credentials
 
 Use the following settings (adjust values as needed):
 
-Database name: library_db
+- **Database name**: ```library_db```
+- **User**: ```postgres```
+- **Password**: *(the password you set during PostgreSQL installation)*
+- **Host**: ```localhost```
+- **Port**: ```5432```
 
-User: postgres
-
-Password: (the password you set during PostgreSQL installation)
-
-Host: localhost
-
-Port: 5432
-
-⚙️ 3. Edit Django Settings (settings.py)
+**⚙️ Edit Django Settings** (```settings.py```)
 
 Open the file:
-
+```
 your_project/settings.py
+```
 
-
-Find the DATABASES section and replace it with:
-
+Find the ```DATABASES``` section and replace it with:
+```
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -390,52 +378,50 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
+```
 
 Save the file.
 
-🔄 4. Apply Initial Migrations
+#### 🔄 Apply Initial Migrations
 
 In the same terminal:
-
+```
 python manage.py migrate
-
+```
 
 If everything is correct, Django will create the necessary tables in PostgreSQL.
 
-📁 5. Create a New Django App
+📁 Create a New Django App
 
 Run:
-
+```
 python manage.py startapp library
+```
 
+A new folder named **library** will be created inside your project.
 
-A new folder named library will be created inside your project.
+#### 🧩 Register the App in Django
 
-🧩 6. Register the App in Django
-
-Open settings.py again and find:
-
+Open ```settings.py``` again and find:
+```
 INSTALLED_APPS = [
-
+```
 
 Add your new app:
-
+```
 'library',
-
+```
 
 Save the file.
 
-📚 7. Define the Book Model
+#### 📚 Define the Book Model
 
 Open:
-
+```
 library/models.py
+```
 
-
-Replace its content with:
-
-Save the file.
+Replace its content with the context in models.py Save the file.
 
 🏗️ 8. Create and Apply Migrations for the New Model
 
@@ -451,7 +437,7 @@ This will create the Book table inside the PostgreSQL database according to your
 
 ---
 
-
+7️⃣8️⃣
 
 
 
