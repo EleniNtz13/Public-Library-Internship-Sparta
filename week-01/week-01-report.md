@@ -345,3 +345,60 @@ C:\Apache24
 | 🐘 PHP   | Built-in   | 8080 |
 | ⚡ Apache | PHP        | 80  |
 
+
+### 6. Configure PHP in Apache
+
+**🔧Update Apache Configuration** (```httpd.conf```)
+
+Navigate to:
+
+```
+C:\Apache24\conf
+```
+
+
+Open the file ```httpd.conf``` and locate the line you previously added for ```AddType```. Instead of that line, type:
+
+```
+AddHandler application/x-httpd-php .php
+```
+
+Save the file when finished.
+
+#### 🔄 (Optional) Restart Apache via Windows Services
+
+1. Press **Start**
+2. Type **services.msc**
+3. Find **Apache24**
+4. Right-click → **Restart**
+
+#### Create an ```info.php``` Test File
+
+Navigate to:
+
+```
+C:\Apache24\htdocs
+```
+
+
+Create a new file named ```info.php``` using Notepad. Insert:
+```
+<?php
+phpinfo();
+?>
+```
+
+Save it as:
+```
+info.php
+(All Files)
+```
+
+#### ▶️ Test in Browser
+
+Open:
+```
+http://localhost/info.php
+```
+
+- If everything is correct, you will see the **PHP Information Page**.
