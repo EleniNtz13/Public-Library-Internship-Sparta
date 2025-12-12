@@ -1,25 +1,22 @@
 ## ⚙️ PHP Configuration & phpMyAdmin Setup
 ### 1️⃣ Configure PHP in Apache
 
-#### 🔧 Update Apache Configuration (```httpd.conf```)
+#### 🔧1. Update Apache Configuration (```httpd.conf```)
 
-- Navigate to:
+Navigate to:
 
 ```
 C:\Apache24\conf
 ```
 
 
-- Open the file ```httpd.conf``` and locate the line you previously added for ```AddType```.
-
-- Instead of that line, type:
+Open the file ```httpd.conf``` and locate the line you previously added for ```AddType```. Instead of that line, type:
 
 ```
 AddHandler application/x-httpd-php .php
 ```
 
-
-- Save the file when finished.
+Save the file when finished.
 
 #### 🔄 (Optional) Restart Apache via Windows Services
 
@@ -28,23 +25,23 @@ AddHandler application/x-httpd-php .php
 3. Find **Apache24**
 4. Right-click → **Restart**
 
-#### Create an info.php Test File
+#### Create an ```info.php``` Test File
 
-- Navigate to:
+Navigate to:
 
 ```
 C:\Apache24\htdocs
 ```
 
 
-- Create a new file named ```info.php``` using Notepad. Insert:
+Create a new file named ```info.php``` using Notepad. Insert:
 ```
 <?php
 phpinfo();
 ?>
 ```
 
-- Save it as:
+Save it as:
 ```
 info.php
 (All Files)
@@ -53,33 +50,31 @@ info.php
 #### ▶️ Test in Browser
 
 Open:
-
 ```
 http://localhost/info.php
 ```
 
-
-If everything is correct, you will see the **PHP Information Page**.
+- If everything is correct, you will see the **PHP Information Page**.
 
 ### 2️⃣ phpMyAdmin Installation
 #### 📥 Download phpMyAdmin
 
-- Go to the official site:
+Go to the official site:
 ```
 https://www.phpmyadmin.net/downloads/
 ```
 
-- Download the **All Languages ZIP** version
+Download the **All Languages ZIP** version
 
 #### 📁 Extract Files
 
-1. Create a folder inside ```htdocs``` named:
+Create a folder inside ```htdocs``` named:
 
 ```
 C:\Apache24\htdocs\phpmyadmin
 ```
 
-2. Extract **all ZIP contents** *directly inside it*
+Extract **all ZIP contents** *directly inside it*
 
 ⚠️ Make sure no double folder is created (e.g. phpmyadmin/phpmyadmin).
 
@@ -88,7 +83,6 @@ C:\Apache24\htdocs\phpmyadmin
 Inside the ```phpmyadmin``` folder:
 
 1. Copy ```config.sample.inc.php```
-
 2. Paste → rename to:
 ```
 config.inc.php
