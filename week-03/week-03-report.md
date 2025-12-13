@@ -17,7 +17,6 @@ The application follows Django’s **MVT (Model–View–Template)** architectur
 ## 🏗 Project Structure
 
 myproject/
-
 │
 ├── manage.py
 ├── myproject/
