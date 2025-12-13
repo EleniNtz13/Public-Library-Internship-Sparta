@@ -1,4 +1,4 @@
-# 🌟📌 Week 2 – Overview:
+# 🌟 Week 2 – Overview:
 
 This section documents the setup of a local development environment for a library system project. It includes configuring phpMyAdmin for database management, installing Django with a virtual environment, setting up PostgreSQL and pgAdmin4, and connecting Django to the database using models and migrations.
 These steps provide the foundation for managing library data and building dynamic web applications.
@@ -170,7 +170,7 @@ venv\Scripts\activate
 
 ⚠️ The virtual environment must be active before installing Django.
 
-#### Install Django
+#### 📌 Install Django
 
 Navigate to your working directory:
 ```
@@ -217,7 +217,7 @@ Stop the server anytime with:
 Ctrl + C
 ```
 
-#### Create a Django App
+#### 📌 Create a Django App
 
 Inside the project directory, run:
 ```
