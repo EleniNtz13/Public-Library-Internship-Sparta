@@ -1,10 +1,7 @@
 # 🌟 Week 3 – Overview: Library Management System  
-### Django · PostgreSQL · Excel Import
 
 This project is a Django-based web application developed during an internship, aiming to manage a library database.  
 It supports importing book records from Excel files, storing them in a PostgreSQL database, and displaying/managing them through a web interface.
-
----
 
 ## 🧭 Project Overview
 
@@ -20,6 +17,7 @@ The application follows Django’s **MVT (Model–View–Template)** architectur
 ## 🏗 Project Structure
 
 myproject/
+
 │
 ├── manage.py
 ├── myproject/
