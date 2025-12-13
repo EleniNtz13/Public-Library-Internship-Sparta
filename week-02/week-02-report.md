@@ -1,5 +1,4 @@
-# 🌟 Week 2 – Overview:
-
+# 🌟 Week 2 – Overview: Development Environment Setup Overview
 This section documents the setup of a local development environment for a library system project. It includes configuring phpMyAdmin for database management, installing Django with a virtual environment, setting up PostgreSQL and pgAdmin4, and connecting Django to the database using models and migrations.
 These steps provide the foundation for managing library data and building dynamic web applications.
 
