@@ -285,7 +285,7 @@ Enter a **name** for your database.
 
 Click **Save**.
 
-5️⃣6️⃣
+
 ### 4️⃣🐘 Connecting Django with PostgreSQL
 #### 🔌 Install PostgreSQL Driver
 
@@ -383,7 +383,30 @@ This will create the Book table inside the PostgreSQL database according to your
 
 ---
 
-7️⃣8️⃣
+5️⃣
+
+
+
+
+
+
+
+
+
+6️⃣7️⃣8️⃣
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
