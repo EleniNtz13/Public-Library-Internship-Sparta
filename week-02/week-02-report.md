@@ -312,7 +312,7 @@ Use the following settings (adjust values as needed):
 - **Host**: ```localhost```
 - **Port**: ```5432```
 
-### 3. ⚙️ Edit Django Settings (```settings.py```)
+**3. ⚙️ Edit Django Settings** **(**```settings.py```**)**
 
 Open the file:
 ```
