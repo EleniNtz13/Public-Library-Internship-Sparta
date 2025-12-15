@@ -5,7 +5,7 @@ These steps provide the foundation for managing library data and building dynami
 ## ⚙️ phpMyAdmin Setup
 
 ### 1️⃣ phpMyAdmin Installation
-#### 1. 📥 Download phpMyAdmin
+### 1. 📥 Download phpMyAdmin
 
 Go to the official site:
 ```
@@ -14,7 +14,7 @@ https://www.phpmyadmin.net/downloads/
 
 Download the **All Languages ZIP** version
 
-#### 2. 📁 Extract Files
+### 2. 📁 Extract Files
 
 Create a folder inside ```htdocs``` named:
 
@@ -26,7 +26,7 @@ Extract **all ZIP contents** *directly inside it*
 
 ⚠️ Make sure no double folder is created (e.g. phpmyadmin/phpmyadmin).
 
-#### 3. ⚙️ Configure phpMyAdmin
+### 3. ⚙️ Configure phpMyAdmin
 
 Inside the ```phpmyadmin``` folder:
 
@@ -42,7 +42,7 @@ $cfg['blowfish_secret'] = 'your32charactersecretkeyhere';
 ```
 and save.
 
-#### 4. ⚙️ Register phpMyAdmin in Apache
+### 4. ⚙️ Register phpMyAdmin in Apache
 
 Open:
 ```
@@ -60,7 +60,7 @@ Alias /phpmyadmin "C:/Apache24/htdocs/phpmyadmin"
 
 💾 Save the file.
 
-#### 5. ⚙️ Set Default Directory Index
+### 5. ⚙️ Set Default Directory Index
 Still inside:
 ```
 C:\Apache24\conf
@@ -73,7 +73,7 @@ This ensures Apache loads ```index.php``` first when a folder is accessed.
 
 💾 Save the file.
 
-#### 6. ⚙️ Configure PHP Extensions
+### 6. ⚙️ Configure PHP Extensions
 Navigate to the PHP installation folder:
 ```
 C:\php
@@ -94,7 +94,7 @@ extension=pdo_mysql
 ```
 💾 Save the ```php.ini``` file.
 
-#### 7. Restart Apache
+### 7. Restart Apache
 
 Open **Command Prompt as Administrator**:
 ```
@@ -102,7 +102,7 @@ cd C:\Apache24\bin
 httpd -k restart
 ```
 
-#### 8. Access phpMyAdmin
+### 8. Access phpMyAdmin
 
 Open:
 ```
@@ -112,7 +112,7 @@ http://localhost/phpmyadmin
 If configured correctly, the **login page** will appear.
 Enter your **MySQL username and password**.
 
-#### 1. 🗄️ Create a Database in phpMyAdmin
+### 1. 🗄️ Create a Database in phpMyAdmin
 ➕ Create New Database
 
 1. Left sidebar → **New**
@@ -123,7 +123,7 @@ utf8mb4_general_ci
 ```
 4. Click **Create**
 
-#### 2. 📤 Import Data (CSV)
+### 2. 📤 Import Data (CSV)
 
 If you have Excel data:
 
@@ -135,7 +135,7 @@ If you have Excel data:
 
 4. Upload your CSV file
 
-#### 💡 Tip: CSV Import Notes
+### 💡 Tip: CSV Import Notes
 
 When importing your .csv file into phpMyAdmin:
 
@@ -148,7 +148,7 @@ When importing your .csv file into phpMyAdmin:
 
 
 ### 2️⃣ Installing & Setting Up Django
-#### 1. 🚀 Verify Python Installation
+### 1. 🚀 Verify Python Installation
 
 Open **CMD** and run:
 ```
@@ -158,7 +158,7 @@ python --version
 - If Python is **not installed**, download and install it from the official website.
 - If the command prints a version number, you're good to go. ✔️
 
-#### 2. Create a Virtual Environment (Recommended)
+### 2. Create a Virtual Environment (Recommended)
 
 In **CMD (Run as Administrator)**, navigate to your desired directory and run:
 ```
@@ -172,7 +172,7 @@ venv\Scripts\activate
 
 ⚠️ The **v**irtual **env**ironment must be active before installing Django.
 
-#### 3. 📌 Install Django
+### 3. 📌 Install Django
 
 Navigate to your working directory:
 ```
@@ -186,7 +186,7 @@ pip install django
 
 ✅ If installation completes successfully, continue to the next step. 
 
-#### 4. 🗂️ Create a New Django Project
+### 4. 🗂️ Create a New Django Project
 
 Run:
 ```
@@ -200,7 +200,7 @@ Move into the project directory:
 cd myproject
 ```
 
-#### 5. ✨ Run the Development Server
+### 5. ✨ Run the Development Server
 
 Start the Django server:
 ```
@@ -219,7 +219,7 @@ Stop the server anytime with:
 Ctrl + C
 ```
 
-#### 6. 📌 Create a Django App
+### 6. 📌 Create a Django App
 
 Inside the project directory, run:
 ```
@@ -228,7 +228,7 @@ python manage.py startapp my_app
 
 This will generate a new folder named **my_app** inside **myproject**.
 
-#### 7. 💻 Open the Project in VS Code
+### 7. 💻 Open the Project in VS Code
 
 Run:
 ```
@@ -241,7 +241,7 @@ This will open both **myproject** and **my_app** in Visual Studio Code for devel
 
 ### 3️⃣ Install & Configure PostgreSQL & pgAdmin4
 
-#### 1. 🛠️ Install PostgreSQL (Windows)
+### 1. 🛠️ Install PostgreSQL (Windows)
 
 1. Download PostgreSQL for Windows from the official website.
 2. Run the installer → click **Yes** to all prompts.
@@ -256,13 +256,13 @@ This will open both **myproject** and **my_app** in Visual Studio Code for devel
 8. Click **Next** → **Next** → **Install** → **Finish**.
 
 
-#### 🗃️ Close Stack Builder
+### 🗃️ Close Stack Builder
 
 After installation finishes, Stack Builder will appear.
 
 ➡️ Click **Cancel** and close it — not required for now.
 
-#### 🔄 Optional: Verify PostgreSQL Service
+### 🔄 Optional: Verify PostgreSQL Service
 
 You can optionally check that the PostgreSQL service is running:
 1. Open **Services** (Start → type Services).
@@ -271,7 +271,7 @@ You can optionally check that the PostgreSQL service is running:
 
 If it is stopped, right-click → **Start**.
 
-#### 2. 🖥️ Open pgAdmin4
+### 2. 🖥️ Open pgAdmin4
 
 Go to **Start** → **pgAdmin 4**.
 
@@ -281,7 +281,7 @@ In the left panel, expand **Servers** → **PostgreSQL 18**.
 
 Enter the password you set earlier.
 
-#### 3. 🧱 Create a New Database
+### 3. 🧱 Create a New Database
 
 In the left sidebar, right-click **Databases**.
 
@@ -293,7 +293,7 @@ Click **Save**.
 
 
 ### 4️⃣🐘 Connecting Django with PostgreSQL
-#### 1. 🔌 Install PostgreSQL Driver
+### 1. 🔌 Install PostgreSQL Driver
 
 Open the terminal **inside the folder where** ```manage.py``` **exists** and run:
 ```
@@ -301,7 +301,7 @@ pip install psycopg2-binary
 ```
 If the installation completes successfully, continue to the next step.
 
-#### 2. 🗄️ Database Credentials
+### 2. 🗄️ Database Credentials
 
 Use the following settings (adjust values as needed):
 
@@ -311,7 +311,7 @@ Use the following settings (adjust values as needed):
 - **Host**: ```localhost```
 - **Port**: ```5432```
 
-**3. ⚙️ Edit Django Settings** (```settings.py```)
+### 3. ⚙️ Edit Django Settings (```settings.py```)
 
 Open the file:
 ```
