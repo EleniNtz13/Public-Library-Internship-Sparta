@@ -219,6 +219,8 @@ Stop the server anytime with:
 Ctrl + C
 ```
 
+prepei manage & to allo na einai ekei!
+
 ### 6. 📌 Create a Django App
 
 Inside the project directory, run:
