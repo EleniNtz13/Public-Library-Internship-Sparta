@@ -269,3 +269,69 @@ for row in ws.iter_rows(min_row=2, values_only=True):
         column2=data.get("column2"),
 
 
+
+
+
+
+
+
+
+import os
+import django
+import csv
+from datetime import datetime
+
+# === 1. Ρύθμιση Django environment ===
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
+django.setup()
+
+from main.models import Book
+
+# === 2. Path του CSV ===
+csv_path = "import_books.csv"  # το CSV πρέπει να βρίσκεται δίπλα στο manage.py
+
+# === 3. Μετρητής εισαγωγής ===
+inserted = 0
+
+# === 4. Άνοιγμα CSV και loop σε κάθε γραμμή ===
+with open(csv_path, encoding="utf-8") as f:
+    reader = csv.DictReader(f)
+    for i, row in enumerate(reader, start=2):
+        print(f"Row {i}:", row)
+        try:
+            # Μετατροπή τύπων
+            entry_number = int(row["entry_number"]) if row.get("entry_number") else None
+            publish_year = int(row["publish_year"]) if row.get("publish_year") else None
+            entry_date = datetime.strptime(row["entry_date"], "%Y-%m-%d").date() if row.get("entry_date") else None
+
+            Book.objects.create(
+                entry_number=entry_number,
+                entry_date=entry_date,
+                author=row.get("author"),
+                koha_author=row.get("koha_author"),
+                title=row.get("title"),
+                publisher=row.get("publisher"),
+                edition=row.get("edition"),
+                publish_year=publish_year,
+                publish_place=row.get("publish_place"),
+                shape=row.get("shape"),
+                pages=row.get("pages"),
+                volume=row.get("volume"),
+                notes=row.get("notes"),
+                isbn=row.get("isbn"),
+                column1=row.get("column1"),
+                column2=row.get("column2"),
+            )
+            inserted += 1
+        except Exception as e:
+            print(f"Row {i} ERROR:", e)
+
+print("Συνολικές εγγραφές που μπήκαν:", inserted)
+
+
+
+
+
+
+
+ εμμφανιστικε στο cmd τα δατα me ta parapanw
