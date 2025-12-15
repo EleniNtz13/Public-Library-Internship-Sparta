@@ -27,6 +27,7 @@ pip install pandas
 ```
 pip install openpyxl
 ```
+
 📁 *Refer to*: `requirements.txt` (if provided) or virtual environment setup instructions.
 
 ---
