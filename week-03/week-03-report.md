@@ -335,3 +335,142 @@ print("Συνολικές εγγραφές που μπήκαν:", inserted)
 
 
  εμμφανιστικε στο cmd τα δατα me ta parapanw
+
+
+C:\Users\spart\myproject\main
+
+
+
+
+urls.py
+
+ from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('main.urls')),  # Αυτό πρέπει να υπάρχει για να "βλέπει" τα URLs του app
+]
+
+
+vies.py 
+from django.shortcuts import render, redirect
+from .models import Book
+from .forms import BookForm
+
+def show_books(request):
+    books = Book.objects.all()
+    return render(request, 'main/book_list.html', {'books': books})
+
+def add_book(request):
+    if request.method == "POST":
+        form = BookForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('show_books')
+    else:
+        form = BookForm()
+    return render(request, 'main/add_book.html', {'form': form})
+
+
+
+
+
+add_book.html
+
+<h2>Add a New Book</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+
+{% if form.errors %}
+<div style="color:red;">
+    <ul>
+        {% for field in form %}
+            {% for error in field.errors %}
+                <li>{{ field.label }}: {{ error }}</li>
+            {% endfor %}
+        {% endfor %}
+        {% for error in form.non_field_errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+return redirect('show_books')  # Όπως έχει ήδη σωστά
+
+
+
+
+
+book_list.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Database</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+        }
+        th {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Books in Library</h2>
+
+<table>
+    <tr>
+        <th>entry_number</th>
+        <th>entry_date</th>
+        <th>author</th>
+        <th>koha_author</th>
+        <th>title</th>
+        <th>publisher</th>
+        <th>edition</th>
+        <th>publish_year</th>
+        <th>publish_place</th>
+        <th>shape</th>
+        <th>pages</th>
+        <th>volume</th>
+        <th>notes</th>
+        <th>isbn</th>
+        <th>column1</th>
+        <th>column2</th>
+    </tr>
+
+    {% for book in books %}
+    <tr>
+        <td>{{ book.entry_number }}</td>
+        <td>{{ book.entry_date }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.koha_author }}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ book.publisher }}</td>
+        <td>{{ book.edition }}</td>
+        <td>{{ book.publish_year }}</td>
+        <td>{{ book.publish_place }}</td>
+        <td>{{ book.shape }}</td>
+        <td>{{ book.pages }}</td>
+        <td>{{ book.volume }}</td>
+        <td>{{ book.notes }}</td>
+        <td>{{ book.isbn }}</td>
+        <td>{{ book.column1 }}</td>
+        <td>{{ book.column2 }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
+
+
