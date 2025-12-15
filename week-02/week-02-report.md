@@ -385,6 +385,8 @@ Replace the Python code (```models.py```) shown in the folder ```week-02``` of t
 Run:
 ```
 python manage.py makemigrations
+```
+```
 python manage.py migrate
 ```
 
