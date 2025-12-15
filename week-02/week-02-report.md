@@ -219,7 +219,8 @@ Stop the server anytime with:
 Ctrl + C
 ```
 
-prepei manage & to allo na einai ekei!
+The files ```manage.py``` and ```db.sqlite3``` must be located in the root directory created by the user. Keeping them in the initial folder ensures that Django can properly manage the project and database.
+
 
 ### 6. 📌 Create a Django App
 
@@ -237,7 +238,7 @@ Run:
 code .
 ```
 
-This will open both **myproject** and **my_app** in Visual Studio Code for development. 
+This will open **myproject** folder in Visual Studio Code for development. 
 
 
 
