@@ -364,7 +364,7 @@ INSTALLED_APPS = [
 
 Add your new app:
 ```
-excel_data
+'excel_data',
 ```
 
 Save the file.
