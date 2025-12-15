@@ -15,9 +15,9 @@ The application follows Django’s **MVT (Model–View–Template)** architectur
 ---
 na φτιαξω τους αριθμους και στα βηματα και στους τιτλους
 
-## 🔧 Step-by-Step Implementation Guide
+## 1️⃣🔧 Step-by-Step Implementation Guide
 
-### 1️⃣ Environment Preparation ⚙️
+### 1. Environment Preparation ⚙️
 
 Before starting development, a Python virtual environment is created and activated.  
 All required dependencies (Django, PostgreSQL driver, Pandas, OpenPyXL) are installed inside this environment.
@@ -26,7 +26,7 @@ All required dependencies (Django, PostgreSQL driver, Pandas, OpenPyXL) are inst
 
 ---
 
-### 2️⃣ Django Project & Application Setup 🏗
+### 2. Django Project & Application Setup 🏗
 
 A Django project (`myproject`) and a Django application (`main`) are created.  
 The application is registered in the Django settings so that models, templates, and commands are recognized.
@@ -36,7 +36,7 @@ The application is registered in the Django settings so that models, templates, 
 
 ---
 
-### 3️⃣ Database Configuration (PostgreSQL) 🐘
+### 3. Database Configuration (PostgreSQL) 🐘
 
 The default SQLite database is replaced with PostgreSQL.  
 Connection details such as database name, user, password, host, and port are defined.
@@ -51,7 +51,7 @@ This ensures:
 
 ---
 
-### 4️⃣ Data Model Design 📦
+### 4. Data Model Design 📦
 
 A `Book` model is designed to represent a library record.  
 Each field corresponds **directly** to a column in the Excel file (entry number, author, title, ISBN, etc.).
@@ -66,7 +66,7 @@ Special care is taken to:
 
 ---
 
-### 5️⃣ Database Migration 🔄
+### 5. Database Migration 🔄
 
 After defining the data model, Django migrations are created and applied.  
 This step generates the actual database table inside PostgreSQL.
@@ -81,7 +81,7 @@ This guarantees:
 
 ---
 
-### 6️⃣ Excel Data Placement 📊
+### 6. Excel Data Placement 📊
 
 The Excel file containing book records is placed inside a dedicated folder within the app.  
 This keeps data files separated from source code and ensures predictable paths.
@@ -95,7 +95,7 @@ The column headers of the Excel file **must exactly match** the model field name
 
 ---
 
-### 7️⃣ Custom Excel Import Command ⚙️📥
+###  Custom Excel Import Command ⚙️📥
 
 A custom Django management command is implemented to import Excel data into PostgreSQL.
 
@@ -119,7 +119,7 @@ python manage.py import_books
 
 ---
 
-### 8️⃣ Form Creation for Manual Data Entry 📝
+### 8. Form Creation for Manual Data Entry 📝
 
 A Django `ModelForm` is created to allow manual insertion of new books via the web interface.
 
@@ -133,7 +133,7 @@ Benefits:
 
 ---
 
-### 9️⃣ Views for Data Display & Submission 👁
+### 9. Views for Data Display & Submission 👁
 
 Two main views are implemented:
 
@@ -147,7 +147,7 @@ These views act as the logical bridge between the database and the templates.
 
 ---
 
-### 🔟 URL Routing 🌐
+### 10. URL Routing 🌐
 
 URL routing connects browser requests to the appropriate views.
 
@@ -160,7 +160,7 @@ URL routing connects browser requests to the appropriate views.
 
 ---
 
-### 1️⃣1️⃣ Templates & Presentation 🎨
+### 11. Templates & Presentation 🎨
 
 HTML templates are used to render data dynamically.
 
@@ -174,7 +174,7 @@ Templates are stored inside the app to leverage Django’s template discovery sy
 
 ---
 
-### 1️⃣2️⃣ Application Execution ▶️
+### 12. Application Execution ▶️
 
 The Django development server is started, and the application is accessed through the browser.
 
@@ -219,7 +219,7 @@ It was developed as part of an internship program and is suitable for academic a
 
 
 
-
+2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟
 
 ---
 
