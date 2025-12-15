@@ -20,7 +20,7 @@ The project follows Django’s **MVT (Model–View–Template)** architecture.
 
 ## 1️⃣🔧 Step-by-Step Implementation Guide
 
-### 1. Environment Preparation ⚙️
+### 1. ⚙️ Environment Preparation 
 
 All required Python libraries are installed inside the virtual environment.
 
@@ -37,9 +37,9 @@ Used libraries(```pip install...```):
 The virtual environment must be activated before installing or running any Django command.
 
 
-### 2️⃣ Django Project & App Registration 🏗
+### 2. 🏗 Django Project & App Registration 
 
-The Django project and the main application are verified and registered.
+The Django project (`myproject`) and a Django application (`main`) are created, verified and registered.
 
 Purpose:
 - Enable Django to detect models, templates, and management commands
@@ -53,9 +53,10 @@ If the app is missing from `INSTALLED_APPS`, models and forms will not work.
 
 ---
 
-### 3️⃣ PostgreSQL Database Configuration 🐘
+### 3. 🐘 Database Configuration (PostgreSQL)
 
 Django is configured to use PostgreSQL instead of SQLite.
+Connection details such as database name, user, password, host, and port are defined.
 
 Purpose:
 - Production-level database support
@@ -69,9 +70,10 @@ The database name, user, and password must match exactly the PostgreSQL configur
 
 ---
 
-### 4️⃣ Book Model Definition 📦
+### 4. 📦 Data Model Design
 
 The `Book` model defines the structure of library records.
+Each field corresponds **directly** to a column in the Excel file (entry number, author, title, ISBN, etc.).
 
 Purpose:
 - Map database fields to real library data
@@ -83,11 +85,17 @@ Purpose:
 ⚠️ **Warning**  
 Any modification to the model requires new migrations.
 
+
+Special care is taken to:
+- Allow nullable fields (`null=True`, `blank=True`)
+- Support real-world incomplete data
+- Ensure compatibility with imported Excel values
+
 ---
 
-### 5️⃣ Database Migrations 🔄
+### 5. 🔄 Database Migration 
 
-Migrations synchronize Django models with PostgreSQL tables.
+After defining the data model, Django migrations are created and applied. Migrations synchronize Django models with PostgreSQL tables. This step generates the actual database table inside PostgreSQL.
 
 Purpose:
 - Create database tables
@@ -96,93 +104,14 @@ Purpose:
 📁 Code reference:
 - `manage.py`
 
-⚠️ **Warning**  
-Commands must be executed from the directory containing `manage.py`.
-
----
-
-### 6️⃣ Excel File Placement 📊
-
-The Excel file containing the library data is placed in a dedicated directory.
-
-📁 File location:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
-
-
-
----
-
-### 2. 🏗 Django Project & Application Setup 
-
-A Django project (`myproject`) and a Django application (`main`) are created.  
-The application is registered in the Django settings so that models, templates, and commands are recognized.
-
-📁 *Refer to*:  
-- `myproject/settings.py` → `INSTALLED_APPS`
-
----
-
-### 3. 🐘 Database Configuration (PostgreSQL) 
-
-The default SQLite database is replaced with PostgreSQL.  
-Connection details such as database name, user, password, host, and port are defined.
-
-This ensures:
-- Better performance
-- Production-level database support
-- Compatibility with bulk inserts
-
-📁 *Refer to*:  
-- `myproject/settings.py` → `DATABASES`
-
----
-
-### 4. 📦 Data Model Design 
-
-A `Book` model is designed to represent a library record.  
-Each field corresponds **directly** to a column in the Excel file (entry number, author, title, ISBN, etc.).
-
-Special care is taken to:
-- Allow nullable fields (`null=True`, `blank=True`)
-- Support real-world incomplete data
-- Ensure compatibility with imported Excel values
-
-📁 *Refer to*:  
-- `main/models.py`
-
----
-
-### 5. 🔄 Database Migration 
-
-After defining the data model, Django migrations are created and applied.  
-This step generates the actual database table inside PostgreSQL.
-
-This guarantees:
-- Schema consistency
-- Version-controlled database changes
-
 📁 *Commands executed from project root*:
 - `makemigrations`
 - `migrate`
+
+⚠️ **Warning**  
+Commands must be executed from the directory containing `manage.py`.
+
+### 5. 🔄 Database Migration 
 
 ---
 
@@ -193,8 +122,6 @@ This keeps data files separated from source code and ensures predictable paths.
 
 📁 Location:
 main/excel_data/data.xlsx
-
-
 
 The column headers of the Excel file **must exactly match** the model field names.
 
