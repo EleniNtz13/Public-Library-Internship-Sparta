@@ -13,6 +13,7 @@ The application follows Django’s **MVT (Model–View–Template)** architectur
 - A custom Django management command for importing Excel data
 
 ---
+na φτιαξω τους αριθμους και στα βηματα και στους τιτλους
 
 ## 🔧 Step-by-Step Implementation Guide
 
