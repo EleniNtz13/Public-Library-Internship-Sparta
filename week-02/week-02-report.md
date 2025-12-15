@@ -335,6 +335,8 @@ DATABASES = {
 
 Save the file.
 
+⚠️ Note: The database name given by the user in pgAdmin 4 needs to be the same as the one set in the settings.py code.
+
 #### 4. 🔄 Apply Initial Migrations
 
 In the same terminal:
