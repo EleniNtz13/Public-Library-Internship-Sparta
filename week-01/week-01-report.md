@@ -359,8 +359,9 @@ phpinfo();
 Save it as:
 ```
 info.php
-(All Files)
 ```
+(All Files)
+
 
 #### ▶️ Test in Browser
 
