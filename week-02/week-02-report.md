@@ -191,7 +191,14 @@ Run:
 django-admin startproject myproject
 ```
 
-A new folder named ```myproject``` will be created in your current path. Automatically, a file named ```myproject``` will be created, which contains the files ```settings.py```, ```urls.py```, ```wsgi.py```, ```asgi.py```.
+A new folder named ```myproject``` will be created in your current path. Automatically, a file named ```myproject``` will be created, which contains the files: 
+```settings.py```, 
+
+```urls.py```, 
+
+```wsgi.py```, 
+
+```asgi.py```.
 
 Move into the project directory:
 ```
@@ -222,7 +229,7 @@ The files ```manage.py``` and ```db.sqlite3``` must be located in the root direc
 
 ### 6. 📌 Create a Django App
 
-Inside the project directory, you can create an app. Run:
+Inside the project directory, you can create an app. For example, run:
 ```
 python manage.py startapp my_app
 ```
@@ -353,7 +360,7 @@ Run:
 python manage.py startapp excel_data
 ```
 
-A new folder named **excel_data** will be created inside your project.
+A new folder named **excel_data** will be created inside your project. The folder contains
 
 #### 6. 🧩 Register the App in Django
 
