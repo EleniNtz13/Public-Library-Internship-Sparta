@@ -222,7 +222,7 @@ The files ```manage.py``` and ```db.sqlite3``` must be located in the root direc
 
 ### 6. 📌 Create a Django App
 
-Inside the project directory, run:
+Inside the project directory, you can create an app. Run:
 ```
 python manage.py startapp my_app
 ```
