@@ -192,13 +192,11 @@ django-admin startproject myproject
 ```
 
 A new folder named ```myproject``` will be created in your current path. Automatically, a file named ```myproject``` will be created, which contains the files: 
-```settings.py```, 
 
-```urls.py```, 
-
-```wsgi.py```, 
-
-```asgi.py```.
+- ```settings.py```, 
+- ```urls.py```, 
+- ```wsgi.py```, 
+- ```asgi.py```.
 
 Move into the project directory:
 ```
