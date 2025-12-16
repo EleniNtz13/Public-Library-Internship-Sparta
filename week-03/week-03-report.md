@@ -251,6 +251,8 @@ It was developed as part of an internship program and is suitable for academic a
 
 2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟
 
+χρειάζεται να είναι ενεργοποιημένο το περιβάλλον σε όλη την διαδικασία;
+
 ---
 
 να δω τις φωτο
