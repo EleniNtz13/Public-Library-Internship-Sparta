@@ -316,7 +316,7 @@ Use the following settings (adjust values as needed):
 
 Open the file:
 ```
-your_project/settings.py
+myproject/settings.py
 ```
 
 Find the ```DATABASES``` section and replace it with:
