@@ -16,7 +16,7 @@ Download the **All Languages ZIP** version
 
 Create a folder inside ```htdocs``` named:
 
-```
+```bash
 C:\Apache24\htdocs\phpmyadmin
 ```
 
