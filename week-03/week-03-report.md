@@ -507,3 +507,19 @@ book_list.html
 </html>
 
 
+
+---
+
+*να μετονομασω τους φακελους που εφτιαξα εδω αλλιώς να τους αντικαταστήσω!*
+
+1) make sure the table Book exists on pgAdmin4 and it has fields like (entry_number, entry_date, koha_author...) poia einai ta vimata? 2 oi tropoi!
+2)  δημιουργία excel_data/forms.py me ton κώδικα που φαινεται στο αντίστοιχο αρχείο του παρόντος φακέλου
+3)  δημιουργία excel_data/views.py me ton κώδικα που φαινεται στο αντίστοιχο αρχείο του παρόντος φακέλου
+4)  δημιουργία excel_data/urls.py me ton κώδικα που φαινεται στο αντίστοιχο αρχείο του παρόντος φακέλου
+5)  δημιουργία templates/excel_data kai ekei mesa 4 arxeia me onoma add_book.html  me ton κώδικα που φαινεται στο αντίστοιχο αρχείο του παρόντος φακέλου kai success.html  me ton κώδικα που φαινεται στο αντίστοιχο αρχείο του παρόντος φακέλου
+6)  test python manage.py runserver kai meta http://127.0.0.1:8000/books/add
+7)  egkatastasi vivliothikis pip install pandas openpyxl
+8)  ενημερωση views.py με προσθήκη του κώδικα upload
+9)  url gia excel upload -> prosthiki sto  excel_data/urls.py to "path('upload/', views.upload_excel, name='upload_excel'),
+
+Note: πρεπει ΤΟ ΑΡΧΕΊΟ που θα φορτωθεί στον browser να είναι .xlsx
