@@ -150,14 +150,8 @@ templates/
 
 ### 📄 `add_book.html`
 
-* Contains **HTML only**
-* Displays the manual book entry form
-* ⚠️ Do **NOT** include Python code such as:
-
-```python
-return redirect('show_books')
-```
-
+* This code renders a Django HTML form for adding a new book, securely handles form submission using CSRF protection, and provides a link back to the book list.
+  
 ### 📄 `book_list.html`
 
 * Displays all stored books from the database
