@@ -145,6 +145,7 @@ templates/
     ├── add_book.html
     ├── upload_excel.html
     └── success.html
+
 ```
 
 ### 📄 `add_book.html`
@@ -285,6 +286,17 @@ Happy coding 🚀
 
 
 
+
+Directory structure:
+
+```
+templates/
+└── excel_data/
+    ├── book_list.html
+    ├── add_book.html
+    ├── upload_excel.html
+    └── success.html
+    └── upload_result.html
 
 
 
