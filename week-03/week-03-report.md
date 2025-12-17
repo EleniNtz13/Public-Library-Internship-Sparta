@@ -523,6 +523,76 @@ book_list.html
 9)  url gia excel upload -> prosthiki sto  excel_data/urls.py to "path('upload-excel/', views.upload_excel, name='upload_excel'),
 10)  test python manage.py runserver kai meta http://127.0.0.1:8000/upload-excel/
 
+
+
+prosthiki sto views.py tou:
+import pandas as pd
+import datetime
+from dateutil.parser import parse
+from django.shortcuts import render, redirect
+from .models import Book
+from .forms import BookForm
+
+
+def clean_text(value):
+    if pd.isna(value):
+        return None
+    return str(value).strip()
+
+
+
+upload_excel:
+
+def upload_excel(request):
+    if request.method == "POST" and request.FILES.get('file'):
+        df = pd.read_excel(request.FILES['file'])
+
+        # Καθαρισμός ονομάτων στηλών Excel
+        df.columns = df.columns.str.strip().str.lower()
+
+        books = []
+
+        for _, row in df.iterrows():
+
+            # entry_date
+            entry_date_value = row.get('entry_date')
+            if pd.notnull(entry_date_value):
+                if hasattr(entry_date_value, 'to_pydatetime'):
+                    entry_date_value = entry_date_value.to_pydatetime().date()
+                elif isinstance(entry_date_value, str):
+                    entry_date_value = parse(entry_date_value).date()
+            else:
+                entry_date_value = None
+
+            books.append(Book(
+                entry_number=clean_text(row.get('entry_number')),
+                entry_date=entry_date_value,
+                author=clean_text(row.get('author')),
+                koha_author=clean_text(row.get('koha_author')),
+                title=clean_text(row.get('title')),
+                publisher=clean_text(row.get('publisher')),
+                edition=clean_text(row.get('edition')),
+                publish_year=clean_text(row.get('publish_year')),
+                publish_place=clean_text(row.get('publish_place')),
+                shape=clean_text(row.get('shape')),
+                pages=clean_text(row.get('pages')),
+                volume=clean_text(row.get('volume')),
+                notes=clean_text(row.get('notes')),
+                isbn=clean_text(row.get('isbn')),
+                column1=clean_text(row.get('column1')),
+                column2=clean_text(row.get('column2')),
+            ))
+
+        Book.objects.bulk_create(books)
+
+        return redirect('show_books')
+
+    return render(request, 'main/upload_excel.html')
+
+
+
+
+
 Notes: 
 - πρεπει ΤΟ ΑΡΧΕΊΟ που θα φορτωθεί στον browser να είναι .xlsx
 - sto add_book.html sto telos tou kwdika den prepei na iparxei return redirect('show_books') -> einai python
