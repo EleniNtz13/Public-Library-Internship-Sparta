@@ -127,20 +127,9 @@ Create:
 
 ```
 excel_data/urls.py
-```
+```This file contains the same code as the file with the same name located in the ```week-03``` folder.
 
-```python
-from django.urls import path
-from . import views
-
-urlpatterns = [
-    path('', views.show_books, name='show_books'),  # app root
-    path('add/', views.add_book, name='add_book'),
-    path('upload-excel/', views.upload_excel, name='upload_excel'),
-]
-```
-
-Make sure this file is included in the **project-level `urls.py`** using `include()`.
+⚠️ Make sure this file is included in the **project-level `urls.py`** using `include()`.
 
 ---
 
