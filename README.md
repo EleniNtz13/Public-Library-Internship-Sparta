@@ -15,7 +15,7 @@ Welcome to the repository documenting my internship experience!
 
 ---
 
-(να γίνει ένα summup με όλη την διαδικασία -> στο τέλος)
+[//]: (να γίνει ένα summup με όλη την διαδικασία -> στο τέλος)
 
 ### 🛠️ Tools & Technologies Used
 
