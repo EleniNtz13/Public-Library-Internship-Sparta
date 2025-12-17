@@ -67,6 +67,7 @@ for field in Book._meta.fields:
    * `entry_date`
    * `koha_author`
    * `publish_year`
+   * ...
 
 ⚠️ **Important Fix**
 
