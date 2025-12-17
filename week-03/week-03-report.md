@@ -1,26 +1,30 @@
 # 🌟 Week 3 – Library Management System
 
-This week focuses on completing the **full integration between forms, views, and the PostgreSQL database**.  
+This week focuses on completing the **full integration between Django forms, views, and the PostgreSQL database**.
 The system now supports **data persistence**, **Excel imports**, and **web-based data management**.
-This repository provides a complete guide for managing book records in a Django application, including manual form entry and Excel (`.xlsx`) upload functionality.
 
+This repository provides a complete guide for managing book records in a Django application, including **manual form entry** and **Excel (`.xlsx`) upload functionality**.
+
+---
 
 ## 🧭 Overview
 
-During Week 3, the application transitions from setup to a **fully functional backend system** by:
+During **Week 3**, the application transitions from initial setup to a **fully functional backend system** by:
 
-- Defining database models
-- Importing Excel data into PostgreSQL
-- Connecting forms to models
-- Displaying stored data via Django views and templates
+* Defining database models
+* Persisting data in PostgreSQL
+* Importing Excel data into the database
+* Connecting Django forms to models
+* Displaying stored data using views and templates
 
+---
 
 ## ✨ Features
 
 * 📚 Book model integration with PostgreSQL
 * 📝 Manual book entry using Django forms
 * 📊 Excel (`.xlsx`) upload and import
-* 🛠️ Admin & pgAdmin verification steps
+* 🛠️ Database verification via Django Shell & pgAdmin
 * 📦 Pandas & OpenPyXL support
 
 ---
@@ -41,9 +45,9 @@ from excel_data.models import Book
 Book.objects.all()
 ```
 
-✅ If no error occurs, the table exists.
+✅ If no error occurs, the model and database table exist.
 
-To inspect fields:
+To inspect the model fields:
 
 ```python
 for field in Book._meta.fields:
@@ -57,16 +61,19 @@ for field in Book._meta.fields:
 1. Open **pgAdmin 4**
 2. Navigate to:
 
-   ```
-   Databases → db → Schemas → public → Tables
-   ```
-3. Confirm a table named **`excel_data_book`** exists
-4. Verify fields such as:
+```
+Databases → db → Schemas → public → Tables
+```
 
-   * `entry_number`
-   * `entry_date`
-   * `koha_author`
-   * `publish_year`
+3. Confirm that a table named **`excel_data_book`** exists
+   (default Django naming convention: `<appname>_<modelname>`)
+
+4. Verify that the following fields exist:
+
+* `entry_number`
+* `entry_date`
+* `koha_author`
+* `publish_year`
 
 ⚠️ **Important Fix**
 
@@ -74,7 +81,7 @@ for field in Book._meta.fields:
 publish_year = models.CharField(max_length=20, null=True, blank=True)
 ```
 
-`publish_year` **must be a `CharField`**, not an integer.
+The `publish_year` field **must be a `CharField`**, not an integer.
 
 If the table does not exist, run:
 
@@ -93,7 +100,8 @@ Create the file:
 excel_data/forms.py
 ```
 
-Add the exact code provided in the corresponding project file.
+Add the exact form code provided in the corresponding project files.
+This file defines the Django form used for manual book entry.
 
 ---
 
@@ -105,7 +113,11 @@ Create:
 excel_data/views.py
 ```
 
-Add the view logic provided in the project files.
+Add the view logic provided in the project files, including:
+
+* Displaying the book form
+* Saving form data to the database
+* Rendering success templates
 
 ---
 
@@ -122,12 +134,13 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.show_books, name='show_books'),    # root του app
+    path('', views.show_books, name='show_books'),  # app root
     path('add/', views.add_book, name='add_book'),
-    path('upload-excel/', views.upload_excel, name='upload_excel')
+    path('upload-excel/', views.upload_excel, name='upload_excel'),
 ]
-
 ```
+
+Make sure this file is included in the **project-level `urls.py`** using `include()`.
 
 ---
 
@@ -138,41 +151,62 @@ Directory structure:
 ```
 templates/
 └── excel_data/
+    ├── book_list.html
     ├── add_book.html
+    ├── upload_excel.html
     └── success.html
 ```
 
-### 📄 add_book.html
-contains the files: 
+### 📄 `add_book.html`
 
-### book_list
+* Contains **HTML only**
+* Displays the manual book entry form
+* ⚠️ Do **NOT** include Python code such as:
 
-### 📄 success.html
-the code exists on the folder myproject/excel_data/templates/excel_data
-* Displays a success message after submission
+```python
+return redirect('show_books')
+```
 
-### upload_excel 
-οι κώδικες ολων των αρχειων φαινονται στον φάκελο week-03
+### 📄 `book_list.html`
+
+* Displays all stored books from the database
+
+### 📄 `upload_excel.html`
+
+* Contains the Excel file upload form
+
+### 📄 `success.html`
+
+* Displays a success message after form submission
+
+📌 The code for all templates is available in the `week-03` folder of the repository.
 
 ---
 
 ## 6️⃣ Initial Test – Manual Entry ✅
 
+Start the development server:
+
 ```bash
 python manage.py runserver
 ```
 
-Open:
+Open in your browser:
 
 ```
 http://127.0.0.1:8000/books/add/
 ```
 
-Verify that books are saved successfully.
+Verify that:
+
+* The form loads correctly
+* Submitting the form stores data in PostgreSQL
 
 ---
 
 ## 7️⃣ Install Required Libraries 📦
+
+Install dependencies required for Excel file processing:
 
 ```bash
 pip install pandas openpyxl
@@ -182,13 +216,13 @@ pip install pandas openpyxl
 
 ## 8️⃣ Add Excel Upload Logic 📊
 
-Update `views.py` with:
+Update `views.py` to include:
 
-* `upload_excel` view
-* `.xlsx` file reading
-* Row-to-model mapping
+* An `upload_excel` view
+* Reading `.xlsx` files using Pandas
+* Mapping Excel rows to the `Book` model
 
-⚠️ Only `.xlsx` files are allowed.
+⚠️ Only `.xlsx` files are allowed:
 
 ```python
 if not file.name.endswith('.xlsx'):
@@ -199,7 +233,7 @@ if not file.name.endswith('.xlsx'):
 
 ## 9️⃣ Add Excel Upload URL 🔗
 
-Update `excel_data/urls.py`:
+Ensure the following route exists in `excel_data/urls.py`:
 
 ```python
 path('upload-excel/', views.upload_excel, name='upload_excel'),
@@ -208,6 +242,8 @@ path('upload-excel/', views.upload_excel, name='upload_excel'),
 ---
 
 ## 🔟 Final Test – Excel Upload 🚀
+
+Run the server:
 
 ```bash
 python manage.py runserver
@@ -219,33 +255,32 @@ Open:
 http://127.0.0.1:8000/upload-excel/
 ```
 
-Verify:
+Verify that:
 
-* File upload works
-* Data is imported correctly
+* The Excel upload form loads
+* `.xlsx` files are accepted
+* Book records are imported into the database
 
 ---
 
 ## ✅ Key Notes
 
 * 📌 Only `.xlsx` files are supported
-* 📌 Templates contain HTML only
-* 📌 Always run migrations after model changes
-* 📌 Confirm URLs are registered
+* 📌 Templates contain **HTML only**
+* 📌 Run migrations after any model change
+* 📌 Confirm app URLs are registered at project level
 
 ---
 
 ## 🎯 Result
 
-You now have a complete Django setup for:
+You now have a complete Django backend that supports:
 
-* Manual book entry
-* Excel-based bulk import
-* PostgreSQL-backed persistence
+* Manual book entry via forms
+* Excel-based bulk data import
+* PostgreSQL-backed data persistence
 
 Happy coding 🚀
-
-
 
 
 
