@@ -527,4 +527,8 @@ Notes:
 - πρεπει ΤΟ ΑΡΧΕΊΟ που θα φορτωθεί στον browser να είναι .xlsx
 - sto add_book.html sto telos tou kwdika den prepei na iparxei return redirect('show_books') -> einai python 
 <img width="892" height="620" alt="image" src="https://github.com/user-attachments/assets/59eb6eaa-c39a-44a6-aa72-8c03b2d2c92a" />
+<img width="982" height="503" alt="image" src="https://github.com/user-attachments/assets/28171cea-4efd-4195-a04d-f738da27ff15" />
+<img width="987" height="372" alt="image" src="https://github.com/user-attachments/assets/0f23251d-876c-42d3-9e73-5a95052a8201" />
+
+
 
