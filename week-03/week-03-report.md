@@ -148,6 +148,9 @@ templates/
 
 ```
 
+δημιουργία upload_result.html me kodika pou fainetai sto fakelo week03
+
+
 ### 📄 `add_book.html`
 
 * This code renders a Django HTML form for adding a new book, securely handles form submission using CSRF protection, and provides a link back to the book list.
@@ -198,6 +201,49 @@ pip install pandas openpyxl
 ```
 
 ---
+
+
+
+ - στα settings.py INSTALLED APPS βεβαιωσου οτι υπαρχουν:.... και στο MIDDLEWARE τα αντίστοιχα 
+
+δήλωσε σε ποια σελίδα γίνεται login και τοποθέτησέ στο settings.py μετά το MIDDLEWARE
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/excel_data/'
+LOGOUT_REDIRECT_URL = '/login/'
+
+- το views.py θα πάρει την μορφή που δείχνει το αρχείο με το αντίστοιχο όνομα στον παρόντα φάκελο
+
+
+- δημιουργία urls.py:
+
+from django.contrib.auth import views as auth_views
+
+urlpatterns = [
+    path('login/', auth_views.LoginView.as_view(template_name='main/login.html'), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+]
+
+
+-δημιουργία myproject/excel_data/login.html  me ton kodiko pou yparxei sto antistoixo arxeio 
+final Directory structure:
+
+```
+templates/
+└── excel_data/
+    ├── book_list.html
+    ├── add_book.html
+    ├── upload_excel.html
+    ├── success.html
+    ├── upload_result.html
+    └── login.html 
+
+
+
+- δημιουργια χρήστη και κωδικού python manage.py createsuperuser
+θα σου εμφανίσει username...
+email & password 
+
+
 
 ## 8️⃣ Add Excel Upload Logic 📊
 
@@ -280,17 +326,6 @@ Happy coding 🚀
 
 
 
-
-Directory structure:
-
-```
-templates/
-└── excel_data/
-    ├── book_list.html
-    ├── add_book.html
-    ├── upload_excel.html
-    └── success.html
-    └── upload_result.html
 
 
 
