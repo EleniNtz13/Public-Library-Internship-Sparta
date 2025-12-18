@@ -104,16 +104,16 @@ templates/
 
 
 ## 6️⃣ Manual Entry Test ✅
-Run server:
+1. Run server:
 ```
 python manage.py runserver
 ```
 
-Open:
+2. Open:
 ```
 http://127.0.0.1:8000/books/add/
 ```
-Verify form loads and saves data.
+3. Verify form loads and saves data.
 
 ## 7️⃣ Install Libraries 📦
 ```
@@ -133,7 +133,7 @@ LOGOUT_REDIRECT_URL = '/login/'
 Ensure ```INSTALLED_APPS``` and ```MIDDLEWARE``` include required Django defaults.
 
 ## 9️⃣ Authentication Views
-In urls.py:
+In ```urls.py```:
 ```
 from django.contrib.auth import views as auth_views
 
@@ -190,7 +190,7 @@ Verify:
 ---
 
 ## ✅ Key Notes
-- 📌 Only .xlsx files supported
+- 📌 Only ```.xlsx``` files supported
 - 📌 Templates contain HTML only
 - 📌 Run migrations after any model change
 - 📌 Confirm app URLs are registered at project level
