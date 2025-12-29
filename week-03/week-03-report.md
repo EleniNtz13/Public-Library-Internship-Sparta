@@ -204,5 +204,3 @@ You now have a complete Django backend that supports:
 - 🔐 Secure login flow → redirect to Excel upload
 
 🚀 Happy coding!
-
---< na prostheso tin diagrafi twn stoixeiwn
