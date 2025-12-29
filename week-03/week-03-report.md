@@ -205,4 +205,4 @@ You now have a complete Django backend that supports:
 
 🚀 Happy coding!
 
-<-- na prostheso tin diagrafi twn stoixeiwn
+--< na prostheso tin diagrafi twn stoixeiwn
