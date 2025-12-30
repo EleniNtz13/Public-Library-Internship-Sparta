@@ -204,3 +204,19 @@ You now have a complete Django backend that supports:
 - 🔐 Secure login flow → redirect to Excel upload
 
 🚀 Happy coding!
+
+
+
+
+
+python manage.py shell
+
+
+
+
+from main.models import Person
+Person.objects.all().delete()
+
+
+
+
