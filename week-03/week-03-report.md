@@ -217,6 +217,7 @@ python manage.py shell
 from main.models import Person
 Person.objects.all().delete()
 
+exit()
 
 
 
