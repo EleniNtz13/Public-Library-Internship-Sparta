@@ -342,7 +342,7 @@ Save the file.
 
 ⚠️ Note: The database name given by the user in pgAdmin 4 needs to be the same as the one set in the settings.py code.
 
-#### 4. 🔄 Apply Initial Migrations
+### 4. 🔄 Apply Initial Migrations
 
 In the same terminal:
 ```
@@ -366,7 +366,7 @@ A new folder named **excel_data** will be created inside your project. The folde
 - ```urls.py```
 - ```templates/```
 
-#### 6. 🧩 Register the App in Django
+### 6. 🧩 Register the App in Django
 
 Open ```settings.py``` again and find:
 ```
@@ -380,7 +380,7 @@ Add your new app:
 
 Save the file.
 
-#### 7. 📚 Define the Book Model
+### 7. 📚 Define the Book Model
 
 Open:
 ```
@@ -391,7 +391,7 @@ Replace the Python code (```models.py```) shown in the folder ```week-02``` of t
 
 ⚠️ This specific code refers to the library manuals, covering the needs of the Sparta public library.
 
-#### 8. 🏗️ Create and Apply Migrations for the New Model
+### 8. 🏗️ Create and Apply Migrations for the New Model
 
 Run:
 ```
