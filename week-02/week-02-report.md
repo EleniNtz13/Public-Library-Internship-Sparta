@@ -188,10 +188,10 @@ pip install django
 
 Run:
 ```
-django-admin startproject myproject
+django-admin startproject excel_form_app
 ```
 
-A new folder named ```myproject``` will be created in your current path. Automatically, a file named ```myproject``` will be created, which contains the files: 
+A new folder named ```excel_form_app``` will be created in your current path. Automatically, a file named ```excel_form_app``` will be created, which contains the files: 
 
 - ```settings.py```
 - ```urls.py```
@@ -200,7 +200,7 @@ A new folder named ```myproject``` will be created in your current path. Automat
 
 Move into the project directory:
 ```
-cd myproject
+cd excel_form_app
 ```
 
 ### 5. ✨ Run the Development Server
@@ -232,7 +232,7 @@ Inside the project directory, you can create an app. For example, run:
 python manage.py startapp my_app
 ```
 
-This will generate a new folder named **my_app** inside **myproject**.
+This will generate a new folder named **my_app** inside **excel_form_app**.
 
 ### 7. 💻 Open the Project in VS Code
 
@@ -321,7 +321,7 @@ Use the following settings (adjust values as needed):
 
 Open the file:
 ```
-myproject/settings.py
+excel_form_app/settings.py
 ```
 
 Find the ```DATABASES``` section and replace it with:
@@ -351,11 +351,11 @@ python manage.py migrate
 
 If everything is correct, Django will create the necessary tables in PostgreSQL.
 
-**5. 📁 Create a New Django App (in** ```myproject``` **folder)**
+**5. 📁 Create a New Django App (in** ```excel_form_app``` **folder)**
 
 Run:
 ```
-python manage.py startapp excel_data
+python manage.py startapp excel_data??
 ```
 
 A new folder named **excel_data** will be created inside your project. The folder contains:
