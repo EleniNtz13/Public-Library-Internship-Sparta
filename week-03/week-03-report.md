@@ -149,37 +149,37 @@ path('', include('main.urls'))
 
 ```
 registration/
-base.html
-home.html
+base.html     # Base layout template
+home.html     # Landing page template
 ```
 
 
 #### 📂 `templates/registration/`
 
 ```
-home.html
-login.html
-logged_out.html
-signup.html
+home.html        # Authentication home page
+login.html       # Login form template
+logged_out.html  # Logout confirmation page
+signup.html      # User registration page
 ```
 
 #### 📂 `main/templates/main/`
 
 ```
-people.html           # List all records
-edit_person.html      # Edit entry
-duplicates.html       # Show duplicates
-duplicates_done.html  # Duplicates resolved
+people.html           # Displays all stored records
+edit_person.html      # Edit record form
+duplicates.html       # Duplicate detection page
+duplicates_done.html  # Confirmation page for duplicates handling
 ```
 
 #### 📂 `main/templates/`
 
 ```
 main/
-people.html
-upload_excel.html
-upload_result.html
-upload_success.html
+people.html          # Alternative or extended listing view
+upload_excel.html    # Excel upload form
+upload_result.html   # Excel import results page
+upload_success.html  # Import success confirmation page
 ```
 
 
