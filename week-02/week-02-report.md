@@ -399,4 +399,5 @@ python manage.py migrate
 
 This will create the Book table inside the PostgreSQL database according to your model.
 
+⚠️ Whenever the model fields are modified, `makemigrations` and `migrate` must be executed to apply the changes to the database.
 
