@@ -229,10 +229,10 @@ The files ```manage.py``` and ```db.sqlite3``` must be located in the root direc
 
 Inside the project directory, you can create an app. For example, run:
 ```
-python manage.py startapp my_app
+python manage.py startapp main
 ```
 
-This will generate a new folder named **my_app** inside **excel_form_app**.
+This will generate a new folder named **main** inside **excel_form_app** project.
 
 ### 7. 💻 Open the Project in VS Code
 
