@@ -336,14 +336,14 @@ python manage.py migrate
 
 If everything is correct, Django will create the necessary tables in PostgreSQL.
 
-### 5. 📁 Create a New Django App (in ```excel_form_app``` folder)
+### 5. 📁 Create a Django App 
 
-Run:
+Inside the ```excel_form_app``` folder, run:
 ```
-python manage.py startapp excel_data??
+python manage.py startapp main 
 ```
 
-A new folder named **excel_data** will be created inside your project. The folder contains:
+A new folder named **main** will be created inside your project. The folder contains:
 
 - ```models.py```
 - ```views.py```
@@ -360,10 +360,21 @@ INSTALLED_APPS = [
 
 Add your new app:
 ```
-'excel_data',
+'main',
 ```
 
-Save the file.
+Save the file. Now, you should have:
+```
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'main'
+]
+```
 
 ### 7. 📚 Define the Book Model
 
