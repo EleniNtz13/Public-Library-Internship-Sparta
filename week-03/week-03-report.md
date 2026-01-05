@@ -12,6 +12,7 @@ The application is designed **exclusively for internal library staff** to manage
 ```
 excel_form_app/
 │── manage.py
+│── urls.py
 │── excel_form_app/
 │   ├── __init__.py
 │   ├── asgi.py
@@ -41,15 +42,16 @@ excel_form_app/
 │       └── signup.html
 │
 └── main/templates
-|   └── main/
-        ├── people.html
-        ├── edit_person.html
-        ├── duplicates.html
-        └── duplicates_done.html
 |   ├── people.html
 │   ├── upload_excel.html
 │   ├── upload_result.html
 │   ├── upload_success.html
+|   └── main/
+|       ├── people.html
+|       ├── edit_person.html
+|       ├── duplicates.html
+|       └── duplicates_done.html
+
 ```
 
 
