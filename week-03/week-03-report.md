@@ -163,15 +163,24 @@ duplicates.html       # Show duplicates
 duplicates_done.html  # Duplicates resolved
 ```
 
-#### 📂 `templates/`
+#### 📂 `main/templates/`
 
 ```
-base.html
-home.html
+main/
+people.html
 upload_excel.html
 upload_result.html
 upload_success.html
 ```
+
+#### 📂 `templates/`
+
+```
+registration/
+base.html
+home.html
+```
+
 
 #### 📂 `templates/registration/`
 
