@@ -91,8 +91,6 @@ exit()
 This step is useful **after imports** if incorrect data was uploaded.
 
 
----
-
 ### 2️⃣ Forms Setup 📝
 
 File:
@@ -107,7 +105,6 @@ Purpose:
 * Connects directly to the `Person` model
 * Used for **manual data entry**
 
----
 
 ### 3️⃣ Views Logic 👁️
 
@@ -125,7 +122,6 @@ Handles:
 * Duplicate detection
 * Success & result pages
 
----
 
 ### 4️⃣ URL Configuration 🔗
 
@@ -147,7 +143,6 @@ Ensure the app URLs are included:
 path('', include('main.urls'))
 ```
 
----
 
 ### 5️⃣ Templates 🧩
 
@@ -178,10 +173,8 @@ logged_out.html
 signup.html
 ```
 
----
-
 ### 6️⃣ Manual Entry Test ✅
-
+In the same CMD, run:
 ```
 python manage.py runserver
 ```
@@ -197,7 +190,6 @@ Verify:
 * `people.html` loads
 * Entries are saved correctly
 
----
 
 ### 7️⃣ Install Required Libraries 📦
 
@@ -207,7 +199,6 @@ pip install pandas openpyxl
 
 Used for Excel (`.xlsx`) imports.
 
----
 
 ### 8️⃣ Authentication Setup 🔐
 
@@ -223,7 +214,6 @@ Create admin user:
 python manage.py createsuperuser
 ```
 
----
 
 ### 9️⃣ Excel Upload Flow 📊
 
@@ -270,7 +260,6 @@ Verify:
 * 📁 Commands must run from the folder containing `manage.py`
 * 🔄 Run `makemigrations` & `migrate` **only when model fields change**
 
----
 
 ## 🎯 Result
 
