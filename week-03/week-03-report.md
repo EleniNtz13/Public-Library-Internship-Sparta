@@ -136,9 +136,7 @@ Paste the corresponding python code which exists in the week-03 folder 🗂️.
 
 Project-level URLs:
 
-```
-excel_form_app/urls.py
-```
+`excel_form_app/urls.py`
 
 Paste the corresponding python code which also exists in the week-03 folder 🗂️.
 
