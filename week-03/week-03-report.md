@@ -94,9 +94,7 @@ This step is useful **after imports** if incorrect data was uploaded.
 
 File:
 
-```
-main/forms.py
-```
+`main/forms.py`
 
 Purpose:
 
@@ -110,9 +108,7 @@ Paste the corresponding python code which is available in the week-03 folder ðŸ—
 
 File:
 
-```
-main/views.py
-```
+`main/views.py`
 
 Handles:
 
