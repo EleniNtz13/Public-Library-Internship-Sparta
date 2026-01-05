@@ -275,8 +275,11 @@ You now have a **complete internal Django system** with:
 
 **Τhe final form of the form:**
 
+At first, display of the home page:
 <img width="1920" height="1027" alt="image" src="https://github.com/user-attachments/assets/35fb8c22-37ac-473c-8965-fa0283caab55" />
+If you don't have an account, then you should sign up:
 <img width="1920" height="1027" alt="image" src="https://github.com/user-attachments/assets/00825dec-0c8f-4011-8dee-4e6275f5be50" />
+Otherwise, you can login: 
 <img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/24dd6764-3967-4c46-b1cf-6e7f7c9e58f4" />
 <img width="1920" height="1027" alt="image" src="https://github.com/user-attachments/assets/854f68ec-1bdb-4845-9bca-65c78342aa7b" />
 <img width="1918" height="1027" alt="image" src="https://github.com/user-attachments/assets/e493f25e-af47-4ca8-8abe-ecf2278d8424" />
