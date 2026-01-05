@@ -53,14 +53,6 @@ excel_form_app/
 |       └── duplicates_done.html
 
 ```
-
-
-
-✅ **Note:**
-
-* `people.html` **is required** and is the **main listing page** for all stored entries.
-* There is **no unused or optional `people.html`** — it is a core template.
-
 ---
 
 ## 1️⃣ Verify Database Table
