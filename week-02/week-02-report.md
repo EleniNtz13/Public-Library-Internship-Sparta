@@ -241,7 +241,7 @@ Run:
 code .
 ```
 
-This will open **myproject** folder in Visual Studio Code for development. 
+This will open **excel_form_app** project in Visual Studio Code for development. 
 
 
 
