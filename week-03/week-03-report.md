@@ -41,7 +41,7 @@ excel_form_app/
 │       ├── logged_out.html
 │       └── signup.html
 │
-└── main/templates
+├── main/templates
 |   ├── people.html
 │   ├── upload_excel.html
 │   ├── upload_result.html
