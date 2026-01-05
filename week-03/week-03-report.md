@@ -276,9 +276,9 @@ You now have a **complete internal Django system** with:
 
 **The final version of the online form:**
 
-Initial display of the home page (the same view is shown when the user is logged out):
+- Initial display of the home page (the same view is shown when the user is logged out):
 <img width="1920" height="1027" alt="image" src="https://github.com/user-attachments/assets/35fb8c22-37ac-473c-8965-fa0283caab55" />
-If you don't have an account, then you should sign up:
+- If you don't have an account, then you should sign up:
 <img width="1920" height="1027" alt="image" src="https://github.com/user-attachments/assets/00825dec-0c8f-4011-8dee-4e6275f5be50" />
 Otherwise, you can login: 
 <img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/24dd6764-3967-4c46-b1cf-6e7f7c9e58f4" />
