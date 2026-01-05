@@ -55,7 +55,7 @@ excel_form_app/
 ```
 
 ### 1️⃣ Verify Database Table
-
+Open CMD as Admin and run:
 ```
 python manage.py shell
 ```
