@@ -251,15 +251,9 @@ This will open **excel_form_app** project in Visual Studio Code for development.
 6. Leave the default **port 5432**.
 7. Keep all other settings on default.
 8. Click **Next** → **Next** → **Install** → **Finish**.
+9. After installation finishes, Stack Builder will appear. Click **Cancel** and close it — not required for now.
 
-
-### 🗃️ Close Stack Builder
-
-After installation finishes, Stack Builder will appear.
-
-➡️ Click **Cancel** and close it — not required for now.
-
-### 🔄 Optional: Verify PostgreSQL Service
+#### 🔄 Optional: Verify PostgreSQL Service
 
 You can optionally check that the PostgreSQL service is running:
 1. Open **Services** (Start → type Services).
@@ -308,7 +302,7 @@ Use the following settings (adjust values as needed):
 - **Host**: ```localhost```
 - **Port**: ```5432```
 
-**3. ⚙️ Edit Django Settings** **(**```settings.py```**)**
+### 3. ⚙️ Edit Django Settings (```settings.py```)
 
 Open the file:
 ```
