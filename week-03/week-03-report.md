@@ -230,7 +230,6 @@ Features:
 * Maps rows to `Person` model
 * Detects duplicates
 
----
 
 ### 🔟 Import Test 🚀
 
