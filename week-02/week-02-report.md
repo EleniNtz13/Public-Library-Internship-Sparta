@@ -225,7 +225,7 @@ Ctrl + C
 The files ```manage.py``` and ```db.sqlite3``` must be located in the root directory created by the user. Keeping them in the initial folder ensures that Django can properly manage the project and database.
 
 
-### 6. 💻 Open the Project in VS Code
+### 6. 💻 Open the Project in VS Code (optional)
 
 Run:
 ```
