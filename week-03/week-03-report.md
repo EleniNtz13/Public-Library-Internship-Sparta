@@ -273,7 +273,7 @@ You now have a **complete internal Django system** with:
 
 🚀 Ready for internal library use.
 
-**the final version of the online form:**
+**The final version of the online form:**
 
 At first, display of the home page:
 <img width="1920" height="1027" alt="image" src="https://github.com/user-attachments/assets/35fb8c22-37ac-473c-8965-fa0283caab55" />
