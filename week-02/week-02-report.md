@@ -225,16 +225,7 @@ Ctrl + C
 The files ```manage.py``` and ```db.sqlite3``` must be located in the root directory created by the user. Keeping them in the initial folder ensures that Django can properly manage the project and database.
 
 
-### 6. 📌 Create a Django App
-
-Inside the project directory, create an app. Run:
-```
-python manage.py startapp main
-```
-
-This will generate a new folder named **main** inside **excel_form_app** project.
-
-### 7. 💻 Open the Project in VS Code
+### 6. 💻 Open the Project in VS Code
 
 Run:
 ```
