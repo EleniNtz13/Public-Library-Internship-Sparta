@@ -138,13 +138,12 @@ Paste the corresponding python code which also exists in the week-03 folder 🗂
 
 
 Ensure the app URLs are included:
-
 ```
 path('', include('main.urls'))
 ```
 
 
-### 5️⃣ Templates 🧩
+### 5️⃣ Templates are included 🧩
 
 #### 📂 `templates/`
 
