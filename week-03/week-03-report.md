@@ -294,7 +294,7 @@ Otherwise, you can login 🔓:
 <img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/24dd6764-3967-4c46-b1cf-6e7f7c9e58f4" />
 Now, you are signed in 🥳:
 <img width="1920" height="1027" alt="image" src="https://github.com/user-attachments/assets/854f68ec-1bdb-4845-9bca-65c78342aa7b" />
-Then, you can upload an .xlsx file 📥:
+Then, you can upload an `.xlsx` file 📥:
 <img width="1918" height="1027" alt="image" src="https://github.com/user-attachments/assets/e493f25e-af47-4ca8-8abe-ecf2278d8424" />
 If these entries have not been submitted before, the form is displayed to the user like this:
 <img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/fb632528-7e89-45cf-8a58-ef2eb2c2a6f7" />
