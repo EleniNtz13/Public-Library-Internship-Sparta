@@ -1,3 +1,43 @@
+excel_form_app/
+├── excel_form_app/
+
+├── main/
+│   ├── models.py
+│   ├── views.py
+│   ├── forms.py
+│   ├── urls.py
+│   └── templates/
+│       ├── main/
+│       │   ├── people.html
+│       │   ├── edit_person.html
+│       │   ├── duplicates.html
+│       │   └── duplicates_done.html
+│       ├── upload_excel.html
+│       ├── upload_result.html
+│       └── upload_success.html
+├── templates/
+│   ├── base.html
+│   ├── home.html
+│   └── registration/
+│       ├── login.html
+│       ├── logged_out.html
+│       └── signup.html
+├── manage.py
+├── urls.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 🌟 Week 3 – Library Management System
 This week focuses on completing the **full integration between Django forms, views, and the PostgreSQL database**. The system now supports **data persistence**, **Excel imports**, and **web-based data management**.
 
@@ -42,7 +82,7 @@ for field in Book._meta.fields:
 
 2. Navigate:
 ```
-Databases → your_db → Schemas → public → Tables
+Databases → db → Schemas → public → Tables
 ```
 3. Confirm table ```excel_data_book``` exists
 
@@ -62,12 +102,12 @@ python manage.py migrate
 ```
 
 ## 2️⃣ Create ```forms.py```
-File: ```excel_data/forms.py``` 
+File: ```main/forms.py``` 
 
 Defines Django form for manual book entry.
 
 ## 3️⃣ Create ```views.py```
-File: ```excel_data/views.py``` 
+File: ```main/views.py``` 
 Handles:
 
 - Displaying book form
@@ -77,7 +117,7 @@ Handles:
 
 
 ## 4️⃣ Create ```urls.py```
-File: ```excel_data/urls.py``` 
+File: ```main/urls.py``` 
 ⚠️ Ensure included in project-level ```urls.py``` using ```include()```.
 
 
