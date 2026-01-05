@@ -380,7 +380,7 @@ INSTALLED_APPS = [
 
 Open:
 ```
-excel_data/models.py
+main/models.py
 ```
 
 Replace the Python code (```models.py```) shown in the folder ```week-02``` of this repository and save the file. 
