@@ -129,9 +129,7 @@ There, paste the corresponding python code which is also available in the week-0
 
 App-level URLs:
 
-```
-main/urls.py
-```
+`main/urls.py`
 
 Paste the corresponding python code which exists in the week-03 folder 🗂️.
 
