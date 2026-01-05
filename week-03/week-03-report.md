@@ -54,7 +54,7 @@ excel_form_app/
 
 ```
 
-## 1️⃣ Verify Database Table
+### 1️⃣ Verify Database Table
 
 ```
 python manage.py shell
@@ -74,9 +74,26 @@ for field in Person._meta.fields:
     print(field.name, field.get_internal_type())
 ```
 
+#### 🧹 Delete Imported Data (If Needed)
+
+⚠️ **Use only if a reset is required**
+
+```
+python manage.py shell
+```
+
+```
+from main.models import Person
+Person.objects.all().delete()
+exit()
+```
+
+This step is useful **after imports** if incorrect data was uploaded.
+
+
 ---
 
-## 2️⃣ Forms Setup 📝
+### 2️⃣ Forms Setup 📝
 
 File:
 
@@ -92,7 +109,7 @@ Purpose:
 
 ---
 
-## 3️⃣ Views Logic 👁️
+### 3️⃣ Views Logic 👁️
 
 File:
 
@@ -110,7 +127,7 @@ Handles:
 
 ---
 
-## 4️⃣ URL Configuration 🔗
+### 4️⃣ URL Configuration 🔗
 
 App-level URLs:
 
@@ -132,9 +149,9 @@ path('', include('main.urls'))
 
 ---
 
-## 5️⃣ Templates 🧩
+### 5️⃣ Templates 🧩
 
-### 📂 `main/templates/main/`
+#### 📂 `main/templates/main/`
 
 ```
 people.html           # List all records
@@ -143,7 +160,7 @@ duplicates.html       # Show duplicates
 duplicates_done.html  # Duplicates resolved
 ```
 
-### 📂 `templates/`
+#### 📂 `templates/`
 
 ```
 base.html
@@ -153,7 +170,7 @@ upload_result.html
 upload_success.html
 ```
 
-### 📂 `templates/registration/`
+#### 📂 `templates/registration/`
 
 ```
 login.html
@@ -163,7 +180,7 @@ signup.html
 
 ---
 
-## 6️⃣ Manual Entry Test ✅
+### 6️⃣ Manual Entry Test ✅
 
 ```
 python manage.py runserver
@@ -182,7 +199,7 @@ Verify:
 
 ---
 
-## 7️⃣ Install Required Libraries 📦
+### 7️⃣ Install Required Libraries 📦
 
 ```
 pip install pandas openpyxl
@@ -192,7 +209,7 @@ Used for Excel (`.xlsx`) imports.
 
 ---
 
-## 8️⃣ Authentication Setup 🔐
+### 8️⃣ Authentication Setup 🔐
 
 ```
 LOGIN_URL = '/login/'
@@ -208,7 +225,7 @@ python manage.py createsuperuser
 
 ---
 
-## 9️⃣ Excel Upload Flow 📊
+### 9️⃣ Excel Upload Flow 📊
 
 Implemented in:
 
@@ -225,7 +242,7 @@ Features:
 
 ---
 
-## 🔟 Import Test 🚀
+### 🔟 Import Test 🚀
 
 ```
 python manage.py runserver
@@ -242,24 +259,6 @@ Verify:
 * Login works
 * Excel upload succeeds
 * Records appear in `people.html`
-
----
-
-## 🧹 Delete Imported Data (If Needed)
-
-⚠️ **Use only if a reset is required**
-
-```
-python manage.py shell
-```
-
-```
-from main.models import Person
-Person.objects.all().delete()
-exit()
-```
-
-This step is useful **after imports** if incorrect data was uploaded.
 
 ---
 
@@ -288,7 +287,7 @@ You now have a **complete internal Django system** with:
 
 
 
-
+---
 
 
 
