@@ -1,22 +1,37 @@
 from django.db import models
+from django.contrib.auth.models import User
 
-class Book(models.Model):
-    entry_number = models.IntegerField(null=True, blank=True)
-    entry_date = models.DateField(null=True, blank=True)
-    author = models.CharField(max_length=255, null=True, blank=True)
-    koha_author = models.CharField(max_length=255, null=True, blank=True)
-    title = models.CharField(max_length=500, null=True, blank=True)
-    publisher = models.CharField(max_length=255, null=True, blank=True)
-    edition = models.CharField(max_length=255, null=True, blank=True)
-    publish_year = models.IntegerField(null=True, blank=True)
-    publish_place = models.CharField(max_length=255, null=True, blank=True)
-    shape = models.CharField(max_length=255, null=True, blank=True)
-    pages = models.CharField(max_length=50, null=True, blank=True)
-    volume = models.CharField(max_length=100, null=True, blank=True)
-    notes = models.TextField(null=True, blank=True)
-    isbn = models.CharField(max_length=50, null=True, blank=True)
-    column1 = models.CharField(max_length=255, null=True, blank=True)
-    column2 = models.CharField(max_length=255, null=True, blank=True)
+class Person(models.Model):
+    ari8mosEisagoghs = models.CharField(unique=True, primary_key=True, max_length=200, blank=True)
+    hmeromhnia_eis = models.CharField(max_length=200, null=True, blank=True)
+    syggrafeas = models.CharField(max_length=200, null=True, blank=True)
+    koha = models.CharField(max_length=200, null=True, blank=True)
+    titlos = models.CharField(max_length=200, null=True, blank=True)
+    ekdoths = models.CharField(max_length=200, null=True, blank=True)
+    ekdosh = models.CharField(max_length=200, null=True, blank=True)
+    etosEkdoshs = models.CharField(max_length=20, null=True, blank=True)
+    toposEkdoshs = models.CharField(max_length=200, null=True, blank=True)
+    sxhma = models.CharField(max_length=200, null=True, blank=True)
+    selides = models.CharField(max_length=50, null=True, blank=True)
+    tomos = models.CharField(max_length=50, null=True, blank=True)
+    troposPromPar = models.CharField(max_length=200, null=True, blank=True)
+    ISBN = models.CharField(max_length=50, null=True, blank=True)
+    sthlh1 = models.CharField(max_length=200, null=True, blank=True)
+    sthlh2 = models.CharField(max_length=200, null=True, blank=True)
 
     def __str__(self):
-        return self.title if self.title else "Book"
+        return self.name
+    
+class UploadLog(models.Model):
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name="uploads"
+    )
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+    filename = models.CharField(max_length=255)
+    rows_added = models.PositiveIntegerField(default=0)
+    rows_updated = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return f"{self.filename} by {self.user.username} on {self.uploaded_at}"
