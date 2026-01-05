@@ -76,8 +76,7 @@ for field in Person._meta.fields:
 
 #### 👉🏻🗑️ Delete Imported Data (If Needed)
 
-⚠️ **Use only if a reset is required**
-
+Inside the same CMD, run:
 ```
 python manage.py shell
 ```
