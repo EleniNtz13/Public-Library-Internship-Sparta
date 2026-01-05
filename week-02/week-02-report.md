@@ -154,7 +154,7 @@ python --version
 ```
 
 - If Python is **not installed**, download and install it from the official website.
-- If the command prints a version number, you're good to go. ✔️
+- If the command prints a version number, you're good to go ✔️.
 
 ### 2. Create a Virtual Environment (Recommended)
 
