@@ -53,7 +53,6 @@ excel_form_app/
 |       └── duplicates_done.html
 
 ```
----
 
 ## 1️⃣ Verify Database Table
 
