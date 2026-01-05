@@ -154,6 +154,24 @@ path('', include('main.urls'))
 
 ### 5️⃣ Templates 🧩
 
+#### 📂 `templates/`
+
+```
+registration/
+base.html
+home.html
+```
+
+
+#### 📂 `templates/registration/`
+
+```
+home.html
+login.html
+logged_out.html
+signup.html
+```
+
 #### 📂 `main/templates/main/`
 
 ```
@@ -173,22 +191,6 @@ upload_result.html
 upload_success.html
 ```
 
-#### 📂 `templates/`
-
-```
-registration/
-base.html
-home.html
-```
-
-
-#### 📂 `templates/registration/`
-
-```
-login.html
-logged_out.html
-signup.html
-```
 
 ### 6️⃣ Manual Entry Test ✅
 In the same CMD, run:
