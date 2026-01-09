@@ -74,18 +74,13 @@ During the internship, I worked with several technologies to build a complete we
 
 ### 🎯 Goals Achieved
 
-✔️ Built a functional development environment
-✔️ Created simple web servers in Python and PHP
-
-✔️ Connected the system to a MySQL database
-
-✔️ Configured Apache to serve PHP pages
-
-✔️ Prepared Django + PostgreSQL for next steps
-
-✔️ Assisted in library cataloging through Excel
-
-✔️ Worked with RFID book identification technology
+- ✔️ Built a functional development environment
+- ✔️ Created simple web servers in Python and PHP
+- ✔️ Connected the system to a MySQL database
+- ✔️ Configured Apache to serve PHP pages
+- ✔️ Prepared Django + PostgreSQL for next steps
+- ✔️ Assisted in library cataloging through Excel
+- ✔️ Worked with RFID book identification technology
 
 
 ### 🧠 Tools Used
