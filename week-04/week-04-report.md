@@ -41,8 +41,9 @@ http://localhost/duplicates/
 
 🔒 For confidentiality reasons, screenshots of the last two URLs are omitted, since they would reveal the library’s data.
 
-## Generally 🌌
+## Generally 🌐
 🔒 For privacy and security, the screenshot does not display the *localhost URLs*. They can be accessed locally when running the app.
+
 ⚠️ User-facing messages are displayed in *Greek*, for clarity and usability within the library working environment
 
 
