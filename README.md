@@ -14,8 +14,9 @@ Welcome to the repository documenting my internship experience!
 - Supervisor / Mentor: Library Director
 
 ---
-<!-- (να γίνει ένα summup με όλη την διαδικασία -> στο τέλος)-->
+<!-- να γίνει ένα summup με όλη την διαδικασία -> στο τέλος -->
 <!-- να γράψω ένα μήνυμα σχετικά πως τις 4 πρώτες εβδομάδες όπως παρουσιάζονται στους αντίστοιχους φακέλους του παρόντος repo εργαστήκαμε ομαδικά για την δημιουργία της διαδικτυακής φόρμας που κάνει... -->
+
 ### 🛠️ Tools & Technologies Used
 
 During the internship, I worked with several technologies to build a complete web development environment and support the library’s internal system:
