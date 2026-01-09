@@ -21,7 +21,7 @@ Below are the steps, structure, and functionality developed during this phase, i
 <img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 181610" src="https://github.com/user-attachments/assets/dd9a933c-e85c-4133-80cc-7a09188826a3" />
 
 6️⃣ If these entries have not been submitted before, the form is displayed to the user like this:
-<img width="1920" height="1028" alt="Στιγμιότυπο οθόνης 2026-01-09 182042" src="https://github.com/user-attachments/assets/d312cc04-5537-400d-b861-b51e33bf668b" />
+<img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 183443" src="https://github.com/user-attachments/assets/ca4f0e12-4f7d-4755-981a-079907ed5461" />
 
 7️⃣ Otherwise, it is displayed as follows:
 <img width="1917" height="1026" alt="Στιγμιότυπο οθόνης 2026-01-09 182317" src="https://github.com/user-attachments/assets/056264b0-2f12-4833-b0fc-96b68a2a6b80" />
