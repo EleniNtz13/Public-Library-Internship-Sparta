@@ -282,7 +282,7 @@ You now have a **complete internal Django system** with:
 
 🚀 Ready for internal library use.
 
----
+
 
 **✨ The final version of the online form:**
 
