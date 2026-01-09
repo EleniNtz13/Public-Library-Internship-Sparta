@@ -38,6 +38,7 @@ The technical scope of this phase included:
 
 Together, these tools form the foundation of a system capable of handling book records, internal data entry, user activity, and dynamic website content, which was further expanded in the following weeks of the internship.
 
+---
 
 ### 🛠️ Tools & Technologies Used
 
