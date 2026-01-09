@@ -290,9 +290,12 @@ Open the terminal **inside the folder where** ```manage.py``` **exists** and run
 ```
 pip install psycopg2-binary
 ```
-`psycopg2-binary` is a Python library that allows your Python programs to connect and interact with PostgreSQL databases. 
 
 If the installation completes successfully, continue to the next step.
+
+⚠️ `psycopg2-binary` is a Python library that allows your Python programs to connect and interact with PostgreSQL databases. 
+
+
 
 ### 2. 🗄️ Database Credentials
 
