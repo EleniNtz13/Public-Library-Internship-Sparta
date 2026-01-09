@@ -26,6 +26,10 @@ Below are the steps, structure, and functionality developed during this phase, i
 7️⃣ Otherwise, if these **entries have been submitted before**, the form is displayed as follows:
 <img width="1917" height="1026" alt="Στιγμιότυπο οθόνης 2026-01-09 182317" src="https://github.com/user-attachments/assets/056264b0-2f12-4833-b0fc-96b68a2a6b80" />
 
+8️⃣ Additionally, library staff can enter a book’s details directly into the form, avoiding the need to import Excel files: 
+<img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 192034" src="https://github.com/user-attachments/assets/6c70fc11-afc2-4e8d-9d52-8c0620481dc4" />
+After all, this is the main purpose of the form — to have all the library’s books and their data consolidated in one place.
+
 🔒 For privacy and security, the screenshot does not display the *localhost URLs*. They can be accessed locally when running the app.
 
 ⚠️ User-facing messages are displayed in *Greek*, for clarity and usability within the library working environment
