@@ -1,0 +1,26 @@
+<h2>Επεξεργασία Βιβλίου {{ person.ari8mosEisagoghs }}</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" onclick="return confirmSave();">
+    Αποθήκευση
+   </button>
+    {% if messages %}
+
+    <ul class="messages">
+        {% for message in messages %}
+            <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+</form>
+
+<script>
+function confirmSave() {
+    return confirm("Είσαι σίγουρος για αυτές τις αλλαγές?");
+}
+</script>
+
+
+<a href="{% url 'resolve_duplicates' %}"><button>Πίσω στα διπλότυπα</button></a>
