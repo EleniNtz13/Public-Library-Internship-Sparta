@@ -62,4 +62,5 @@ By the end of the internship, the system supports:
 - 🖨️ The print functionality allows staff to generate printable views of specific books by entry number, supporting internal documentation and catalog verification
 - 📱 The interface is responsive and can be used on mobile devices, although it is optimized primarily for desktop use by staff
 
+🚀 Ready for internal library use.
 
