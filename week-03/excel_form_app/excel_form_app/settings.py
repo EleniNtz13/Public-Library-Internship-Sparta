@@ -76,9 +76,9 @@ WSGI_APPLICATION = 'excel_form_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'books',
+        'NAME': 'db',
         'USER': 'postgres',
-        'PASSWORD': 'Godzilla333.',
+        'PASSWORD': 'EnterYourPassword',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -126,4 +126,5 @@ STATICFILES_DIRS = [
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
 LOGIN_URL = 'login'
