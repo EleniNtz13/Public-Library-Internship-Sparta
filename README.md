@@ -2,7 +2,8 @@
 
 ### 🏫 Internship Overview – Library System Project
 
-Welcome to the repository documenting my internship experience!
+Welcome to the repository documenting my internship experience at the Sparta Public Library.
+This project focuses on the design, setup, and gradual development of an internal library management system, combining web technologies, databases, and data organization tools.
 
 ### 📅 Internship Details
 
@@ -14,8 +15,18 @@ Welcome to the repository documenting my internship experience!
 - Supervisor / Mentor: Library Director
 
 ---
-<!-- να γίνει ένα summup με όλη την διαδικασία -> στο τέλος -->
-<!-- να γράψω ένα μήνυμα σχετικά πως τις 4 πρώτες εβδομάδες όπως παρουσιάζονται στους αντίστοιχους φακέλους του παρόντος repo εργαστήκαμε ομαδικά για την δημιουργία της διαδικτυακής φόρμας που κάνει... -->
+
+### 🧭 Project Scope & Timeline
+
+📌 **Project 1** was developed during the first *four weeks* of the internship, as documented in the corresponding folders of this repository. During this phase, the work was carried out collaboratively with fellow students, focusing on:
+
+- Setting up the development environment
+- Exploring and integrating multiple technologies
+- Designing the core workflow of a web-based data entry system
+- Laying the foundation for database-backed forms and data management
+
+The implementation of these stages can be found exactly as developed inside the respective weekly folders of this repository.
+
 
 ### 🛠️ Tools & Technologies Used
 
@@ -82,7 +93,7 @@ Together, these tools form the foundation of a system capable of handling book r
 - GitHub Copilot – development support
 
 
-### 📌 Additional Work
+### ✨ Additional Work
 
 Alongside the technical setup, I worked extensively with Excel to record books that were not yet cataloged so they could later be added to the database.
 I also gained experience with the RFID tracking system, which allows quick identification of books using the unique ID stored on each tag.
