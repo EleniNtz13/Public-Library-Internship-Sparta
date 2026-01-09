@@ -75,7 +75,6 @@ During the internship, I worked with several technologies to build a complete we
 ### 🎯 Goals Achieved
 
 ✔️ Built a functional development environment
-
 ✔️ Created simple web servers in Python and PHP
 
 ✔️ Connected the system to a MySQL database
