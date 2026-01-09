@@ -196,7 +196,7 @@ python manage.py runserver
 Open:
 
 ```
-http://127.0.0.1:8000/
+http://localhost/
 ```
 
 Verify:
@@ -254,7 +254,7 @@ python manage.py runserver
 Login:
 
 ```
-http://127.0.0.1:8000/login/
+http://localhost/login/
 ```
 
 Verify:
