@@ -1,4 +1,4 @@
-# 🌟 Week 4 – Overview: The final version of the online form
+<img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 180823" src="https://github.com/user-attachments/assets/e8a7be8e-5fb6-4c2a-937e-8f920a2072b3" /># 🌟 Week 4 – Overview: The final version of the online form
 
 ### 🗓️ Week Overview – Form Development
 
@@ -6,15 +6,20 @@ This week was dedicated to the **design**, **implementation**, and **completion*
 Below are the steps, structure, and functionality developed during this phase, including form handling, data validation, database integration, and user access control.
 
 1️⃣ Initial display of the home page 🏠︎ (the same view is shown when the user is logged out):
-<img width="1920" height="1027" alt="image" src="https://github.com/user-attachments/assets/35fb8c22-37ac-473c-8965-fa0283caab55" />
+<img width="1917" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 180250" src="https://github.com/user-attachments/assets/1720fca3-0d69-4464-927c-a01eb985b7fa" />
+
 2️⃣ If you don't have an account 🔐, then you should sign up:
-<img width="1920" height="1027" alt="image" src="https://github.com/user-attachments/assets/00825dec-0c8f-4011-8dee-4e6275f5be50" />
+<img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 180639" src="https://github.com/user-attachments/assets/6208a993-a929-4e80-ac99-d306ca3c26a6" />
+
 3️⃣ Otherwise, you can login 🔓: 
-<img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/24dd6764-3967-4c46-b1cf-6e7f7c9e58f4" />
+<img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 180823" src="https://github.com/user-attachments/assets/a8732640-4d5b-4a8c-99a6-a8828fd597d9" />
+
 4️⃣ Now, you are signed in 🥳:
-<img width="1920" height="1027" alt="image" src="https://github.com/user-attachments/assets/854f68ec-1bdb-4845-9bca-65c78342aa7b" />
+<img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 181450" src="https://github.com/user-attachments/assets/083b9729-06a3-4e2b-93a1-422048ac007f" />
+
 5️⃣ Then, you can upload an `.xlsx` file 📥:
-<img width="1918" height="1027" alt="image" src="https://github.com/user-attachments/assets/e493f25e-af47-4ca8-8abe-ecf2278d8424" />
+<img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 181610" src="https://github.com/user-attachments/assets/dd9a933c-e85c-4133-80cc-7a09188826a3" />
+
 6️⃣ If these entries have not been submitted before, the form is displayed to the user like this:
 <img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/fb632528-7e89-45cf-8a58-ef2eb2c2a6f7" />
 7️⃣ Otherwise, it is displayed as follows:
