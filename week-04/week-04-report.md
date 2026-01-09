@@ -1,4 +1,4 @@
-<img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 180823" src="https://github.com/user-attachments/assets/e8a7be8e-5fb6-4c2a-937e-8f920a2072b3" /># 🌟 Week 4 – Overview: The final version of the online form
+# 🌟 Week 4 – Overview: The final version of the online form
 
 ### 🗓️ Week Overview – Form Development
 
@@ -15,8 +15,7 @@ Below are the steps, structure, and functionality developed during this phase, i
 <img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 180823" src="https://github.com/user-attachments/assets/a8732640-4d5b-4a8c-99a6-a8828fd597d9" />
 
 4️⃣ Now, you are signed in 🥳:
-<img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 181450" src="https://github.com/user-attachments/assets/083b9729-06a3-4e2b-93a1-422048ac007f" />
-
+<img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 180823" src="https://github.com/user-attachments/assets/e8a7be8e-5fb6-4c2a-937e-8f920a2072b3" />
 5️⃣ Then, you can upload an `.xlsx` file 📥:
 <img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 181610" src="https://github.com/user-attachments/assets/dd9a933c-e85c-4133-80cc-7a09188826a3" />
 
