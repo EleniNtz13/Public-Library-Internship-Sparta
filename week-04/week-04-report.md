@@ -27,6 +27,7 @@ Below are the steps, structure, and functionality developed during this phase, i
 <img width="1917" height="1026" alt="Στιγμιότυπο οθόνης 2026-01-09 182317" src="https://github.com/user-attachments/assets/056264b0-2f12-4833-b0fc-96b68a2a6b80" />
 
 🔒 For privacy and security, the screenshot does not display the localhost URLs. They can be accessed locally when running the app.
+⚠️ User-facing messages are displayed in Greek, for clarity and usability within the library working environment
 
 
 🔔 Finally, you can now see all entries here:
@@ -55,9 +56,9 @@ By the end of the internship, the system supports:
 ### 🔒 Important Notes
 
 - 🏤 The application is designed exclusively for internal library staff, ensuring safe and controlled management of catalog records
-- ⚠️ User-facing messages are displayed in Greek, for clarity and usability within the library working environment
+- 🔢 Entries are imported sequentially, and will be sorted correctly even if their input order is mixed
 - 🧠 If the Koha author field is not provided, it is automatically populated using the main author name
-- 📱 The interface is responsive and can be used on mobile devices, although it is optimized primarily for desktop use by staff
 - 🖨️ The print functionality allows staff to generate printable views of specific books by entry number, supporting internal documentation and catalog verification
+- 📱 The interface is responsive and can be used on mobile devices, although it is optimized primarily for desktop use by staff
 
 
