@@ -18,3 +18,7 @@ Finally, all entries are visible in:
 ```
 http://127.0.0.1:8000/people/
 ```
+
+
+⚠️ User-facing messages are displayed in Greek for clarity and usability reasons.
+να συμπληρώσω πως δουλεύει και σε κινητά
