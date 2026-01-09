@@ -149,7 +149,7 @@ You should now see the displayed messages:
 
 After setting up the basic web servers using Python and PHP, the next step was to prepare the environment required for data storage and dynamic content management. For this purpose, a relational database system was introduced, using 💾 **MySQL**, which allows the application to store, retrieve, and manage library-related data efficiently (such as book information, categories, and user activity).
 
-Additionally, the setup process included the installation and configuration of the ⚡ **Apache HTTP Server**, which provides a stable, production-level environment for serving PHP applications. Apache enables the web server to deliver PHP pages reliably and is commonly used in combination with MySQL to create full-stack web applications.
+Additionally, the setup process included the installation and configuration of the⚡**Apache HTTP Server**, which provides a stable, production-level environment for serving PHP applications. Apache enables the web server to deliver PHP pages reliably and is commonly used in combination with MySQL to create full-stack web applications.
 
 The following sections describe the installation steps for **MySQL** and **Apache**, as well as how they integrate with the overall project architecture.
 
