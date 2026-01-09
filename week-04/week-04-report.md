@@ -1,5 +1,26 @@
 # 🌟 Week 4 – Overview: The final version of the online form
 
+### 🧾 Form Completion & Functionality
+
+By the end of the internship, the system supports:
+
+- 📝 Manual data entry via Django forms
+- 📊 Bulk data import from Excel files
+- 💾 Persistent storage in PostgreSQL
+- 🛠️ Duplicate detection and resolution
+- ✏️ Editing and deletion of records
+- 🔐 Authentication & restricted access
+- 📱 Responsive layout, usable on mobile devices
+
+### 🔒 Important Notes
+
+- 🏤 The application is designed exclusively for internal library staff, ensuring safe and controlled management of catalog records
+- ⚠️ User-facing messages are displayed in Greek, for clarity and usability within the library working environment
+- 🧠 If the Koha author field is not provided, it is automatically populated using the main author name
+- 📱 The interface is responsive and can be used on mobile devices, although it is optimized primarily for desktop use by staff
+- 🖨️ The print functionality allows staff to generate printable views of specific books by entry number, supporting internal documentation and catalog verification
+
+
 Initial display of the home page 🏠︎ (the same view is shown when the user is logged out):
 <img width="1920" height="1027" alt="image" src="https://github.com/user-attachments/assets/35fb8c22-37ac-473c-8965-fa0283caab55" />
 If you don't have an account 🔐, then you should sign up:
@@ -19,8 +40,3 @@ Finally, all entries are visible in:
 http://localhost/people/
 ```
 
-
-The application is designed **exclusively for internal library staff** to manage records safely and efficiently.
-⚠️ User-facing messages are displayed in Greek for clarity and usability reasons.
-να συμπληρώσω πως δουλεύει και σε κινητά
-σημειωση: αν δεν υπάρχει ο συγγραφέας koha τότε συμπληρώνεται αυτόματα βάσει του ονόματος του συγγραφέα
