@@ -84,6 +84,15 @@ exit()
 
 This step is useful **after imports** if incorrect data was uploaded.
 
+It should be noted🗒️:
+
+| What it is             | Description                                                           | Example                                 |
+| ---------------------- | --------------------------------------------------------------------- | --------------------------------------- |
+| **Database**           | The space where all data is stored; can contain multiple tables       | `db` in pgAdmin 4                       |
+| **Table**              | A unit within the database that holds specific data in rows & columns | `Person`                                |
+| **Class in models.py** | Defines a table through the ORM; describes fields & their types       | `class Person(models.Model)`            |
+| **Relationship**       | The class → creates a table → inside the database                     | Person → table `person` → database `db` |
+
 
 ### 2️⃣ Forms Setup 📝
 
