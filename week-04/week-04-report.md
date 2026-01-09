@@ -20,5 +20,6 @@ http://127.0.0.1:8000/people/
 ```
 
 
+The application is designed **exclusively for internal library staff** to manage records safely and efficiently.
 ⚠️ User-facing messages are displayed in Greek for clarity and usability reasons.
 να συμπληρώσω πως δουλεύει και σε κινητά
