@@ -78,7 +78,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'db',
         'USER': 'postgres',
-        'PASSWORD': 'EnterYourPassword',
+        'PASSWORD': 'your_database_password',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -128,3 +128,4 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 LOGIN_URL = 'login'
+
