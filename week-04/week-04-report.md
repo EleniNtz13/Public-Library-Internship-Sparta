@@ -27,6 +27,7 @@ Below are the steps, structure, and functionality developed during this phase, i
 <img width="1917" height="1026" alt="Στιγμιότυπο οθόνης 2026-01-09 182317" src="https://github.com/user-attachments/assets/056264b0-2f12-4833-b0fc-96b68a2a6b80" />
 
 🔒 For privacy and security, the screenshot does not display the *localhost URLs*. They can be accessed locally when running the app.
+
 ⚠️ User-facing messages are displayed in *Greek*, for clarity and usability within the library working environment
 
 
