@@ -23,3 +23,4 @@ http://localhost/people/
 The application is designed **exclusively for internal library staff** to manage records safely and efficiently.
 ⚠️ User-facing messages are displayed in Greek for clarity and usability reasons.
 να συμπληρώσω πως δουλεύει και σε κινητά
+σημειωση: αν δεν υπάρχει ο συγγραφέας koha τότε συμπληρώνεται αυτόματα βάσει του ονόματος του συγγραφέα
