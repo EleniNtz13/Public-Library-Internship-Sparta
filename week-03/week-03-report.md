@@ -69,7 +69,7 @@ for field in Person._meta.fields:
     print(field.name, field.get_internal_type())
 ```
 
-#### 👉🏻🗑️ Delete Imported Data (If Needed)
+### 👉🏻🗑️ Delete Imported Data (If Needed)
 
 Inside the same CMD, run:
 ```
