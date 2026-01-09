@@ -100,7 +100,7 @@ Download the **Thread Safe ZIP package** and extract it into:
 C:\php
 ```
 
-### 2. Create the PHP File (```index.php```)
+### 2. Create the PHP File
 
 Inside the ```C:\php``` folder, create a new file named ```index.php``` using Notepad.
 Select **"All Files"** when saving, and paste the PHP code provided in the ```week-01``` folder.
