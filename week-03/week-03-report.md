@@ -1,11 +1,8 @@
 # 🌟 Week 3 – Overview: Django Forms & Excel Integration
 
-## 🧭 Overview
-
 This stage completes the **Django form workflow** by fully integrating **models, views, templates, authentication, Excel imports, and PostgreSQL**.
 The application is designed **exclusively for internal library staff** to manage records safely and efficiently.
 
----
 
 ## 🗂️ Project Structure (Exact – Based on `excel_form_app`)
 
