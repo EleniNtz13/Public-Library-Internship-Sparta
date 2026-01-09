@@ -212,7 +212,7 @@ python manage.py runserver
 
 You will receive a local URL such as:
 ```
-http://127.0.0.1:8000/
+http://localhost/
 ```
 
 Open it in your browser — you should see the **default Django page with the rocket** 🚀
