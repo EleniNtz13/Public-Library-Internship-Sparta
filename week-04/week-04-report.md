@@ -21,14 +21,24 @@ Below are the steps, structure, and functionality developed during this phase, i
 <img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 181610" src="https://github.com/user-attachments/assets/dd9a933c-e85c-4133-80cc-7a09188826a3" />
 
 6️⃣ If these entries have not been submitted before, the form is displayed to the user like this:
-<img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/fb632528-7e89-45cf-8a58-ef2eb2c2a6f7" />
-7️⃣ Otherwise, it is displayed as follows:
-<img width="1916" height="1030" alt="image" src="https://github.com/user-attachments/assets/4ece83f1-1a46-402f-bdac-5001ff433508" />
+<img width="1920" height="1028" alt="Στιγμιότυπο οθόνης 2026-01-09 182042" src="https://github.com/user-attachments/assets/d312cc04-5537-400d-b861-b51e33bf668b" />
 
-🔔 Finally, all entries are visible in:
+7️⃣ Otherwise, it is displayed as follows:
+<img width="1917" height="1026" alt="Στιγμιότυπο οθόνης 2026-01-09 182317" src="https://github.com/user-attachments/assets/056264b0-2f12-4833-b0fc-96b68a2a6b80" />
+
+🔒 For privacy and security, the screenshot does not display the localhost URLs. They can be accessed locally when running the app.
+
+
+🔔 Finally, you can now see all entries here:
 ```
 http://localhost/people/
 ```
+And check duplicates here:
+```
+http://localhost/duplicates/
+```
+
+🔒 For confidentiality reasons, screenshots of the last two URLs are omitted, since they would reveal the library’s data.
 
 ### 🧾 Form Completion & Functionality
 
