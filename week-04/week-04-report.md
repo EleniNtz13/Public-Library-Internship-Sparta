@@ -5,7 +5,7 @@
 This week was dedicated to the **design**, **implementation**, and **completion** of the web-based data entry form.
 Below are the steps, structure, and functionality developed during this phase, including form handling, data validation, database integration, and user access control:
 
-1️⃣ Initial display of the **home page** 🏠︎ (the same view is shown when the user is logged out):
+1️⃣ Initial display of the **home page** 🏠 (the same view is shown when the user is logged out):
 <img width="1917" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 180250" src="https://github.com/user-attachments/assets/1720fca3-0d69-4464-927c-a01eb985b7fa" />
 
 2️⃣ If you don't have an account 🔐, then you should **sign up**:
