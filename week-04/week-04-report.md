@@ -41,10 +41,15 @@ http://localhost/duplicates/
 
 🔒 For confidentiality reasons, screenshots of the last two URLs are omitted, since they would reveal the library’s data.
 
-## Generally 🌐
-🔒 For privacy and security, the screenshot does not display the *localhost URLs*. They can be accessed locally when running the app.
+### 🔒 Important Notes
 
-⚠️ User-facing messages are displayed in *Greek*, for clarity and usability within the library working environment
+- 🏤 The application is designed exclusively for **internal library staff**, ensuring safe and controlled management of catalog records
+- 🔒 For privacy and security, the screenshot does not display the *localhost URLs*. They can be accessed locally when running the app
+- ⚠️ User-facing messages are displayed in *Greek*, for clarity and usability within the library working environment
+- 🔢 Entries are imported sequentially, and will be sorted correctly even if their input order is mixed
+- 🧠 If the Koha author field is not provided, it is automatically populated using the main author name
+- 🖨️ The print functionality allows staff to generate printable views of specific books by entry number, supporting internal documentation and catalog verification
+- 📱 The interface is responsive and can be used on mobile devices, although it is optimized primarily for desktop use by staff
 
 
 ### 🧾 Form Completion & Functionality
@@ -59,13 +64,6 @@ By the end of the internship, the system supports:
 - 🔐 Authentication & restricted access
 - 📱 Responsive layout, usable on mobile devices
 
-### 🔒 Important Notes
-
-- 🏤 The application is designed exclusively for **internal library staff**, ensuring safe and controlled management of catalog records
-- 🔢 Entries are imported sequentially, and will be sorted correctly even if their input order is mixed
-- 🧠 If the Koha author field is not provided, it is automatically populated using the main author name
-- 🖨️ The print functionality allows staff to generate printable views of specific books by entry number, supporting internal documentation and catalog verification
-- 📱 The interface is responsive and can be used on mobile devices, although it is optimized primarily for desktop use by staff
 
 🚀 Ready for internal library use.
 
