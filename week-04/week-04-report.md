@@ -47,7 +47,7 @@ http://localhost/duplicates/
 - 🔒 For privacy and security, the screenshot does not display the *localhost URLs*. They can be accessed locally when running the app
 - ⚠️ User-facing messages are displayed in *Greek*, for clarity and usability within the library working environment
 - 🔢 Entries are imported sequentially, and will be sorted correctly even if their input order is mixed
-- 🧠 If the Koha author field is not provided, it is automatically populated using the main author name
+- 🧠 In the case of direct book data entry into the database, if the Koha author field is not provided, it is automatically populated using the main author’s name
 - 🖨️ The print functionality allows staff to generate printable views of specific books by entry number, supporting internal documentation and catalog verification
 - 📱 The interface is responsive and can be used on mobile devices, although it is optimized primarily for desktop use by staff
 
