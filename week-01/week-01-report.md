@@ -23,7 +23,7 @@ Create a folder named ```Project_Folder``` in the path:
 C:\
 ```
 
-### 2. Create the Python File (```app.py```)
+### 2. Create the Python File
 
 Using Notepad, create a new file named ```app.py``` and paste the Python code shown in the folder ```week-01``` of this repository.
 Save the file inside ```Project_Folder```, making sure to select **"All Files"** before saving.
