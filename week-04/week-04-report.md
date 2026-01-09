@@ -16,7 +16,7 @@ Otherwise, it is displayed as follows:
 <img width="1916" height="1030" alt="image" src="https://github.com/user-attachments/assets/4ece83f1-1a46-402f-bdac-5001ff433508" />
 Finally, all entries are visible in:
 ```
-http://127.0.0.1:8000/people/
+http://localhost/people/
 ```
 
 
