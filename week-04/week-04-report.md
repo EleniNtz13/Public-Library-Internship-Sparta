@@ -41,7 +41,7 @@ http://localhost/duplicates/
 
 🔒 For confidentiality reasons, screenshots of the last two URLs are omitted, since they would reveal the library’s data.
 
-### 🔒 Important Notes
+### 📋 Important Notes
 
 - 🏤 The application is designed exclusively for **internal library staff**, ensuring safe and controlled management of catalog records
 - 🔒 For privacy and security, the screenshot does not display the *localhost URLs*. They can be accessed locally when running the app
