@@ -2,7 +2,7 @@
 
 This stage completes the **Django form workflow** by fully integrating **models**, **views**, **templates**, **authentication**, **Excel imports**, and **PostgreSQL**.
 
-## 🗂️ Project Structure 
+## 🧩 Project Structure 
 
 Exact – Based on `excel_form_app` folder 🗂️:
 
