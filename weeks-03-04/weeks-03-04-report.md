@@ -22,6 +22,15 @@ excel_form_app/
 |      └── main/
 │        └── autocomplete.js
 │
+├── templates/
+│   ├── base.html
+│   ├── home.html
+│   └── registration/
+|       ├── home.html
+│       ├── login.html
+│       ├── logged_out.html
+│       └── signup.html
+|
 ├── main/
 │   ├── __init__.py
 │   ├── admin.py
@@ -34,15 +43,6 @@ excel_form_app/
 │   └── migrations/
 │       └── __init__.py
 |
-├── templates/
-│   ├── base.html
-│   ├── home.html
-│   └── registration/
-|       ├── home.html
-│       ├── login.html
-│       ├── logged_out.html
-│       └── signup.html
-│
 ├── main/templates
 │   ├── upload_excel.html
 │   ├── upload_result.html
