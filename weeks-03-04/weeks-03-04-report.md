@@ -93,7 +93,7 @@ exit()
 
 This step is useful **after imports** if incorrect data was uploaded.
 
-It should be noted🗒️:
+It should be noted 📝:
 
 | What it is             | Description                                                           | Example                                 |
 | ---------------------- | --------------------------------------------------------------------- | --------------------------------------- |
@@ -176,15 +176,6 @@ logged_out.html  # Logout confirmation page
 signup.html      # User registration page
 ```
 
-#### 📂 `main/templates/main/`
-
-```
-people.html           # Displays all stored records
-edit_person.html      # Edit record form
-duplicates.html       # Duplicate detection page
-duplicates_done.html  # Confirmation page for duplicates handling
-```
-
 #### 📂 `main/templates/`
 
 ```
@@ -195,6 +186,14 @@ upload_result.html   # Excel import results page
 upload_success.html  # Import success confirmation page
 ```
 
+#### 📂 `main/templates/main/`
+
+```
+people.html           # Displays all stored records
+edit_person.html      # Edit record form
+duplicates.html       # Duplicate detection page
+duplicates_done.html  # Confirmation page for duplicates handling
+```
 
 ### 6️⃣ Manual Entry Test ✅
 In the same CMD, run:
