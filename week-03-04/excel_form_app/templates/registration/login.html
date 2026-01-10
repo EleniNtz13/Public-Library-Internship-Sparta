@@ -1,108 +1,110 @@
-{% extends "base.html" %} {# Extend the base template for consistent layout #}
+{% extends "base.html" %} {# Extend base template #}
 
-{% block title %}Σύνδεση Προσωπικού{% endblock %} {# Set the page title to "Staff Login" #}
+{% block title %}Σύνδεση Προσωπικού{% endblock %} {# Page title #}
 
-{% block content %} {# Start of main content block #}
+{% block content %}
 
 <div class="container" style="
     font-family: Arial, sans-serif;
-    background-color: #f5f0e6;   {# Beige background like nav buttons #}
-    border: 2px solid #d6c9b8;   {# Slightly darker border #}
+    background-color: #f5f0e6;  /* Beige background like nav buttons */
+    border: 2px solid #d6c9b8;  /* Slightly darker border */
     border-radius: 8px;
     padding: 25px;
     width: 350px;
-    margin: 50px auto;  {# Center horizontally with top margin #}
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);  {# Soft shadow for depth #}
+    margin: 50px auto;  /* Center horizontally */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);  /* Soft shadow */
 ">
 
     <h2 style="text-align:center; margin-bottom:20px;">
-        Σύνδεση Προσωπικού Βιβλιοθήκης {# Library staff login header #}
+        Σύνδεση Προσωπικού Βιβλιοθήκης
     </h2>
 
-    <form method="post" id="loginForm" style="display:flex; flex-direction:column;"> {# Login form #}
-        {% csrf_token %} {# CSRF token for security #}
+    <form method="post" id="loginForm" style="display:flex; flex-direction:column;">
+        {% csrf_token %} {# CSRF protection #}
 
         <!-- Username -->
-        <label for="id_username">Όνομα χρήστη:</label> {# Label for username input #}
-        <input type="text" id="id_username" name="username"> {# Username input field #}
-        <p id="usernameError" style="display:none; color:red; font-size:0.9em;"></p> {# Error message placeholder #}
+        <label for="id_username">Όνομα χρήστη:</label>
+        <input type="text" id="id_username" name="username">
+        <p id="usernameError" style="display:none; color:red; font-size:0.9em;"></p>
 
         <!-- Email -->
-        <label for="id_email">Email:</label> {# Label for email input #}
-        <input type="email" id="id_email" name="email"> {# Email input field #}
-        <p id="emailError" style="display:none; color:red; font-size:0.9em;"></p> {# Error message placeholder #}
+        <label for="id_email">Email:</label>
+        <input type="email" id="id_email" name="email">
+        <p id="emailError" style="display:none; color:red; font-size:0.9em;"></p>
 
         <!-- Password -->
-        <label for="id_password">Κωδικός πρόσβασης:</label> {# Label for password input #}
-        <input type="password" id="id_password" name="password"> {# Password input field #}
-        <p id="passwordError" style="display:none; color:red; font-size:0.9em;"></p> {# Error message placeholder #}
+        <label for="id_password">Κωδικός πρόσβασης:</label>
+        <input type="password" id="id_password" name="password">
+        <p id="passwordError" style="display:none; color:red; font-size:0.9em;"></p>
 
         <button type="submit" style="
             padding:10px;
-            background-color:#c9b18f;  {# Darker button color #}
-            border:2px solid #a89377;  {# Matching border #}
+            background-color:#c9b18f;  /* Darker button */
+            border:2px solid #a89377;  /* Matching border */
             border-radius:8px;
-            color:white;               {# White text for contrast #}
+            color:white;
             font-weight:700;
             cursor:pointer;
             margin-top:15px;
-            transition: transform 0.2s ease, background 0.2s ease; {# Smooth hover effects #}
+            transition: transform 0.2s ease, background 0.2s ease;
         ">
-            Σύνδεση {# Login button text #}
+            Σύνδεση
         </button>
     </form>
 
     <p style="margin-top:20px; font-size:0.8em;">
         ❓ Αν έχετε ξεχάσει τα στοιχεία σας ή αντιμετωπίζετε πρόβλημα,
-        επικοινωνήστε με τον διαχειριστή. {# Help message if login fails #}
+        επικοινωνήστε με τον διαχειριστή.
     </p>
 
 </div>
 
-<script> {# Client-side validation script #}
-    const usernameInput = document.getElementById('id_username'); {# Username field #}
-    const emailInput = document.getElementById('id_email'); {# Email field #}
-    const passwordInput = document.getElementById('id_password'); {# Password field #}
+<script>
+    // Get references to inputs
+    const usernameInput = document.getElementById('id_username');
+    const emailInput = document.getElementById('id_email');
+    const passwordInput = document.getElementById('id_password');
 
-    const usernameError = document.getElementById('usernameError'); {# Error placeholder for username #}
-    const emailError = document.getElementById('emailError'); {# Error placeholder for email #}
-    const passwordError = document.getElementById('passwordError'); {# Error placeholder for password #}
+    // Get references to error placeholders
+    const usernameError = document.getElementById('usernameError');
+    const emailError = document.getElementById('emailError');
+    const passwordError = document.getElementById('passwordError');
 
-    const form = document.getElementById('loginForm'); {# Reference to the login form #}
+    const form = document.getElementById('loginForm');
 
-    form.addEventListener('submit', function(event) {  {# Validate before submission #}
-        let valid = true;  {# Flag to track form validity #}
+    form.addEventListener('submit', function(event) {
+        let valid = true; // Flag to track validity
 
         // Username validation
-        const usernameRegex = /^[A-Za-z0-9@.+-_]+$/; {# Allowed characters #}
-        if (!usernameRegex.test(usernameInput.value)) {  {# Invalid username #}
+        const usernameRegex = /^[A-Za-z0-9@.+-_]+$/; // Allowed characters
+        if (!usernameRegex.test(usernameInput.value)) {
             usernameError.textContent =
                 '❌ Μη έγκυρο όνομα χρήστη. Χρησιμοποιήστε λατινικά γράμματα, αριθμούς ή τα σύμβολα @ . + - _';
             usernameError.style.display = 'block';
             valid = false;
         } else {
-            usernameError.style.display = 'none'; {# Hide error if valid #}
+            usernameError.style.display = 'none';
         }
 
         // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; {# Simple email regex #}
-        if (!emailRegex.test(emailInput.value)) { {# Invalid email #}
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex
+        if (!emailRegex.test(emailInput.value)) {
             emailError.textContent =
                 '❌ Παρακαλώ εισάγετε έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου.';
             emailError.style.display = 'block';
             valid = false;
         } else {
-            emailError.style.display = 'none'; {# Hide error if valid #}
+            emailError.style.display = 'none';
         }
 
         // Password validation
-        if (passwordInput.value.length < 8) { {# Minimum 8 characters #}
+        if (passwordInput.value.length < 8) {
             passwordError.textContent =
                 '❌ Ο κωδικός πρόσβασης πρέπει να έχει τουλάχιστον 8 χαρακτήρες.';
             passwordError.style.display = 'block';
             valid = false;
         } else {
-            passwordError.style.display = 'none'; {# Hide error if valid #}
+            passwordError.style.display = 'none';
         }
 
         if (!valid) {
@@ -111,4 +113,4 @@
     });
 </script>
 
-{% endblock %} {# End of main content block #}
+{% endblock %}
