@@ -1,30 +1,26 @@
-<h2>Επεξεργασία Βιβλίου {{ person.ari8mosEisagoghs }}</h2>  {# Heading: "Edit Book [ID]" #}
+<h2>Επεξεργασία Βιβλίου {{ person.ari8mosEisagoghs }}</h2>
 
 <form method="post">
-    {% csrf_token %}  {# CSRF token for form security #}
-
-    {{ form.as_p }}  {# Render the form fields as paragraphs #}
-
+    {% csrf_token %}
+    {{ form.as_p }}
     <button type="submit" onclick="return confirmSave();">
-        Αποθήκευση  {# Button text: "Save" in Greek #}
-    </button>
+    Αποθήκευση
+   </button>
+    {% if messages %}
 
-    {% if messages %}  {# Check if there are any Django messages #}
-        <ul class="messages">
-            {% for message in messages %}
-                <li class="{{ message.tags }}">{{ message }}</li>  {# Display each message with its tags (e.g., success, error) #}
-            {% endfor %}
-        </ul>
-    {% endif %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
 </form>
 
 <script>
 function confirmSave() {
-    return confirm("Είσαι σίγουρος για αυτές τις αλλαγές?");  {# Confirmation popup before saving changes #}
+    return confirm("Είσαι σίγουρος για αυτές τις αλλαγές?"); 
 }
 </script>
 
-<!-- Link to return back to the duplicates page -->
-<a href="{% url 'resolve_duplicates' %}">
-    <button>Πίσω στα διπλότυπα</button>  {# Button text: "Back to duplicates" in Greek #}
-</a>
+
+<a href="{% url 'resolve_duplicates' %}"><button>Πίσω στα διπλότυπα</button></a>
