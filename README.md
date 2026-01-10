@@ -1,4 +1,4 @@
-## 📚 Internship at Sparta Public Library
+# 📚 Internship at Sparta Public Library
 
 ### 🏫 Internship Overview – Library System Project
 
