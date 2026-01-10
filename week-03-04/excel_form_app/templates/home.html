@@ -1,17 +1,17 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {# Use the base template for consistent layout and styles #}
 
-{% block title %}Αρχική{% endblock %}
+{% block title %}Αρχική{% endblock %} {# Page title: Home #}
 
-{% block content %}
-  {% if user.is_authenticated %}
-    <p>Γειά σου, {{ user.username }}!</p>
-    <form action="{% url 'logout' %}" method="post">
-      {% csrf_token %}
-      <button type="submit">Αποσύνδεση</button>
+{% block content %} {# Main content block #}
+  {% if user.is_authenticated %} {# Check if the user is logged in #}
+    <p>Γειά σου, {{ user.username }}!</p> {# Greeting with the username #}
+    <form action="{% url 'logout' %}" method="post"> {# Logout form #}
+      {% csrf_token %} {# CSRF token for security #}
+      <button type="submit">Αποσύνδεση</button> {# Submit button to log out #}
     </form>
-  {% else %}
-    <p>Δεν είστε συνδεδεμένος/η.</p>
-    <a href="{% url 'login' %}">Σύνδεση</a> |
-    <a href="{% url 'signup' %}">Εγγραφή</a>
+  {% else %} {# If the user is not authenticated #}
+    <p>Δεν είστε συνδεδεμένος/η.</p> {# Message for non-logged in users #}
+    <a href="{% url 'login' %}">Σύνδεση</a> | {# Link to login page #}
+    <a href="{% url 'signup' %}">Εγγραφή</a> {# Link to signup page #}
   {% endif %}
-{% endblock %}
+{% endblock %} {# End of main content block #}
