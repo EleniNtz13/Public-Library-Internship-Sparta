@@ -6,7 +6,7 @@
 
 <div class="container" style="
     font-family: Arial, sans-serif;
-    background-color: #f5f0e6;   /* ΜΠΕΖ ΦΟΝΤΟ */
+    background-color: #f5f0e6;
     padding: 25px;
     border: 2px solid #d6c9b8;
     border-radius: 8px;
@@ -23,52 +23,44 @@
     <p><strong>Παραλείφθηκαν:</strong> {{ skipped_count }}</p>
 
     {% if duplicate_count > 0 %}
-        <a href="{% url 'resolve_duplicates' %}">
-            <button style="
-                padding:10px 20px;
-                background-color: #f5f0e6;      /* ίδιο με το πλαίσιο */
-                color: #5cb85c;                /* έντονο χρώμα */
-                border:none;
-                border-radius:5px;
-                cursor:pointer;
-                margin-top:15px;
-                width:100%;
-            ">
-                Προβολή & Επίλυση Διπλότυπων
-            </button>
+        <a href="{% url 'resolve_duplicates' %}" style="
+            display:block;
+            text-decoration:none;
+            padding:10px 20px;
+            background-color: #f5f0e6;
+            color: #5cb85c;
+            border-radius:5px;
+            margin-top:15px;
+            font-weight:bold;
+        ">
+            Προβολή & Επίλυση Διπλότυπων
         </a>
     {% endif %}
 
-    <br><br>
-
-    <a href="{% url 'upload_excel' %}">
-        <button style="
-            padding:10px 20px;
-            background-color:#5cb85c;
-            color:white;
-            border:none;
-            border-radius:5px;
-            cursor:pointer;
-            width:100%;
-        ">
-            Νέα Μεταφόρτωση Excel
-        </button>
+    <a href="{% url 'upload_excel' %}" style="
+        display:block;
+        text-decoration:none;
+        padding:10px 20px;
+        background-color:#5cb85c;
+        color:white;
+        border-radius:5px;
+        margin-top:15px;
+        font-weight:bold;
+    ">
+        Νέα Μεταφόρτωση Excel
     </a>
 
-    <br><br>
-
-    <a href="{% url 'show_people' %}">
-        <button style="
-            padding:10px 20px;
-            background-color:#0275d8;
-            color:white;
-            border:none;
-            border-radius:5px;
-            cursor:pointer;
-            width:100%;
-        ">
-            Προβολή Όλων των Εγγραφών (Σύνολο: {{ total_records }})
-        </button>
+    <a href="{% url 'show_people' %}" style="
+        display:block;
+        text-decoration:none;
+        padding:10px 20px;
+        background-color:#0275d8;
+        color:white;
+        border-radius:5px;
+        margin-top:15px;
+        font-weight:bold;
+    ">
+        Προβολή Όλων των Εγγραφών (Σύνολο: {{ total_records }})
     </a>
 
 </div>
