@@ -85,6 +85,6 @@ During the internship, I worked with several technologies to build a complete we
 
 ### 🧠 Tools Used
 
-- ChatGPT – assistance with code and documentation
-- GitHub Copilot – development support
+- **ChatGPT** – assistance with code and documentation
+- **Copilot** – development support
 
