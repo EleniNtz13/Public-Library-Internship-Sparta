@@ -1,7 +1,7 @@
-from django.contrib import admin
-from django.urls import path, include  # make sure to import include
+from django.contrib import admin  # Import Django's admin module
+from django.urls import path, include  # Import functions to define URL patterns and include app URLs
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('main.urls')),  # include your app URLs
+urlpatterns = [  # List of URL patterns for the project
+    path('admin/', admin.site.urls),  # Route for the Django admin interface
+    path('', include('main.urls')),  # Include URLs from the "main" app at the root path
 ]
