@@ -1,11 +1,11 @@
 # 📚 Internship at Sparta Public Library
 
-## 🏫 Internship Overview – Library System Project
+### 🏫 Internship Overview – Library System Project
 
 Welcome to the repository documenting my internship experience at the Sparta Public Library.
 This project focuses on the design, setup, and gradual development of an internal library management system, combining web technologies, databases, and data organization tools.
 
-## 📅 Internship Details
+### 📅 Internship Details
 
 - Organization / Company: Sparta Public Library
 - Location: Sparta, Lakonia
