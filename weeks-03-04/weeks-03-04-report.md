@@ -46,7 +46,7 @@ excel_form_app/
 |
 ├── main/static
 |   ├── images/
-|     └── book_background.jpg
+|       └── book_background.jpg
 │
 ├── templates/
 │   ├── base.html
