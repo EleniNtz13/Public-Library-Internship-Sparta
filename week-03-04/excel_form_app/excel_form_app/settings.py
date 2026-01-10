@@ -75,7 +75,7 @@ DATABASES = {  # Database connection settings
         'ENGINE': 'django.db.backends.postgresql',  # Use PostgreSQL backend
         'NAME': 'db',  # Database name
         'USER': 'postgres',  # Database username
-        'PASSWORD': 'Your',  # Database password
+        'PASSWORD': 'your_database_password',  # Database password
         'HOST': 'localhost',  # Database host
         'PORT': '5432',  # Database port
     }
@@ -121,3 +121,4 @@ STATICFILES_DIRS = [  # Additional directories to search for static files
 LOGIN_REDIRECT_URL = 'home'  # Redirect after successful login
 LOGOUT_REDIRECT_URL = 'home'  # Redirect after logout
 LOGIN_URL = 'login'  # URL for login page
+
