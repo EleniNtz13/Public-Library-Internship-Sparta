@@ -1,0 +1,8 @@
+{% extends "base.html" %} {# Extend the base template for consistent layout #}
+
+{% block title %}Logged Out{% endblock %} {# Set the page title to "Logged Out" #}
+
+{% block content %} {# Start of the main content block #}
+<p>You are now logged out.</p> {# Inform the user that they have successfully logged out #}
+<a href="{% url 'login' %}">Log in again</a> {# Provide a link to the login page #}
+{% endblock %} {# End of content block #}

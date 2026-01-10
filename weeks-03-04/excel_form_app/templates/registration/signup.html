@@ -1,0 +1,131 @@
+{% extends "base.html" %} {# Extend the base template for consistent layout #}
+
+{% block title %}Εγγραφή Προσωπικού{% endblock %} {# Page title: Staff Registration #}
+
+{% block content %} {# Start main content block #}
+
+<div class="container" style="
+    font-family: Arial, sans-serif;
+    background-color:#f5f0e6;   /* Beige background */
+    border: 2px solid #d6c9b8;  /* Border color */
+    border-radius:8px;
+    padding:25px;
+    width:350px;
+    margin:50px auto;            /* Center container horizontally */
+    box-shadow:0 4px 12px rgba(0,0,0,0.1); /* Soft shadow for depth */
+">
+
+    <h2 style="text-align:center; margin-bottom:20px;">
+        Εγγραφή Προσωπικού Βιβλιοθήκης {# Header for library staff registration #}
+    </h2>
+
+    <form method="post" id="signupForm" style="display:flex; flex-direction:column;"> {# Registration form #}
+        {% csrf_token %} {# CSRF token for security #}
+
+        <!-- Username -->
+        <label for="id_username">Όνομα χρήστη:</label>
+        {{ form.username }} {# Django form field for username #}
+        <p id="usernameError" style="display:none; color:red; font-size:0.9em;"></p> {# Placeholder for username error #}
+
+        <!-- Email -->
+        <label for="id_email">Email:</label>
+        {{ form.email }} {# Django form field for email #}
+        <p id="emailError" style="display:none; color:red; font-size:0.9em;"></p> {# Placeholder for email error #}
+
+        <!-- Password -->
+        <label for="id_password1">Κωδικός πρόσβασης:</label>
+        {{ form.password1 }} {# Django form field for password #}
+        <p id="passwordError" style="display:none; color:red; font-size:0.9em;"></p> {# Placeholder for password error #}
+
+        <!-- Confirm Password -->
+        <label for="id_password2">Επιβεβαίωση κωδικού πρόσβασης:</label>
+        {{ form.password2 }} {# Django form field for password confirmation #}
+        <p id="confirmError" style="display:none; color:red; font-size:0.9em;"></p> {# Placeholder for confirmation error #}
+
+        <button type="submit" style="
+            padding:10px;
+            background-color:#c9b18f;  /* Darker button color */
+            border:2px solid #a89377;  /* Matching border */
+            border-radius:8px;
+            color:white;               /* Text color */
+            font-weight:700;
+            cursor:pointer;
+            margin-top:15px;
+            transition: transform 0.2s ease, background 0.2s ease; /* Smooth hover transition */
+        ">
+            Εγγραφή {# Button text #}
+        </button>
+    </form>
+
+    <p style="margin-top:20px;font-size:0.8em;">
+        ❓ Αν αντιμετωπίσετε οποιοδήποτε πρόβλημα κατά την εγγραφή, επικοινωνήστε με τον διαχειριστή. {# Help text #}
+    </p>
+</div>
+
+<script>
+    // Get references to input fields
+    const usernameInput = document.getElementById('id_username');
+    const emailInput = document.getElementById('id_email');
+    const passwordInput = document.getElementById('id_password1');
+    const confirmInput = document.getElementById('id_password2');
+
+    // Get references to error placeholders
+    const usernameError = document.getElementById('usernameError');
+    const emailError = document.getElementById('emailError');
+    const passwordError = document.getElementById('passwordError');
+    const confirmError = document.getElementById('confirmError');
+
+    const form = document.getElementById('signupForm');
+
+    form.addEventListener('submit', function(event) {
+        let valid = true; // Flag to track validity
+
+        // Username validation
+        const usernameRegex = /^[A-Za-z0-9@.+-_]+$/; // Allowed characters
+        if (!usernameRegex.test(usernameInput.value)) {
+            usernameError.textContent =
+                '❌ Μη έγκυρο όνομα χρήστη. Χρησιμοποιήστε λατινικά γράμματα, αριθμούς ή τα σύμβολα @ . + - _';
+            usernameError.style.display = 'block';
+            valid = false;
+        } else {
+            usernameError.style.display = 'none';
+        }
+
+        // Email validation
+        if (!emailInput.value.includes('@')) { // Simple email check
+            emailError.textContent =
+                '❌ Παρακαλώ εισάγετε έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου.';
+            emailError.style.display = 'block';
+            valid = false;
+        } else {
+            emailError.style.display = 'none';
+        }
+
+        // Password validation
+        const passwordRegex =
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[,-.@$!%*?&]).{8,}$/; // Min 8 chars, 1 uppercase, 1 lowercase, 1 number, 1 special
+        if (!passwordRegex.test(passwordInput.value)) {
+            passwordError.textContent =
+                '❌ Ο κωδικός πρέπει να έχει τουλάχιστον 8 χαρακτήρες, ένα κεφαλαίο γράμμα, ένα μικρό, έναν αριθμό και ένα ειδικό σύμβολο.';
+            passwordError.style.display = 'block';
+            valid = false;
+        } else {
+            passwordError.style.display = 'none';
+        }
+
+        // Confirm password validation
+        if (passwordInput.value !== confirmInput.value) {
+            confirmError.textContent = '❌ Οι κωδικοί πρόσβασης δεν ταιριάζουν.';
+            confirmError.style.display = 'block';
+            valid = false;
+        } else {
+            confirmError.style.display = 'none';
+        }
+
+        if (!valid) {
+            event.preventDefault(); // Prevent form submission if invalid
+        }
+    });
+</script>
+
+{% endblock %} {# End of main content block #}

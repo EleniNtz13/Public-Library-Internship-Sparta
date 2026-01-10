@@ -1,0 +1,17 @@
+{% extends "base.html" %} {# Extend the base template for consistent layout #}
+
+{% block title %}Home{% endblock %} {# Set the page title to "Home" #}
+
+{% block content %} {# Start of the main content block #}
+  {% if user.is_authenticated %} {# Check if the user is logged in #}
+    <p>Hi {{ user.username }}!</p> {# Greet the logged-in user by username #}
+    <form action="{% url 'logout' %}" method="post"> {# Form to log out #}
+      {% csrf_token %} {# CSRF token for security #}
+      <button type="submit">Log Out</button> {# Submit button for logout #}
+    </form>
+  {% else %} {# If the user is not logged in #}
+    <p>You are not logged in.</p> {# Display message #}
+    <a href="{% url 'login' %}">Log In</a> | {# Link to login page #}
+    <a href="{% url 'signup' %}">Sign Up</a> {# Link to signup page #}
+  {% endif %}
+{% endblock %} {# End of content block #}
