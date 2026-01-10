@@ -46,17 +46,17 @@ During the internship, I worked with several technologies to build a complete we
 
 | Technology / Tool                | Purpose                                            | Emoji |
 | -------------------------------- | -------------------------------------------------- | ----- |
-| 🐍 **Python (Flask)**            | Basic web server displaying messages and templates | 🌐    |
-| 🐘 **PHP**                       | Dynamic pages via built-in PHP server and Apache   | 💻    |
-| ⚡ **Apache HTTP Server**         | Stable environment for running PHP applications    | 🔧    |
-| 💾 **MySQL Database**            | Manages data such as books, categories, and users  | 🗄️   |
-| 🧱 **Django Framework**          | Python-based web application environment           | 🚀    |
-| 🐘 **PostgreSQL**                | Relational database used with Django               | 🐘    |
-| 🖥️ **Visual Studio Code**       | Main IDE for code development                      | ✏️    |
-| 🔌 **VS Code Extensions**        | Python & PHP tools for development                 | 🔌    |
-| 🐳 **Command Prompt / Terminal** | Running servers & package installations            | 💬    |
-| 📊 **Excel**                     | Recording uncatalogued book data                   | 📑    |
-| 📡 **RFID System**               | Identifying books via tag-based IDs                | 🔖    |
+| 🐍 **Python (Flask)**            | Basic web server displaying messages and templates | 🌐   |
+| 🐘 **PHP**                       | Dynamic pages via built-in PHP server and Apache   | 💻   |
+| ⚡ **Apache HTTP Server**         | Stable environment for running PHP applications    | 🔧   |
+| 💾 **MySQL Database**            | Manages data such as books, categories, and users  | 🗄️  |
+| 🧱 **Django Framework**          | Python-based web application environment           | 🚀   |
+| 🐘 **PostgreSQL**                | Relational database used with Django               | 🐘   |
+| 🖥️ **Visual Studio Code**       | Main IDE for code development                      | ✏️   |
+| 🔌 **VS Code Extensions**        | Python & PHP tools for development                 | 🔌   |
+| 🐳 **Command Prompt / Terminal** | Running servers & package installations            | 💬   |
+| 📊 **Excel**                     | Recording uncatalogued book data                   | 📑   |
+| 📡 **RFID System**               | Identifying books via tag-based IDs                | 🔖   |
 
 
 ### ⚙️ Setup Summary (High-Level)
