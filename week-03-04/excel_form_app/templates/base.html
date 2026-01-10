@@ -1,20 +1,22 @@
-{% load static %}
+{% load static %} {# Load Django static template tag for referencing static files #}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> {# Character encoding #}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {# Responsive design #}
 
-    <title>{% block title %}My App{% endblock %}</title>
+    <title>{% block title %}My App{% endblock %}</title> {# Page title block #}
 
     <style>
+        /* Body styling */
         body {
             margin: 0;
             font-family: "Segoe UI", Tahoma, sans-serif;
             background: #ffffff;
         }
 
+        /* Wrapper for the whole page content */
         .page-wrapper {
             display: flex;
             justify-content: center;
@@ -24,7 +26,7 @@
             text-align: center;
             padding: 20px;
 
-            /* Background εικόνα με overlay */
+            /* Background image with semi-transparent overlay */
             background-image: linear-gradient(
                 rgba(255,255,255,0.75),
                 rgba(255,255,255,0.75)
@@ -34,11 +36,12 @@
             background-repeat: no-repeat;
         }
 
+        /* Navigation bar styling */
         nav {
             display: flex;
-            flex-direction: column; /* δύο σειρές */
+            flex-direction: column; /* Two rows of links/buttons */
             align-items: center;
-            gap: 12px; /* απόσταση μεταξύ σειρών */
+            gap: 12px; /* Vertical spacing between rows */
             padding: 18px 28px;
         }
 
@@ -46,10 +49,10 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 12px; /* απόσταση μεταξύ κουμπιών κάθε σειράς */
+            gap: 12px; /* Horizontal spacing between items in a row */
         }
 
-        /* 🔹 Links με μπεζ πλαίσιο */
+        /* Navigation links styling */
         nav a {
             text-decoration: none;
             color: #1f2937;
@@ -68,6 +71,7 @@
             color: #4f46e5;
         }
 
+        /* Logout button styling */
         nav form button {
             background: #f5f0e6;
             color: #c0392b;
@@ -87,6 +91,7 @@
             color: #c0392b;
         }
 
+        /* Gradient horizontal line */
         hr {
             width: 65%;
             margin: 30px auto;
@@ -96,6 +101,7 @@
             background: linear-gradient(to right, #4f46e5, #22c55e);
         }
 
+        /* Content box styling */
         .content-box {
             padding: 35px;
             max-width: 900px;
@@ -106,11 +112,13 @@
             animation: fadeIn 0.6s ease-in-out;
         }
 
+        /* Fade in animation for content box */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(15px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
+        /* Responsive adjustments for smaller screens */
         @media (max-width: 600px) {
             nav { padding: 14px; }
             nav a, nav form button { font-size: 1rem; padding: 6px 10px; }
@@ -121,36 +129,36 @@
 
 <body>
 
-<div class="page-wrapper">
+<div class="page-wrapper"> {# Main page container #}
 
-    <nav>
-        <!-- Πρώτη σειρά -->
+    <nav> {# Navigation bar #}
+        <!-- First row of navigation -->
         <div class="nav-row">
-            <a href="/">🏠 Αρχική</a>
-            <a href="/upload/">📊 Εισαγωγή αρχείου Excel</a>
-            <a href="/add-person/">📚 Νέα εγγραφή βιβλίου</a>
+            <a href="/">🏠 Αρχική</a> {# Home link #}
+            <a href="/upload/">📊 Εισαγωγή αρχείου Excel</a> {# Upload Excel file #}
+            <a href="/add-person/">📚 Νέα εγγραφή βιβλίου</a> {# Add new book #}
         </div>
 
-        <!-- Δεύτερη σειρά -->
+        <!-- Second row of navigation -->
         <div class="nav-row">
-            <a href="/people/">📖 Όλες οι εγγραφές</a>
+            <a href="/people/">📖 Όλες οι εγγραφές</a> {# View all records #}
 
-            {% if user.is_authenticated %}
+            {% if user.is_authenticated %} {# If logged in #}
                 <form action="{% url 'logout' %}" method="post">
                     {% csrf_token %}
-                    <button type="submit">🚪 Αποσύνδεση</button>
+                    <button type="submit">🚪 Αποσύνδεση</button> {# Logout button #}
                 </form>
-            {% else %}
-                <a href="{% url 'login' %}">🔐 Σύνδεση</a>
-                <a href="{% url 'signup' %}">📝 Εγγραφή</a>
+            {% else %} {# If not logged in #}
+                <a href="{% url 'login' %}">🔐 Σύνδεση</a> {# Login link #}
+                <a href="{% url 'signup' %}">📝 Εγγραφή</a> {# Signup link #}
             {% endif %}
         </div>
     </nav>
 
-    <hr>
+    <hr> {# Decorative gradient separator #}
 
-    <div class="content-box">
-        {% block content %}
+    <div class="content-box"> {# Main content container #}
+        {% block content %} {# Placeholder for page-specific content #}
         {% endblock %}
     </div>
 
