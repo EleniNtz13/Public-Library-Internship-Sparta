@@ -4,7 +4,7 @@ This stage completes the **Django form workflow** by fully integrating **models*
 
 ## 🗂️ Project Structure 
 
-Exact – Based on `excel_form_app`
+Exact – Based on `excel_form_app` folder 🗂️:
 
 ```
 excel_form_app/
