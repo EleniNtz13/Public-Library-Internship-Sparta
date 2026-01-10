@@ -18,8 +18,7 @@ excel_form_app/
 │   ├── settings.py
 │   ├── urls.py
 │   ├── wsgi.py
-|   └── static/
-|      └── main/
+|   └── static/main
 │        └── autocomplete.js
 |
 ├── main/
