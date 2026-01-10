@@ -65,5 +65,5 @@ By the end of the internship, the system supports:
 - 📱 Responsive layout, usable on mobile devices
 
 
-🚀 Ready for internal library use
+🚀 Ready for internal library use!
 
