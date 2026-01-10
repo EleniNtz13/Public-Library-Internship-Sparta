@@ -116,7 +116,7 @@ Purpose:
 * Connects directly to the `Person` model
 * Used for **manual data entry**
 
-Paste the corresponding python code which is available in the week-03 folder 🗂️.
+Paste the corresponding python code which is available in the `week-03` folder 🗂️.
 
 ### 3️⃣ Views Logic 👁️
 
@@ -133,7 +133,7 @@ Handles:
 * Success & result pages
 
 
-There, paste the corresponding python code which is also available in the week-03 folder 🗂️.
+There, paste the corresponding python code which is also available in the `week-03` folder 🗂️.
 
 ### 4️⃣ URL Configuration 🔗
 
@@ -141,14 +141,14 @@ App-level URLs:
 
 `main/urls.py`
 
-Paste the corresponding python code which exists in the week-03 folder 🗂️.
+Paste the corresponding python code which exists in the `week-03` folder 🗂️.
 
 
 Project-level URLs:
 
 `excel_form_app/urls.py`
 
-Paste the corresponding python code which also exists in the week-03 folder 🗂️.
+Paste the corresponding python code which also exists in the `week-03` folder 🗂️.
 
 
 Ensure the app URLs are included:
