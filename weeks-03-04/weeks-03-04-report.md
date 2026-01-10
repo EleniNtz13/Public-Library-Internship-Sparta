@@ -21,15 +21,6 @@ excel_form_app/
 |   └── static/
 |      └── main/
 │        └── autocomplete.js
-│
-├── templates/
-│   ├── base.html
-│   ├── home.html
-│   └── registration/
-|       ├── home.html
-│       ├── login.html
-│       ├── logged_out.html
-│       └── signup.html
 |
 ├── main/
 │   ├── __init__.py
@@ -57,6 +48,15 @@ excel_form_app/
 ├── main/static
 |   ├── images/
 |     └── book_background.jpg
+│
+├── templates/
+│   ├── base.html
+│   ├── home.html
+│   └── registration/
+|       ├── home.html
+│       ├── login.html
+│       ├── logged_out.html
+│       └── signup.html
 ```
 
 ### 1️⃣ Verify Database Table 🗄️
