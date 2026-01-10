@@ -1,65 +1,64 @@
-<h2>Πιθανά Διπλότυπα</h2>
+<h2>Πιθανά Διπλότυπα</h2>  {# Heading: "Potential Duplicates" #}
 
 <!-- ============================= -->
-<!--   ΓΕΝΙΚΕΣ ΕΝΕΡΓΕΙΕΣ (ΟΛΕΣ ΜΕΣΑ) -->
+<!--   GENERAL ACTIONS (APPLY TO ALL) -->
 <!-- ============================= -->
 
 <div style="text-align:center; margin-top:40px;">
 
-    <!-- Παράβλεψη όλων -->
+    <!-- Skip all duplicates form -->
     <form method="post" action="{% url 'skip_all_duplicates' %}" style="display:inline-block; margin-right:10px;">
-        {% csrf_token %}
+        {% csrf_token %}  {# CSRF protection #}
         <button style="
             padding:10px 20px;
-            background-color:#d9534f;
+            background-color:#d9534f;  /* Red button for skip all */
             color:white;
             border:none;
             border-radius:5px;
             cursor:pointer;
         ">
-            Παράβλεψη όλων
+            Παράβλεψη όλων  {# "Skip All" #}
         </button>
     </form>
 
-    <!-- Επιστροφή στην αρχική -->
+    <!-- Return to home -->
     <a href="{% url 'home' %}">
         <button style="
             padding:10px 20px;
-            background-color:#5bc0de;
+            background-color:#5bc0de;  /* Light blue button */
             color:white;
             border:none;
             border-radius:5px;
             cursor:pointer;
             margin-right:10px;
         ">
-            Επιστροφή στην αρχική
+            Επιστροφή στην αρχική  {# "Return to Home" #}
         </button>
     </a>
 
-    <!-- Προβολή όλων των εγγραφών -->
+    <!-- View all records -->
     <a href="{% url 'show_people' %}">
         <button style="
             padding:10px 20px;
-            background-color:#0275d8;
+            background-color:#0275d8;  /* Dark blue button */
             color:white;
             border:none;
             border-radius:5px;
             cursor:pointer;
         ">
-            Προβολή όλων των εγγραφών
+            Προβολή όλων των εγγραφών  {# "View All Records" #}
         </button>
     </a>
 
 </div>
 
-
-{% for dup in duplicates %}
+{% for dup in duplicates %}  {# Loop over all detected duplicates #}
 
 <!-- ========================= -->
-<!--   ΠΙΝΑΚΑΣ 1: EXCEL RECORD -->
+<!--   TABLE 1: EXCEL RECORD -->
 <!-- ========================= -->
 
-<h3 style="margin-top:30px; color:#1f3c88;">Excel Record</h3>
+<h3 style="margin-top:30px; color:#1f3c88;">Excel Record</h3>  {# Heading for imported Excel record #}
 
 <table border="1" cellpadding="8" cellspacing="0" width="100%">
     <thead>
@@ -84,8 +83,8 @@
     </thead>
     <tbody>
         <tr>
-            <td>{{ dup.right.ari8mos }}</td>
-            <td>{{ dup.right.hmeromhnia_eis }}</td>
+            <td>{{ dup.right.ari8mos }}</td>  {# Excel entry number #}
+            <td>{{ dup.right.hmeromhnia_eis }}</td>  {# Excel date #}
             <td>{{ dup.right.syggrafeas }}</td>
             <td>{{ dup.right.koha }}</td>
             <td>{{ dup.right.titlos }}</td>
@@ -105,10 +104,10 @@
 </table>
 
 <!-- ============================= -->
-<!--   ΠΙΝΑΚΑΣ 2: DATABASE RECORD  -->
+<!--   TABLE 2: DATABASE RECORD -->
 <!-- ============================= -->
 
-<h3 style="margin-top:30px; color:#8a1f1f;">Database Record</h3>
+<h3 style="margin-top:30px; color:#8a1f1f;">Database Record</h3>  {# Heading for database entry #}
 
 <table border="1" cellpadding="8" cellspacing="0" width="100%">
     <thead>
@@ -133,7 +132,7 @@
     </thead>
     <tbody>
         <tr>
-            <td>{{ dup.left.ari8mos }}</td>
+            <td>{{ dup.left.ari8mos }}</td>  {# Database entry number #}
             <td>{{ dup.left.hmeromhnia_eis }}</td>
             <td>{{ dup.left.syggrafeas }}</td>
             <td>{{ dup.left.koha }}</td>
@@ -154,24 +153,23 @@
 </table>
 
 <!-- ============================= -->
-<!--   ΚΟΥΜΠΙΑ ΕΝΕΡΓΕΙΩΝ (EDIT / SKIP) -->
+<!--   ACTION BUTTONS (EDIT / SKIP) -->
 <!-- ============================= -->
 
 <form method="post" action="{% url 'handle_duplicate' %}" style="margin-top:20px;">
-    {% csrf_token %}
+    {% csrf_token %}  {# CSRF protection for form submission #}
 
-    <!-- Η ΜΟΝΑΔΙΚΗ ΣΩΣΤΗ ΑΛΛΑΓΗ -->
+    <!-- Hidden input to identify the record to edit/skip -->
     <input type="hidden" name="ari8mos" value="{{ dup.left.ari8mos }}">
 
     <button name="action" value="edit" style="padding:8px 15px;">
-        Επεξεργασία
+        Επεξεργασία  {# "Edit" button in Greek #}
     </button>
     <button name="action" value="skip" style="padding:8px 15px;">
-        Παράβλεψη
+        Παράβλεψη  {# "Skip" button in Greek #}
     </button>
 </form>
 
-<hr style="margin:40px 0; border:1px solid #ccc;">
+<hr style="margin:40px 0; border:1px solid #ccc;">  {# Separator between duplicates #}
 
-{% endfor %}
-
+{% endfor %}  {# End loop over duplicates #}
