@@ -10,120 +10,114 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
-from pathlib import Path
+from pathlib import Path  # Import Path class to handle filesystem paths
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-
+BASE_DIR = Path(__file__).resolve().parent.parent  # Define the base directory of the project
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-mkiu+ph5%jsbi(6+9jhxu)py)en@(h8m=g%ve+z31j&eezkiq9'
+SECRET_KEY = 'django-insecure-mkiu+ph5%jsbi(6+9jhxu)py)en@(h8m=g%ve+z31j&eezkiq9'  # Secret key for cryptographic signing
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True  # Enable debug mode (should be False in production)
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = []  # List of hosts/domains the site can serve
 
 # Application definition
 
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'main'
+INSTALLED_APPS = [  # List of Django apps installed in this project
+    'django.contrib.admin',  # Admin interface
+    'django.contrib.auth',  # Authentication framework
+    'django.contrib.contenttypes',  # Content types framework
+    'django.contrib.sessions',  # Session framework
+    'django.contrib.messages',  # Messaging framework
+    'django.contrib.staticfiles',  # Static files handling
+    'main'  # Custom app named "main"
 ]
 
-MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+MIDDLEWARE = [  # List of middleware classes to process requests/responses
+    'django.middleware.security.SecurityMiddleware',  # Security enhancements
+    'django.contrib.sessions.middleware.SessionMiddleware',  # Manage sessions
+    'django.middleware.common.CommonMiddleware',  # Basic HTTP middleware
+    'django.middleware.csrf.CsrfViewMiddleware',  # CSRF protection
+    'django.contrib.auth.middleware.AuthenticationMiddleware',  # Authentication handling
+    'django.contrib.messages.middleware.MessageMiddleware',  # Message framework
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',  # Clickjacking protection
 ]
 
-ROOT_URLCONF = 'excel_form_app.urls'
+ROOT_URLCONF = 'excel_form_app.urls'  # Define the root URL configuration module
 
-TEMPLATES = [
+TEMPLATES = [  # Template engine configuration
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates"],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',  # Use Django template engine
+        'DIRS': [BASE_DIR / "templates"],  # Project-level templates directory
+        'APP_DIRS': True,  # Enable template discovery in installed apps
+        'OPTIONS': {  # Additional template options
+            'context_processors': [  # Context processors to inject variables into templates
+                'django.template.context_processors.request',  # Add request object
+                'django.contrib.auth.context_processors.auth',  # Add user and authentication info
+                'django.contrib.messages.context_processors.messages',  # Add messages
             ],
         },
     },
 ]
 
-WSGI_APPLICATION = 'excel_form_app.wsgi.application'
-
+WSGI_APPLICATION = 'excel_form_app.wsgi.application'  # WSGI callable for deployment
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db',
-        'USER': 'postgres',
-        'PASSWORD': 'MySQL2024!',
-        'HOST': 'localhost',
-        'PORT': '5432',
+DATABASES = {  # Database connection settings
+    'default': {  # Default database
+        'ENGINE': 'django.db.backends.postgresql',  # Use PostgreSQL backend
+        'NAME': 'db',  # Database name
+        'USER': 'postgres',  # Database username
+        'PASSWORD': 'Your',  # Database password
+        'HOST': 'localhost',  # Database host
+        'PORT': '5432',  # Database port
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [
+AUTH_PASSWORD_VALIDATORS = [  # Validators for user passwords
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # Prevent passwords similar to user attributes
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # Enforce minimum length
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # Prevent common passwords
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # Prevent fully numeric passwords
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-us'  # Default language
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC'  # Default time zone
 
-USE_I18N = True
+USE_I18N = True  # Enable Django's internationalization system
 
-USE_TZ = True
-
+USE_TZ = True  # Enable timezone-aware datetimes
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / "static",  # optional if you have a project-level static folder
+STATIC_URL = '/static/'  # URL path for static files
+STATICFILES_DIRS = [  # Additional directories to search for static files
+    BASE_DIR / "static",  # Project-level static folder
 ]
 
-LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = 'home'
-LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'  # Redirect after successful login
+LOGOUT_REDIRECT_URL = 'home'  # Redirect after logout
+LOGIN_URL = 'login'  # URL for login page
