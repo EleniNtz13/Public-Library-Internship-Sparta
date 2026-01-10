@@ -20,7 +20,7 @@ This project focuses on the design, setup, and gradual development of an interna
 
 The main focus of this internship project was to set up a **complete development environment for a simple library management system**, combining multiple technologies into a unified workflow.
 
-**Project 1** was developed during the **first four weeks of the internship**, as documented in the corresponding folders of this repository. During this phase, the work was carried out **collaboratively with fellow students**, focusing on:
+**Project 1** was developed during the **first six weeks of the internship**, as documented in the corresponding folders of this repository. During this phase, the work was carried out **collaboratively with fellow students**, focusing on:
 
 - ⚙️ Setting up the local development environment
 - 🔗 Exploring and integrating multiple technologies
