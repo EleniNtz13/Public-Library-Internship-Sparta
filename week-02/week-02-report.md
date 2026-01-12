@@ -4,7 +4,7 @@ These steps provide the foundation for managing library data and building dynami
 
 ## ⚙️ phpMyAdmin Setup
 
-## 1️⃣ phpMyAdmin Installation
+## 1️⃣ phpMyAdmin Installation ⬇️
 ### 1. 📥 Download phpMyAdmin
 
 Go to the official site: https://www.phpmyadmin.net/downloads/
@@ -110,7 +110,7 @@ http://localhost/phpmyadmin
 If configured correctly, the **login page** will appear.
 Enter your **MySQL username and password**.
 
-## 2️⃣ 🗄️ Create a Database in phpMyAdmin
+## 2️⃣ Create a Database in phpMyAdmin 🗄️
 ### 1. Create New Database
 
 1. Left sidebar → **New**
@@ -145,7 +145,7 @@ When importing your .csv file into phpMyAdmin:
 ---
 
 
-## 3️⃣ Installing & Setting Up Django
+## 3️⃣ Installing & Setting Up Django 📥
 ### 1. 🚀 Verify Python Installation
 
 Open **CMD** and run:
@@ -236,7 +236,7 @@ This will open **excel_form_app** project in Visual Studio Code for development.
 
 
 
-## 4️⃣ Install & Configure PostgreSQL & pgAdmin4
+## 4️⃣ Install & Configure PostgreSQL & pgAdmin4 🔧
 
 ### 1. 🛠️ Install PostgreSQL (Windows)
 
@@ -283,7 +283,7 @@ Enter a **name** for your database.
 Click **Save**.
 
 
-## 5️⃣🐘 Connecting Django with PostgreSQL
+## 5️⃣ Connecting Django with PostgreSQL 🐘
 ### 1. 🔌 Install PostgreSQL Driver
 
 Open the terminal **inside the folder where** ```manage.py``` **exists** and run:
