@@ -14,7 +14,7 @@ Together, these tools form a simple development stack that allows message displa
 
 Below are the steps to install and set up the development environments for **both Python and PHP**.
 
-## 1️⃣ Python Setup
+## 1️⃣ Python Setup 🛠️
 ### 1. Create the Project Folder
 
 Create a folder named ```Project_Folder``` in the path:
@@ -89,7 +89,7 @@ Open that URL in your browser, and the page will display the messages:
 📝 **This is a message.**
 
 
-## 2️⃣ PHP Setup
+## 2️⃣ PHP Setup 🔧
 ### 1. Download and Install PHP
 
 Go to the official PHP for Windows download page: https://windows.php.net/download/
@@ -154,7 +154,7 @@ Additionally, the setup process included the installation and configuration of t
 The following sections describe the installation steps for **MySQL** and **Apache**, as well as how they integrate with the overall project architecture.
 
 
-## 3️⃣ MySQL Database (MySQL Server)
+## 3️⃣ MySQL Database (MySQL Server)🛢️
 
 **MySQL**: 
 - 💾 is one of the most widely used relational database systems, ideal for web applications like the ones developed during this project,
@@ -197,13 +197,13 @@ When the process finishes, MySQL Workbench will be available for use.
 
 
 
-## 4️⃣ Apache HTTP Server Setup (Without XAMPP/WAMP)
+## 4️⃣ Apache HTTP Server Setup (Without XAMPP/WAMP) ⚙️
 
 **Apache**:
 - ⚡is one of the most widely used web servers globally and serves as the backbone for running PHP applications in a stable, production-style environment.
 - 🖥️ In this project, Apache is used to process and serve PHP pages directly from the local machine, creating a fully functional local web server setup.
 
-## Installation Steps:
+## Installation Steps ⬇️:
 ### 1. Download Apache
 
 - Visit the Apache Lounge download page: https://www.apachelounge.com/download/
@@ -229,7 +229,7 @@ C:\Apache24\htdocs
 ...
 ```
 
-### 3. Configure Apache to Work with PHP
+### 3. Configure Apache to Work with PHP 🔄
 
 - Navigate to:
 
