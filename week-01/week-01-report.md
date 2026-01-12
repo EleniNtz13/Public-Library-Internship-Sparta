@@ -197,7 +197,7 @@ When the process finishes, MySQL Workbench will be available for use.
 
 
 
-## 4️⃣ Apache HTTP Server Setup (Without XAMPP/WAMP) ⚙️
+## 4️⃣ Apache HTTP Server Setup (Without XAMPP/WAMP)
 
 **Apache**:
 - ⚡is one of the most widely used web servers globally and serves as the backbone for running PHP applications in a stable, production-style environment.
