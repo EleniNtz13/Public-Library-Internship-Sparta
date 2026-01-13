@@ -18,3 +18,14 @@ Route::get('/hello', function () {
 
 <?php
 echo "PHP WORKS";
+
+
+<VirtualHost *:80>
+    ServerName project2.local
+    DocumentRoot "C:/Apache24/htdocs/project2/public"
+
+    <Directory "C:/Apache24/htdocs/project2/public">
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
