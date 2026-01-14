@@ -2,3 +2,4 @@
 <img width="877" height="471" alt="image" src="https://github.com/user-attachments/assets/453ad552-8cac-420b-ace1-0022d549b255" />
 
 
+βασει ορισμενων ενεργιεων που εχουν προηγηθεί τις προηγούμενες εβδομάδες, συνεχίζουμε στο δεύτερο προτζεκτ
