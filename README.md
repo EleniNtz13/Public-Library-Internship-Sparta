@@ -35,6 +35,7 @@ The technical scope of this phase included:
 - 🧱 Working with **Django** and **PostgreSQL** for future system expansion
 - 📊 Using **Excel** to organize uncatalogued library book data
 - 📡 Learning to operate the **RFID system** for fast identification and tracking of library materials
+- - 📚 Assisted in the loan and return process, ensuring accurate record-keeping and timely return of borrowed books
 
 Together, these tools form the foundation of a system capable of handling book records, internal data entry, user activity, and dynamic website content, which was further expanded in the following weeks of the internship.
 
