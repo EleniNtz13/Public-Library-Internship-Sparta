@@ -4,8 +4,10 @@
 
 <div class="container py-5">
 
+    <!-- Τίτλος -->
     <h1 class="text-center fw-bold mb-5">Συμπλήρωση Εγγράφων</h1>
 
+    <!-- Success Message -->
     @if(session('success'))
         <div class="alert alert-success text-center">{{ session('success') }}</div>
     @endif
@@ -19,13 +21,17 @@
                     Εισερχόμενα Έγγραφα
                 </div>
                 <div class="card-body">
+
                     <form action="/documents/incoming" method="POST">
                         @csrf
+
                         @include('documents._incoming_fields')
+
                         <button type="submit" class="btn btn-primary w-100 py-2 fw-bold mt-3">
                             Αποθήκευση Εισερχομένου
                         </button>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -37,19 +43,22 @@
                     Εξερχόμενα Έγγραφα
                 </div>
                 <div class="card-body">
+
                     <form action="/documents/outgoing" method="POST">
                         @csrf
+
                         @include('documents._outgoing_fields')
+
                         <button type="submit" class="btn btn-success w-100 py-2 fw-bold mt-3">
                             Αποθήκευση Εξερχομένου
                         </button>
                     </form>
+
                 </div>
             </div>
         </div>
 
     </div>
-
 </div>
 
 @endsection
