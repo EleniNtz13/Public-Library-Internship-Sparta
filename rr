@@ -1,3 +1,0 @@
-Route::get('/documents/all', function() {
-    return view('documents.all_documents');
-});
