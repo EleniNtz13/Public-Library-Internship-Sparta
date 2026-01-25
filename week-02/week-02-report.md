@@ -2,6 +2,36 @@
 This section documents the setup of a local development environment for a library system project. It includes configuring phpMyAdmin for database management, installing Django with a virtual environment, setting up **PostgreSQL** and **pgAdmin4**, and connecting **Django** to the database using models and migrations.
 These steps provide the foundation for managing library data and building dynamic web applications.
 
+
+                     ┌──────────────────────────┐
+                     │        Web Browser        │
+                     └─────────────┬────────────┘
+                                   │
+                     ┌─────────────┼────────────┐
+                     │                          │
+                     ▼                          ▼
+        ┌──────────────────────┐     ┌────────────────────────┐
+        │   Apache HTTP Server │     │  Django Dev Server     │
+        └─────────────┬────────┘     └─────────────┬─────────┘
+                      │                              │
+                      ▼                              ▼
+        ┌──────────────────────┐        ┌──────────────────────┐
+        │         PHP          │        │        Django         │
+        └─────────────┬────────┘        └─────────────┬────────┘
+                      │                              │
+                      ▼                              ▼
+        ┌──────────────────────┐        ┌──────────────────────┐
+        │        MySQL         │        │     PostgreSQL        │
+        └─────────────┬────────┘        └─────────────┬────────┘
+                      │                              │
+                      ▼                              ▼
+        ┌──────────────────────┐        ┌──────────────────────┐
+        │      phpMyAdmin      │        │       pgAdmin4        │
+        └──────────────────────┘        └──────────────────────┘
+
+
+
+
 ## ⚙️ phpMyAdmin Setup
 
 ## 1️⃣ phpMyAdmin Installation ⬇️
