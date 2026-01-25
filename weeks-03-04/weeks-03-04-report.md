@@ -105,6 +105,34 @@ It should be noted 📝:
 | **Relationship**       | The class → creates a table → inside the database                     | Person → table `person` → database `db` |
 
 
+### 2️⃣ Install Required Libraries 📦
+Required for Excel imports:
+```
+pip install pandas openpyxl
+```
+
+### 3️⃣ Start the Server & Access the Website 🌐
+In CMD, run:
+```
+python manage.py runserver
+```
+Then open your browser and visit:
+```
+http://localhost/
+```
+If authentication is enabled, log in at:
+```
+http://localhost/login/
+```
+
+### 4️⃣ Create Admin User (If Needed) 🔐
+If no admin exists yet:
+```
+python manage.py createsuperuser
+```
+
+---
+
 ### 2️⃣ Forms Setup 📝
 
 File:
