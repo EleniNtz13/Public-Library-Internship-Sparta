@@ -182,9 +182,6 @@ When importing your .csv file into phpMyAdmin:
 - Ensure the file is saved in **UTF-8** encoding to avoid incorrect characters
 
 
----
-
-
 ## 3️⃣ Installing & Setting Up Django 📥
 ### 1. Verify Python Installation
 
