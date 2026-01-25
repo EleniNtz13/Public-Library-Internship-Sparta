@@ -11,7 +11,7 @@ Project 1
 │── manage.py
 │── requirements.txt
 │── urls.py
-|   └── static/main
+│── static/main
 │        └── autocomplete.js
 │
 │── excel_form_app/
@@ -28,8 +28,8 @@ Project 1
 │   ├── forms.py
 │   ├── models.py
 │   ├── tests.py
-│   ├── views.py
-│   └── urls.py
+│   ├── urls.py
+│   └── views.py
 |
 ├── main/templates
 │   ├── incomplete_records.html
