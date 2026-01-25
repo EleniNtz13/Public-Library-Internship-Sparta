@@ -380,7 +380,7 @@ If everything is correct, Django will create the necessary tables in PostgreSQL.
 
 ### 5. Create a Django App 
 
-Inside the ```Project 1``` folder, run:
+Inside the ```Project 1``` folder 🗂️, run:
 ```
 python manage.py startapp main 
 ```
