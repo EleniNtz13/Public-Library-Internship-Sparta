@@ -177,7 +177,6 @@ The following sections describe the installation steps for **MySQL** and **Apach
 - 💾 is one of the most widely used relational database systems, ideal for web applications like the ones developed during this project,
 - 🗄️ is used to store, retrieve, and manage data such as book information, categories, and user activity.
 
-## Installation Steps (Windows)
 ### 1. Download MySQL Installer
 
 - Visit the official MySQL download page: https://dev.mysql.com/downloads/installer/
