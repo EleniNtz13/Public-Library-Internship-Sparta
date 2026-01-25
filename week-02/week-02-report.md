@@ -207,7 +207,7 @@ venv\Scripts\activate
 
 ⚠️ The **v**irtual **env**ironment must be active before installing Django.
 
-### 3. 📌 Install Django
+### 3. Install Django
 
 Navigate to your working directory:
 ```
