@@ -2,13 +2,13 @@
 During the first week of the internship, we set up the basic tools to create simple web applications. 
 The goal was to build two development servers (Python and PHP) and connect them with a MySQL database and Apache HTTP Server to create a complete development environment.
 
-- 🐍 **Python (Flask)**: Lightweight server for displaying messages and handling HTML templates (```localhost:5000```).
+- 🐍 **Python (Flask)**: Lightweight development server for displaying messages and handling HTML templates (```localhost:5000```)
 
-- 🐘 **PHP**: Runs via the built-in PHP server (```localhost:8080```) or through Apache for a more production-like setup (```localhost:80```).
+- 🐘 **PHP**: Runs via the built-in PHP server (```localhost:8080```) or through Apache for a more production-like setup (```localhost:80```)
 
-- ⚡ **Apache HTTP Server**: Provides a stable environment to serve PHP pages.
+- ⚡ **Apache HTTP (web) Server**: Provides a stable environment to serve PHP pages
 
-- 💾 **MySQL Database**: Stores and manages data such as books, users, and categories.
+- 💾 **MySQL Database**: Stores and manages data such as books, users, and categories
 
 Together, these tools form a simple development stack that allows message display, data management, and local web server operation — forming the foundation for more advanced features in the library system.
 
@@ -147,9 +147,17 @@ You should now see the displayed messages:
 
 ---
 
-After setting up the basic web servers using Python and PHP, the next step was to prepare the environment required for data storage and dynamic content management. For this purpose, a relational database system was introduced, using 💾 **MySQL**, which allows the application to store, retrieve, and manage library-related data efficiently (such as book information, categories, and user activity).
+## 🔍 Understanding Flask, PHP, MySQL & Apache
+After setting up the basic web servers using Python and PHP, the next step was to prepare the environment required for data storage and dynamic content handling. In this architecture, each component plays a distinct role within the workflow:
 
-Additionally, the setup process included the installation and configuration of the ⚡**Apache HTTP Server**, which provides a stable, production-level environment for serving PHP applications. Apache enables the web server to deliver PHP pages reliably and is commonly used in combination with MySQL to create full-stack web applications.
+🐍 Flask and 🐘 PHP act as the application layers, responsible for processing user requests, generating dynamic pages, and interacting with the database. They form the “logic” of the system, handling routing, templates, and server‑side operations.
+
+💾 MySQL functions as the data layer, storing and managing all persistent information such as book records, categories, and user activity. It ensures that data can be efficiently retrieved, updated, and maintained across the application.
+
+⚡ Apache HTTP Server serves as the web server for PHP, providing a stable, production‑like environment for delivering dynamic content. Apache receives incoming HTTP requests, forwards them to PHP for processing, and returns the generated output to the user. Its reliability and compatibility with MySQL make it a common choice for full‑stack web applications.
+
+Together, these components form a complete workflow:
+the user sends a request → Apache receives it → PHP or Flask processes it → MySQL provides the necessary data → Apache returns the final page to the browser.
 
 The following sections describe the installation steps for **MySQL** and **Apache**, as well as how they integrate with the overall project architecture.
 
