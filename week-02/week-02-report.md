@@ -1,6 +1,18 @@
 # 🌟 Week 2 – Overview: Development Environment Setup
-This section documents the setup of a local development environment for a library system project. It includes configuring phpMyAdmin for database management, installing Django with a virtual environment, setting up **PostgreSQL** and **pgAdmin4**, and connecting **Django** to the database using models and migrations.
-These steps provide the foundation for managing library data and building dynamic web applications.
+
+The development of the *library system* was based on setting up a complete local environment that integrates tools for data management, web application development, and dynamic content delivery. Each technology used in the project fulfills a specific role within the system’s architecture, and their interaction ensures smooth and reliable application functionality.
+
+At the application layer, two different technologies were employed: **Django** (a Python framework) and **PHP**. Django serves as the application layer responsible for request routing, business logic processing, database communication, and the generation of dynamic HTML pages through its template system. PHP was also used as an application layer, primarily in combination with Apache, to serve dynamic pages and interact with the MySQL database.
+
+For data management, two database systems were utilized: **MySQL** and **PostgreSQL**. MySQL was used alongside PHP and managed through **phpMyAdmin**, a web-based interface that allows easy viewing, editing, and organization of database content. PostgreSQL served as Django’s primary database, offering stability, strong support for complex queries, and seamless integration with the Django ORM. Its administration was performed through pgAdmin4, a graphical tool for monitoring and managing tables, relationships, and stored data.
+
+At the web server level, the Apache HTTP Server was used as the intermediary between the browser and PHP. Apache receives incoming HTTP requests, forwards them to PHP for processing, and returns the final HTML response to the user. This setup provides a stable, production‑like environment for serving PHP applications. In contrast, Django runs through its own development server, which is suitable for development but not intended for production use.
+
+The overall workflow operates as follows: the user sends a request through the browser; if the request targets a Django page, it is processed by Django, which communicates with PostgreSQL and returns the resulting page. If the request targets a PHP page, it is handled by Apache, forwarded to PHP, processed using MySQL, and finally returned to the user by Apache. Meanwhile, phpMyAdmin and pgAdmin4 are used to manage their respective databases but do not participate directly in the request–response cycle.
+
+Through this structure, the development environment integrates all essential layers — application, database, and web server — forming a complete and functional architecture for building and managing a library system.
+
+The diagram below illustrates the communication flow between the system’s components and how they work together to handle user requests:
 
 
                      ┌──────────────────────────┐
