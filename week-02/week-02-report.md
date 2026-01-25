@@ -188,7 +188,7 @@ pip install django
 
 Run:
 ```
-django-admin startproject excel_form_app
+django-admin startproject Project 1
 ```
 
 A new folder named ```excel_form_app``` will be created in your current path. Automatically, a file named ```excel_form_app``` will be created, which contains the files: 
