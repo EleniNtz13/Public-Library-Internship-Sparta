@@ -158,7 +158,7 @@ After setting up the basic web servers using Python and PHP, the next step was t
 
 Together, these components form a complete workflow:
 ```
-*The user sends a request
+The user sends a request
 ↓
 Apache receives it
 ↓
@@ -166,7 +166,7 @@ PHP or Flask processes it
 ↓
 MySQL provides the necessary data
 ↓
-Apache returns the final page to the browser*
+Apache returns the final page to the browser
 ```
 The following sections describe the installation steps for **MySQL** and **Apache**, as well as how they integrate with the overall project architecture:
 
