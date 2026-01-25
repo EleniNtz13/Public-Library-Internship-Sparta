@@ -1,5 +1,5 @@
 """
-ASGI config for excel_form_app project.
+ASGI config for Project 1 project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
