@@ -37,7 +37,7 @@ After all, this is the main purpose of the form — to have all the library’s 
 <img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-25 184253" src="https://github.com/user-attachments/assets/99023783-05ab-4bb9-acdf-17dc121e9eaa" />
 
 ⏸️ Finally, the records **printing page** is as follows:
-<img width="1920" height="1030" alt="Στιγμιότυπο οθόνης 2026-01-25 183403" src="https://github.com/user-attachments/assets/f7519949-62b2-4439-8438-973e447619ba" />
+<img width="1920" height="1030" alt="Στιγμιότυπο οθόνης 2026-01-25 183403" src="https://github.com/user-attachments/assets/18d148b4-3dcc-4365-a70a-24bc7c9c34fd" />
 
 ⚠️ Record details are not shown in order to protect the library’s data.
 <!-- And check **duplicates** here:```http://localhost/duplicates/``` -->
