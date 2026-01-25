@@ -34,7 +34,7 @@ After all, this is the main purpose of the form — to have all the library’s 
 ```
 http://localhost/people/
 ```
-<!-- And check **duplicates** here:```http://localhost/duplicates/``` !>
+<!-- And check **duplicates** here:```http://localhost/duplicates/``` -->
 
 🔒 For confidentiality reasons, screenshots of the last two URLs are omitted, since they would reveal the library’s data.
 
