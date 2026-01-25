@@ -45,14 +45,14 @@ The diagram below illustrates the communication flow between the system’s comp
 ## ⚙️ phpMyAdmin Setup
 
 ## 1️⃣ phpMyAdmin Installation ⬇️
-### 1. 📥 Download phpMyAdmin
+### 1. Download phpMyAdmin
 
 Go to the official site: https://www.phpmyadmin.net/downloads/
 
 
 Download the **All Languages ZIP** version
 
-### 2. 📁 Extract Files
+### 2. Extract Files
 
 Create a folder inside ```htdocs``` named:
 
@@ -64,7 +64,7 @@ Extract **all ZIP contents** *directly inside it*.
 
 ⚠️ Make sure no double folder is created (e.g. phpmyadmin/phpmyadmin).
 
-### 3. ⚙️ Configure phpMyAdmin
+### 3. Configure phpMyAdmin
 
 Inside the ```phpmyadmin``` folder:
 
@@ -80,7 +80,7 @@ $cfg['blowfish_secret'] = 'your32charactersecretkeyhere';
 ```
 and save.
 
-### 4. ⚙️ Register phpMyAdmin in Apache
+### 4. Register phpMyAdmin in Apache
 
 Open:
 ```
@@ -98,7 +98,7 @@ Alias /phpmyadmin "C:/Apache24/htdocs/phpmyadmin"
 
 💾 Save the file.
 
-### 5. ⚙️ Set Default Directory Index
+### 5. Set Default Directory Index
 Still inside:
 ```
 C:\Apache24\conf
@@ -111,7 +111,7 @@ This ensures Apache loads ```index.php``` first when a folder is accessed.
 
 💾 Save the file.
 
-### 6. ⚙️ Configure PHP Extensions
+### 6. Configure PHP Extensions
 Navigate to the PHP installation folder:
 ```
 C:\php
@@ -161,7 +161,7 @@ utf8mb4_general_ci
 ```
 4. Click **Create**
 
-### 2. 📤 Import Data (CSV)
+### 2. Import Data (CSV)
 
 If you have Excel data:
 
@@ -186,7 +186,7 @@ When importing your .csv file into phpMyAdmin:
 
 
 ## 3️⃣ Installing & Setting Up Django 📥
-### 1. 🚀 Verify Python Installation
+### 1. Verify Python Installation
 
 Open **CMD** and run:
 ```
@@ -224,7 +224,7 @@ pip install django
 
 ✅ If installation completes successfully, continue to the next step. 
 
-### 4. 🗂️ Create a New Django Project
+### 4. Create a New Django Project
 
 Run:
 ```
@@ -243,7 +243,7 @@ Move into the project directory:
 cd Project 1
 ```
 
-### 5. ✨ Run the Development Server
+### 5. Run the Development Server
 
 Start the Django server:
 ```
@@ -265,7 +265,7 @@ Ctrl + C
 The files ```manage.py``` and ```db.sqlite3``` must be located in the root directory created by the user. Keeping them in the initial folder ensures that Django can properly manage the project and database.
 
 
-### 6. 💻 Open the Project in VS Code (optional)
+### 6. Open the Project in VS Code (optional)
 
 Run:
 ```
@@ -278,7 +278,7 @@ This will open **excel_form_app** project in Visual Studio Code for development.
 
 ## 4️⃣ Install & Configure PostgreSQL & pgAdmin4 🔧
 
-### 1. 🛠️ Install PostgreSQL (Windows)
+### 1. Install PostgreSQL (Windows)
 
 1. Download **PostgreSQL** for *Windows* from the official website: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 2. Run the installer → click **Yes** to all prompts.
@@ -302,7 +302,7 @@ You can optionally check that the PostgreSQL service is running:
 
 If it is stopped, right-click → **Start**.
 
-### 2. 🖥️ Open pgAdmin4
+### 2. Open pgAdmin4
 
 Go to **Start** → **pgAdmin 4**.
 
@@ -312,7 +312,7 @@ In the left panel, expand **Servers** → **PostgreSQL 18**.
 
 Enter the password you set earlier.
 
-### 3. 🧱 Create a New Database
+### 3. Create a New Database
 
 In the left sidebar, right-click **Databases**.
 
@@ -324,7 +324,7 @@ Click **Save**.
 
 
 ## 5️⃣ Connecting Django with PostgreSQL 🐘
-### 1. 🔌 Install PostgreSQL Driver
+### 1. Install PostgreSQL Driver
 
 Open the terminal **inside the folder where** ```manage.py``` **exists** and run:
 ```
@@ -337,7 +337,7 @@ If the installation completes successfully, continue to the next step.
 
 
 
-### 2. 🗄️ Database Credentials
+### 2. Database Credentials
 
 Use the following settings (adjust values as needed):
 
@@ -347,7 +347,7 @@ Use the following settings (adjust values as needed):
 - **Host**: ```localhost```
 - **Port**: ```5432```
 
-### 3. ⚙️ Edit Django Settings (```settings.py```)
+### 3. Edit Django Settings (```settings.py```)
 
 Open the file:
 ```
@@ -372,7 +372,7 @@ Save the file.
 
 ⚠️ Note: The database name given by the user in pgAdmin 4 needs to be the same as the one set in the ```settings.py``` code.
 
-### 4. 🔄 Apply Initial Migrations
+### 4. Apply Initial Migrations
 
 In the same terminal:
 ```
@@ -381,7 +381,7 @@ python manage.py migrate
 
 If everything is correct, Django will create the necessary tables in PostgreSQL.
 
-### 5. 📁 Create a Django App 
+### 5. Create a Django App 
 
 Inside the ```excel_form_app``` folder, run:
 ```
@@ -396,7 +396,7 @@ A new folder named **main** will be created inside your project. The folder cont
 - ```urls.py```
 - ```templates/```
 
-### 6. 🧩 Register the App in Django
+### 6. Register the App in Django
 
 Open ```settings.py``` again and find:
 ```
@@ -421,7 +421,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### 7. 📚 Define the Book Model
+### 7. Define the Book Model
 
 Open:
 ```
@@ -432,7 +432,7 @@ Replace the Python code (```models.py```) shown in the folder ```week-02``` of t
 
 ⚠️ This specific code refers to the library manuals, covering the needs of the Sparta public library.
 
-### 8. 🏗️ Create and Apply Migrations for the New Model
+### 8. Create and Apply Migrations for the New Model
 
 Run:
 ```
