@@ -200,7 +200,7 @@ A new folder named ```excel_form_app``` will be created in your current path. Au
 
 Move into the project directory:
 ```
-cd excel_form_app
+cd Project 1
 ```
 
 ### 5. ✨ Run the Development Server
