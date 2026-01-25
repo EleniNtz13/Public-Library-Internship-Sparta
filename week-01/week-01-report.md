@@ -148,6 +148,7 @@ You should now see the displayed messages:
 ---
 
 ## 🔍 Understanding Flask, PHP, MySQL & Apache
+
 After setting up the basic web servers using Python and PHP, the next step was to prepare the environment required for data storage and dynamic content handling. In this architecture, each component plays a distinct role within the workflow:
 
 🐍 Flask and 🐘 PHP act as the application layers, responsible for processing user requests, generating dynamic pages, and interacting with the database. They form the “logic” of the system, handling routing, templates, and server‑side operations.
