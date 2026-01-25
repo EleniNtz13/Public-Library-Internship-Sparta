@@ -177,9 +177,9 @@ If you have Excel data:
 
 When importing your .csv file into phpMyAdmin:
 
-- Make sure that the **column names in the CSV match exactly** the fields in your database table (same order, same spelling, no extra spaces).
-- If the data does not appear correctly aligned after import, change the **Field Separator** from ```,``` to ```;```.
-- Ensure the file is saved in **UTF-8** encoding to avoid incorrect characters.
+- Make sure that the **column names in the CSV match exactly** the fields in your database table (same order, same spelling, no extra spaces)
+- If the data does not appear correctly aligned after import, change the **Field Separator** from ```,``` to ```;```
+- Ensure the file is saved in **UTF-8** encoding to avoid incorrect characters
 
 
 ---
