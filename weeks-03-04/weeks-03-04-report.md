@@ -1,6 +1,6 @@
 # 🌟 Weeks 3 & 4 – Overview: Final Steps to Run the Form
 
-This stage completes the **Django form workflow** by fully integrating **models**, **views**, **templates**, **authentication**, **Excel imports**, and **PostgreSQL**.
+This document outlines the *final steps required to run the form locally*, including database verification, library installation, and launching the Django server. Once these steps are completed, the user can access the form through the browser and begin using the application ✨.
 
 ## 🧩 Project Structure 
 
