@@ -7,13 +7,12 @@ This stage completes the **Django form workflow** by fully integrating **models*
 Exact – Based on `excel_form_app` folder 🗂️:
 
 ```
-excel_form_app/
+Project 1
 │── manage.py
 │── requirements.txt
 │── urls.py
 │
 │── excel_form_app/
-│   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
@@ -22,27 +21,27 @@ excel_form_app/
 │        └── autocomplete.js
 |
 ├── main/
-│   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
 │   ├── forms.py
 │   ├── models.py
 │   ├── tests.py
 │   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│       └── __init__.py
+│   └── urls.py
 |
 ├── main/templates
+│   ├── incomplete_records.html
 │   ├── upload_excel.html
 │   ├── upload_result.html
 │   ├── upload_success.html
 |   └── main/
 |       ├── add_person.html
-|       ├── people.html
+|       ├── duplicates_done.html
 |       ├── edit_person.html
-|       ├── duplicates.html
-|       └── duplicates_done.html
+|       ├── people.html
+|       ├── people_table_rows.html
+|       ├── print_range.html
+|       └── resolve_duplicates.html
 |
 ├── main/static
 |   ├── images/
@@ -53,8 +52,8 @@ excel_form_app/
 │   ├── home.html
 │   └── registration/
 |       ├── home.html
-│       ├── login.html
 │       ├── logged_out.html
+│       ├── login.html
 │       └── signup.html
 ```
 
