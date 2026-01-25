@@ -15,6 +15,7 @@ Through this structure, the development environment integrates all essential lay
 The diagram below illustrates the communication flow between the system’s components and how they work together to handle user requests:
 
 <p align="center">
+  ```
                      ┌──────────────────────────┐
                      │        Web Browser       │
                      └─────────────┬────────────┘
@@ -40,7 +41,7 @@ The diagram below illustrates the communication flow between the system’s comp
         ┌──────────────────────┐        ┌──────────────────────┐
         │      phpMyAdmin      │        │       pgAdmin4       │
         └──────────────────────┘        └──────────────────────┘
-
+```
 </p>
 
 
