@@ -225,10 +225,10 @@ pip install django
 
 Run:
 ```
-django-admin startproject Project 1
+django-admin startproject excel_form_app
 ```
 
-A new folder named ```Project 1``` will be created in your current path. Automatically, a file named ```Project 1``` will be created, which contains the files: 
+A new folder named ```excel_form_app``` will be created in your current path. Automatically, a file named ```excel_form_app``` will be created, which contains the files: 
 
 - ```settings.py```
 - ```urls.py```
@@ -237,7 +237,7 @@ A new folder named ```Project 1``` will be created in your current path. Automat
 
 Move into the project directory:
 ```
-cd Project 1
+cd excel_form_app
 ```
 
 ### 5. Run the Development Server
