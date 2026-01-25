@@ -219,7 +219,6 @@ When the process finishes, MySQL Workbench will be available for use.
 - ⚡is one of the most widely used web servers globally and serves as the backbone for running PHP applications in a stable, production-style environment.
 - 🖥️ In this project, Apache is used to process and serve PHP pages directly from the local machine, creating a fully functional local web server setup.
 
-## Installation Steps ⬇️:
 ### 1. Download Apache
 
 - Visit the Apache Lounge download page: https://www.apachelounge.com/download/
