@@ -4,6 +4,8 @@ This document outlines the *final steps required to run the form locally*, inclu
 
 ## 🧩 Project Structure 
 
+📋 The project name was changed from ‘excel_form_app’ to ‘Project 1’ for clearer identification and numbering of the projects that will be completed during the internship.
+
 Exact – Based on `Project 1` folder 🗂️:
 
 ```
