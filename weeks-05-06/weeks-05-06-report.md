@@ -1,4 +1,4 @@
-# 🌟 Weeks 5 and 6 – Overview: The final version of the online form
+# 🌟 Weeks 5 & 6 – Overview: The final version of the online form
 
 ### 🗓️ Week Overview – Form Development
 
