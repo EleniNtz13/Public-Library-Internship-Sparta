@@ -1,5 +1,5 @@
 """
-WSGI config for excel_form_app project.
+WSGI config for Project 1 project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
