@@ -120,10 +120,6 @@ Then open your browser and visit:
 ```
 http://localhost/
 ```
-If authentication is enabled, log in at:
-```
-http://localhost/login/
-```
 
 ### 4️⃣ Create Admin User (If Needed) 🔐
 If no admin exists yet:
