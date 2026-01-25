@@ -12,7 +12,7 @@ The goal was to build two development servers (Python and PHP) and connect them 
 
 Together, these tools form a simple development stack that allows message display, data management, and local web server operation — forming the foundation for more advanced features in the library system.
 
-Below are the steps to install and set up the development environments for **both Python and PHP**:
+Below are the steps to install and set up the development environments for both **Python** and **PHP**:
 
 ## 1️⃣ Python Setup 🛠️
 ### 1. Create the Project Folder
