@@ -12,7 +12,7 @@ The goal was to build two development servers (Python and PHP) and connect them 
 
 Together, these tools form a simple development stack that allows message display, data management, and local web server operation — forming the foundation for more advanced features in the library system.
 
-Below are the steps to install and set up the development environments for **both Python and PHP**.
+Below are the steps to install and set up the development environments for **both Python and PHP**:
 
 ## 1️⃣ Python Setup 🛠️
 ### 1. Create the Project Folder
@@ -160,7 +160,7 @@ Together, these components form a complete workflow:
 
 *The user sends a request → Apache receives it → PHP or Flask processes it → MySQL provides the necessary data → Apache returns the final page to the browser*
 
-The following sections describe the installation steps for **MySQL** and **Apache**, as well as how they integrate with the overall project architecture.
+The following sections describe the installation steps for **MySQL** and **Apache**, as well as how they integrate with the overall project architecture:
 
 
 ## 3️⃣ MySQL Database (MySQL Server)🛢️
