@@ -33,7 +33,7 @@ After all, this is the main purpose of the form — to have all the library’s 
 9️⃣ You can also view **all records**, search by a **selected field** (entry number, date, author, title, publisher, ISBN), and **print** any specific range of records the user chooses:
 <img width="1920" height="972" alt="Στιγμιότυπο οθόνης 2026-01-25 182214" src="https://github.com/user-attachments/assets/8deb3d4c-6d02-4773-b9ce-75825a100343" />
 
-🔟 The user is able to edit any record they choose as shown below:
+🔟 The user is able to **edit** any record they choose as shown below:
 <img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-25 184253" src="https://github.com/user-attachments/assets/99023783-05ab-4bb9-acdf-17dc121e9eaa" />
 
 ⏸️ Finally, the records **printing page** is as follows:
