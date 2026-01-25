@@ -145,7 +145,6 @@ You should now see the displayed messages:
 
 📝 **This is a message.**
 
----
 
 ## 🔍 Understanding Flask, PHP, MySQL & Apache
 
