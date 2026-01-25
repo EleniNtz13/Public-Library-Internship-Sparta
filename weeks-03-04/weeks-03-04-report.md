@@ -7,7 +7,7 @@ This stage completes the **Django form workflow** by fully integrating **models*
 Exact – Based on `Project 1` folder 🗂️:
 
 ```
-**Project 1**
+Project 1
 │── manage.py
 │── requirements.txt
 │── urls.py
