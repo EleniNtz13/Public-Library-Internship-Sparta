@@ -172,8 +172,8 @@ home.html     # Landing page template
 
 ```
 home.html        # Authentication home page
-login.html       # Login form template
 logged_out.html  # Logout confirmation page
+login.html       # Login form template
 signup.html      # User registration page
 ```
 
@@ -181,19 +181,22 @@ signup.html      # User registration page
 
 ```
 main/
-people.html          # Alternative or extended listing view
-upload_excel.html    # Excel upload form
-upload_result.html   # Excel import results page
-upload_success.html  # Import success confirmation page
+incomplete_records.html    # Displays incomplete records with dynamic styling & data rendering
+upload_excel.html          # Excel upload form
+upload_result.html         # Excel import results page
+upload_success.html        # Import success confirmation page
 ```
 
 #### 📂 `main/templates/main/`
 
 ```
-people.html           # Displays all stored records
-edit_person.html      # Edit record form
-duplicates.html       # Duplicate detection page
-duplicates_done.html  # Confirmation page for duplicates handling
+add_person.html        # Provides a dynamic book‑entry form with autocomplete, validation messages, and styled input fields
+duplicates_done.html   # Confirmation page for duplicates handling
+edit_person.html       # Edit record form
+people.html            # Displays all stored records
+people_table_rows.html # Renders a paginated list of records with default values and edit/delete actions
+print_range            # Loads large record ranges in batches, displays them in a printable table, and enables print‑ready formatting
+resolve_duplicates     # Displays duplicate and empty records side‑by‑side, allowing users to review, select, and replace them with Excel data
 ```
 
 ### 6️⃣ Manual Entry Test ✅
