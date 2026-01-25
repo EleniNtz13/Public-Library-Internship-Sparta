@@ -30,10 +30,12 @@ Below are the steps, structure, and functionality developed during this phase, i
 <img width="1920" height="1027" alt="Στιγμιότυπο οθόνης 2026-01-09 192034" src="https://github.com/user-attachments/assets/6c70fc11-afc2-4e8d-9d52-8c0620481dc4" />
 After all, this is the main purpose of the form — to have all the library’s books and their data consolidated in one place.
 
-🔔 Finally, you can now see **all entries** here:
-```
-http://localhost/people/
-```
+9️⃣ You can also view **all records**, search by a **selected field** (entry number, date, author, title, publisher, ISBN), and **print** any specific range of records the user chooses:
+<img width="1920" height="972" alt="Στιγμιότυπο οθόνης 2026-01-25 182214" src="https://github.com/user-attachments/assets/8deb3d4c-6d02-4773-b9ce-75825a100343" />
+
+🔟 Finally, the records **printing page** is as follows:
+<img width="1920" height="1030" alt="Στιγμιότυπο οθόνης 2026-01-25 183403" src="https://github.com/user-attachments/assets/f7519949-62b2-4439-8438-973e447619ba" />
+⚠️ Record details are not shown in order to protect the library’s data.
 <!-- And check **duplicates** here:```http://localhost/duplicates/``` -->
 
 🔒 For confidentiality reasons, screenshots of the last two URLs are omitted, since they would reveal the library’s data.
