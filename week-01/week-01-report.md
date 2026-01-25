@@ -157,6 +157,7 @@ After setting up the basic web servers using Python and PHP, the next step was t
 - ⚡ **Apache HTTP Server** serves as the web server for PHP, providing a stable, production‑like environment for delivering dynamic content. Apache receives incoming HTTP requests, forwards them to PHP for processing, and returns the generated output to the user. Its reliability and compatibility with MySQL make it a common choice for full‑stack web applications
 
 Together, these components form a complete workflow:
+
 *The user sends a request → Apache receives it → PHP or Flask processes it → MySQL provides the necessary data → Apache returns the final page to the browser*
 
 The following sections describe the installation steps for **MySQL** and **Apache**, as well as how they integrate with the overall project architecture.
