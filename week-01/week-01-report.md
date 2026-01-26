@@ -214,8 +214,7 @@ When the process finishes, MySQL Workbench will be available for use.
 
 **Apache**:
 - ⚡ is one of the most widely used web servers globally and serves as the backbone for running PHP applications in a stable, production-style environment
-
-📝 In this project, Apache is used to process and serve PHP pages directly from the local machine, creating a fully functional local web server setup.
+- 📝 in this project, Apache is used to process and serve PHP pages directly from the local machine, creating a fully functional local web server setup
 
 ### 1. Download Apache
 
