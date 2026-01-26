@@ -168,7 +168,7 @@ Apache returns the final page to the browser
 The following sections describe the installation steps for **MySQL** and **Apache**, as well as how they integrate with the overall project architecture:
 
 
-## 3️⃣ MySQL Database (MySQL Server)🗄️
+## 3️⃣ MySQL Database 🗄️
 
 **MySQL**: 
 - 💾 is one of the most widely used relational database systems, ideal for web applications like the ones developed during this project,
