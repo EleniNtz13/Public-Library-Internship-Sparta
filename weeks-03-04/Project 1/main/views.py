@@ -696,7 +696,7 @@ def add_person(request):
         ["max_num"]
     )
 
-    next_number = (last_number or 0) + 1
+    next_number = int(last_number or 0) + 1
     
     # ✅ Check if we're filling an incomplete record
     prefill_ari8mos = request.GET.get("ari8mos")
