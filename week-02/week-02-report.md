@@ -40,7 +40,7 @@ The diagram below illustrates the communication flow between the system’s comp
                                         │      phpMyAdmin      │     │       pgAdmin4       │
                                         └──────────────────────┘     └──────────────────────┘   
                                     
-
+After understanding this architecture, the next steps describe how to install and configure the required tools and the remaining components of the environment.
 
 ## ⚙️ phpMyAdmin Setup
 
