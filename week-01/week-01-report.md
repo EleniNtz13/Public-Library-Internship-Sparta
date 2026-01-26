@@ -241,7 +241,7 @@ C:\Apache24\htdocs
 ...
 ```
 
-### 3. Configure Apache to Work with PHP 🔄
+### 3. Configure Apache to Work with PHP 
 
 - Navigate to:
 
