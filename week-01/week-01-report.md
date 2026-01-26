@@ -8,7 +8,7 @@ The goal was to build two development servers (Python and PHP) and connect them 
 
 - ⚡ **Apache HTTP (web) Server**: Provides a stable environment to serve PHP pages
 
-- 💾 **MySQL Database**: Stores and manages data such as books, users, and categories
+- 💾 **MySQL Database**: Stores and manages books' data 
 
 Together, these tools form a simple development stack that allows message display, data management, and local web server operation — forming the foundation for more advanced features in the library system.
 
