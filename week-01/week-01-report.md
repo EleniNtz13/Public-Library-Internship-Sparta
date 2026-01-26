@@ -257,7 +257,7 @@ C:\Apache24\conf
 
 - Make the following adjustments:
 
-### ✔ Update the ServerRoot path
+#### 🔄 Update the ServerRoot path
 
 - Locate:
 
@@ -272,7 +272,7 @@ Define SRVROOT "/Apache24"
 Define SRVROOT "c:/Apache24"
 ```
 
-### ✔ Enable PHP module and configuration
+#### 🔄 Enable PHP module and configuration
  
 - Ensure that the following lines exist **without the # symbol** (uncommented):
 
