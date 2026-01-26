@@ -105,11 +105,10 @@ Inside the ```C:\php``` folder, create a new file named ```index.php``` using No
 Select **"All Files"** when saving, and paste the PHP code provided in the ```week-01``` folder 📂.
 
 Example structure:
-
-`C:\php\`
-
-   `└── index.php`
-
+```
+C:\php\
+   └── index.php
+```
 
 ### 3. Install the PHP Extension in Visual Studio Code
 
