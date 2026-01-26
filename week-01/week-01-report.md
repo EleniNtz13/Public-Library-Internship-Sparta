@@ -82,11 +82,11 @@ Running on http://localhost:5000/
 
 Open that URL in your browser, and the page will display the messages:
 ```
-👋 **Hello!**
+👋 Hello!
 
-🎉 **Welcome!**
+🎉 Welcome!
 
-📝 **This is a message.**
+📝 This is a message.
 ```
 
 ## 2️⃣ PHP Setup 🔧
