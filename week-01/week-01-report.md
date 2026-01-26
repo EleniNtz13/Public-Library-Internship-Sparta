@@ -107,6 +107,7 @@ Select **"All Files"** when saving, and paste the PHP code provided in the ```we
 Example structure:
 
 `C:\php\`
+
    `└── index.php`
 
 
