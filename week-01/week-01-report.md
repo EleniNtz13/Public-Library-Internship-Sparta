@@ -57,7 +57,7 @@ Inside VS Code, go to **Extensions** 🔌 (left sidebar) and install the **Pytho
 
 Open the ```app.py``` file in VS Code and run one of the following commands:
 
-#### Option A: Through Visual Studio Code terminal
+   - #### Option A: Through Visual Studio Code terminal
 ```
 python app.py
 ```
