@@ -49,7 +49,7 @@ After all, this is the main purpose of the form — to have all the library’s 
 - 🏤 The application is designed exclusively for **internal library staff**, ensuring safe and controlled management of catalog records
 - 🔒 For privacy and security, the screenshot does not display the *localhost URLs*. They can be accessed locally when running the app
 - ⚠️ User-facing messages are displayed in *Greek*, for clarity and usability within the library working environment
-- 🔢 Entries are imported sequentially, and will be sorted correctly even if their input order is mixed
+- 🔢 Entries are imported sequentially and will be sorted correctly even if their input order is mixed
 - 🧠 In the case of direct book data entry into the database, if the Koha author field is not provided, it is automatically populated using the main author’s name
 - 🖨️ The print functionality allows staff to generate printable views of specific books by entry number, supporting internal documentation and catalog verification
 - 📱 The interface is responsive and can be used on mobile devices, although it is optimized primarily for desktop use by staff
