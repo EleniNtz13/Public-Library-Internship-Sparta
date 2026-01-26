@@ -147,9 +147,9 @@ You should now see the displayed messages:
 
 After setting up the basic web servers using Python and PHP, the next step was to prepare the environment required for data storage and dynamic content handling. In this architecture, each component plays a distinct role within the workflow:
 
-- 🐍 **Flask** and 🐘 **PHP** act as the application layers, responsible for processing user requests, generating dynamic pages, and interacting with the database. They form the “logic” of the system, handling routing, templates, and server‑side operations
+- 🐍 **Flask** and 🐘 **PHP** act as the application layers, responsible for processing user requests, generating dynamic pages and interacting with the database. They form the “logic” of the system, handling routing, templates, and server‑side operations
 
-- 💾 **MySQL** functions as the data layer, storing and managing all persistent information such as book records, categories, and user activity. It ensures that data can be efficiently retrieved, updated and maintained across the application
+- 💾 **MySQL** functions as the data layer, storing and managing all persistent information such as book records, categories and user activity. It ensures that data can be efficiently retrieved, updated and maintained across the application
 
 - ⚡ **Apache HTTP Server** serves as the web server for PHP, providing a stable, production‑like environment for delivering dynamic content. Apache receives incoming HTTP requests, forwards them to PHP for processing, and returns the generated output to the user. Its reliability and compatibility with MySQL make it a common choice for full‑stack web applications
 
