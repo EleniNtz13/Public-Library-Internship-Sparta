@@ -69,7 +69,7 @@ During the internship, I worked with several technologies to build a complete we
 - Excel & CSV: Organized uncatalogued book data for import
 - RFID: Used tag identifiers to locate books efficiently
 
-*(Detailed installation steps will be documented in separate files, each located in the corresponding folder)*
+ℹ️ Detailed installation steps will be documented in separate files, each located in the corresponding folder
 
 ---
 
