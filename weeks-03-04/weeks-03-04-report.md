@@ -95,7 +95,7 @@ Person.objects.all().delete()
 exit()
 ```
 
-This step is useful **after imports** if incorrect data was uploaded.
+This step is useful **after imports**, if incorrect data was uploaded.
 
 It should be noted 📝:
 
