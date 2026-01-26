@@ -60,7 +60,7 @@ Create a folder inside ```htdocs``` named:
 C:\Apache24\htdocs\phpmyadmin
 ```
 
-Extract **all ZIP contents** *directly inside it*.
+Extract **all ZIP contents** directly inside it.
 
 ⚠️ Make sure no double folder is created (e.g. phpmyadmin/phpmyadmin).
 
