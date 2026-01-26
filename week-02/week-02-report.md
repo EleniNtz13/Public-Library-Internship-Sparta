@@ -423,7 +423,7 @@ Open:
 main/models.py
 ```
 
-Replace the Python code (```models.py```) shown in the folder ```week-02``` of this repository and save the file. 
+Replace the Python code (```models.py```) shown in the folder ```week-02``` 📁 of this repository and save the file. 
 
 ⚠️ This specific code refers to the library manuals, covering the needs of the Sparta public library.
 
