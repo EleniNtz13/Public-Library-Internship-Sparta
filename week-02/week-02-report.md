@@ -305,17 +305,17 @@ If it is stopped, right-click → **Start**.
 
 - In the left panel, expand **Servers** → **PostgreSQL 18**
 
-- Enter the password you set earlier.
+- Enter the password you set earlier
 
 ### 3. Create a New Database
 
-In the left sidebar, right-click **Databases**.
+- In the left sidebar, right-click **Databases**
 
-Select **Create** → **Database**…
+- Select **Create** → **Database**…
 
-Enter a **name** for your database.
+- Enter a **name** for your database.
 
-Click **Save**.
+- Click **Save**.
 
 
 ## 5️⃣ Connecting Django with PostgreSQL 🐘
