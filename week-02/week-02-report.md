@@ -8,7 +8,7 @@ For data management, two database systems were utilized: **MySQL** and **Postgre
 
 At the web server level, the Apache HTTP Server was used as the intermediary between the browser and PHP. Apache receives incoming HTTP requests, forwards them to PHP for processing, and returns the final HTML response to the user. This setup provides a stable, production‑like environment for serving PHP applications. In contrast, Django runs through its own development server, which is suitable for development but not intended for production use.
 
-The overall workflow operates as follows: the user sends a request through the browser; if the request targets a Django page, it is processed by Django, which communicates with PostgreSQL and returns the resulting page. If the request targets a PHP page, it is handled by Apache, forwarded to PHP, processed using MySQL, and finally returned to the user by Apache. Meanwhile, phpMyAdmin and pgAdmin4 are used to manage their respective databases but do not participate directly in the request–response cycle.
+The overall workflow operates as follows: the user sends a request through the browser; if the request targets a Django page, it is processed by Django, which communicates with PostgreSQL and returns the resulting page. If the request targets a PHP page, it is handled by Apache, forwarded to PHP, processed using MySQL and finally returned to the user by Apache. Meanwhile, phpMyAdmin and pgAdmin4 are used to manage their respective databases but do not participate directly in the request–response cycle.
 
 Through this structure, the development environment integrates all essential layers — application, database, and web server — forming a complete and functional architecture for building and managing a library system.
 
