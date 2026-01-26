@@ -293,9 +293,9 @@ This will open **excel_form_app** project in Visual Studio Code for development.
 #### 🔄 Optional: Verify PostgreSQL Service
 
 You can optionally check that the PostgreSQL service is running:
-1. Open **Services** (Start → type Services).
-2. Locate **postgresql-x64-18** (or your installed version).
-3. Make sure the **Status** is Running.
+1. Open **Services** (Start → type Services)
+2. Locate **postgresql-x64-18** (or your installed version)
+3. Make sure the **Status** is Running
 
 If it is stopped, right-click → **Start**.
 
