@@ -398,8 +398,8 @@ C:\Apache24
 **Note**: All servers run on localhost and are only accessible from your local machine. They are not exposed to the internet.
 
 
-| Server   | Technology | Port |
-| -------- | ---------- | ---- |
-| 🐍 Flask | Python     | 5000 |
-| 🐘 PHP   | Built-in   | 8080 |
-| ⚡ Apache | PHP        | 80  |
+                                                   | Server   | Technology | Port |
+                                                   | -------- | ---------- | ---- |
+                                                   | 🐍 Flask | Python     | 5000 |
+                                                   | 🐘 PHP   | Built-in   | 8080 |
+                                                   | ⚡ Apache | PHP        | 80  |
