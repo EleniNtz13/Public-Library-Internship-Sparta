@@ -278,17 +278,17 @@ This will open **excel_form_app** project in Visual Studio Code for development.
 ### 1. Install PostgreSQL (Windows)
 
 1. Download **PostgreSQL** for Windows from the official website: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
-2. Run the installer → click **Yes** to all prompts.
+2. Run the installer → click **Yes** to all prompts
 3. Leave all default components selected:
    - PostgreSQL Server
    - pgAdmin 4
    - Stack Builder
-4. Choose the default installation directory.
-5. Set a **password** for the default user ```postgres```.
-6. Leave the default **port 5432**.
-7. Keep all other settings on default.
-8. Click **Next** → **Next** → **Install** → **Finish**.
-9. After installation finishes, Stack Builder will appear. Click **Cancel** and close it — not required for now.
+4. Choose the default installation directory
+5. Set a **password** for the default user ```postgres```
+6. Leave the default **port 5432**
+7. Keep all other settings on default
+8. Click **Next** → **Next** → **Install** → **Finish**
+9. After installation finishes, Stack Builder will appear. Click **Cancel** and close it — not required for now
 
 #### 🔄 Optional: Verify PostgreSQL Service
 
