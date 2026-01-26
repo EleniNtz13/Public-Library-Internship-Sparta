@@ -179,7 +179,7 @@ The following sections describe the installation steps for **MySQL** and **Apach
 - Visit the official MySQL download page: https://dev.mysql.com/downloads/installer/
 
 
-- Download the **latest MySQL Installer** for Windows.
+- Download the **latest MySQL Installer** for Windows
 
 ### 2. Run the Installer
 
