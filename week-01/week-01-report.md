@@ -112,7 +112,7 @@ C:\php\
 
 ### 3. Install the PHP Extension in Visual Studio Code
 
-Open Visual Studio Code → Go to **Extensions** 🔌 → Install the extension named **PHP** (this enables syntax highlighting and support for PHP code)
+Open Visual Studio Code → Go to **Extensions** 🔌 → Install the extension named **PHP** (this enables syntax highlighting and support for PHP code).
 
 ### 4. Run the PHP Development Server
 
