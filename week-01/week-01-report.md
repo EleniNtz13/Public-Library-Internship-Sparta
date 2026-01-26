@@ -323,7 +323,7 @@ http://localhost
 
 If Apache is running successfully, you should see the message:
 
-**It works!** ✅
+`It works! ✅`
 
 
 ### 6. Configure PHP in Apache
