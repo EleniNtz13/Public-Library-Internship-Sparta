@@ -368,11 +368,11 @@ phpinfo();
 ?>
 ```
 
-Save it as:
+Select **All Files** and save it as:
 ```
 info.php
 ```
-(All Files)
+
 
 
 #### ▶️ Test in Browser
