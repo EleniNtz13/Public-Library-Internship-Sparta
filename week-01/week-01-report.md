@@ -62,7 +62,7 @@ Open the ```app.py``` file in VS Code and run one of the following commands:
 python app.py
 ```
 
-#### Option B: Through Command Prompt
+   - #### Option B: Through Command Prompt
 
 Navigate to the project directory:
 
