@@ -42,7 +42,7 @@ Open **Command Prompt** 💻 and install Flask by running:
 pip install flask
 ```
 
-Then set the Flask application environment variable:
+Then, set the Flask application environment variable:
 
 ```
 set FLASK_APP=app.py
