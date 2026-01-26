@@ -83,7 +83,9 @@ Running on http://localhost:5000/
 Open that URL in your browser, and the page will display the messages:
 
 `👋 Hello!`
+
 `🎉 Welcome!`
+
 `📝 This is a message.`
 
 ## 2️⃣ PHP Setup 🔧
