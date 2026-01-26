@@ -301,13 +301,11 @@ If it is stopped, right-click → **Start**.
 
 ### 2. Open pgAdmin4
 
-Go to **Start** → **pgAdmin 4**.
+- Go to **Start** → **pgAdmin 4**. The program opens in your browser.
 
-The program opens in your browser.
+- In the left panel, expand **Servers** → **PostgreSQL 18**
 
-In the left panel, expand **Servers** → **PostgreSQL 18**.
-
-Enter the password you set earlier.
+- Enter the password you set earlier.
 
 ### 3. Create a New Database
 
