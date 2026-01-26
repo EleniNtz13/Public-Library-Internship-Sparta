@@ -292,7 +292,7 @@ These lines tell Apache how to load the PHP module and where to find the PHP con
 
 - Open **Command Prompt as Administrator** 💻 and run:
 
-#### Install Apache as a service:
+#### I) Install Apache as a service:
 ```
 cd C:\Apache24\bin
 ```
@@ -304,7 +304,7 @@ httpd.exe -k install
 
 This registers Apache as a Windows service.
 
-#### Start the Apache server:
+#### II) Start the Apache server:
 ```
 httpd.exe -k start
 ```
