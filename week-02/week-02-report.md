@@ -123,8 +123,8 @@ php.ini
 ```
 3. Open ```php.ini```
 4. Press **Ctrl + F** and search for the following extensions:
-  - extension=mysqli
-  - extension=pdo_mysql
+    - extension=mysqli
+    - extension=pdo_mysql
 5. Remove the semicolon ```;``` in front of them so they become:
 ```
 extension=mysqli
