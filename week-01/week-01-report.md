@@ -25,12 +25,12 @@ C:\
 
 ### 2. Create the Python File
 
-Using Notepad, create a new file named ```app.py``` and paste the Python code shown in the folder ```week-01``` of this repository.
+Using Notepad, create a new file named ```app.py``` and paste the Python code shown in the folder ```week-01``` 📂 of this repository.
 Save the file inside ```Project_Folder```, making sure to select **"All Files"** before saving.
 
 ### 3. Create the Templates Folder and HTML File
 
-Inside **Project_Folder**, create a new folder named ```templates```📂.
+Inside **Project_Folder**, create a new folder named ```templates```.
 Open Notepad again and create a file named ```index.html```.
 Paste the corresponding HTML code (also available in the ```week-01``` folder), select **"All Files"**, and save it inside the ```templates``` folder.
 
