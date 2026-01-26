@@ -135,7 +135,7 @@ python manage.py createsuperuser
 
 * 🔒 Intended **only for library staff**
 * 🐍 Python & Django must be installed
-* 🧪 Virtual environment must be **active**
+* 💻 Virtual environment must be **active**
 * 📁 Commands must run from the folder containing `manage.py`
 * 🔄 Run `makemigrations` & `migrate` **only when model fields change**
 
