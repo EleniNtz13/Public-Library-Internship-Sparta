@@ -102,7 +102,7 @@ C:\php
 ### 2. Create the PHP File
 
 Inside the ```C:\php``` folder, create a new file named ```index.php``` using Notepad.
-Select **"All Files"** when saving, and paste the PHP code provided in the ```week-01``` folder.
+Select **"All Files"** when saving, and paste the PHP code provided in the ```week-01``` folder 📂.
 
 Example structure:
 
@@ -138,12 +138,11 @@ http://localhost:8080
 
 You should now see the displayed messages:
 
-👋 **Hello!**
+`👋 Hello!`
 
-🎉 **Welcome!**
+`🎉 Welcome!`
 
-📝 **This is a message.**
-
+`📝 This is a message.`
 
 ## 🔍 Understanding Flask, PHP, MySQL & Apache
 
