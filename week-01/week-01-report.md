@@ -171,8 +171,8 @@ The following sections describe the installation steps for **MySQL** and **Apach
 ## 3️⃣ MySQL Database 🗄️
 
 **MySQL**: 
-- 💾 is one of the most widely used relational database systems, ideal for web applications like the ones developed during this project,
-- 🗄️ is used to store, retrieve, and manage data such as book information, categories, and user activity.
+- 💾 is one of the most widely used relational database systems, ideal for web applications like the ones developed during this project
+- 🗄️ is used to store, retrieve, and manage data such as book information, categories, and user activity
 
 ### 1. Download MySQL Installer
 
