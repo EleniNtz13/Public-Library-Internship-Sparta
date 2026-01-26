@@ -221,11 +221,11 @@ When the process finishes, MySQL Workbench will be available for use.
 - Visit the Apache Lounge download page: https://www.apachelounge.com/download/
 
 
-- Download the version compatible with your system.
+- Download the version compatible with your system
 
 ### 2. Extract Apache Files
 
-- Create a new folder in the root of your C: drive:
+- Create a new folder in the root of your `C:` drive:
 
 ```
 C:\Apache24
