@@ -115,29 +115,26 @@ composer create-project laravel/laravel protocol_project
 
 📌 Note: **protocol_project** is the project name and can be changed.
 
-⏳ Wait 1–2 minutes for installation to complete 
+⏳ Wait 1–2 minutes for installation to complete. 
 
-
-============================================================
-⚠️ Composer Proxy Issue (Common Problem)
-============================================================
+#### ⚠️ Composer Proxy Issue (Common Problem)
 
 Sometimes Composer detects broken proxy settings and freezes.
 
-✅ Guaranteed Fix:
+##### ✅ Guaranteed Fix:
 
 Open Command Prompt (NOT PowerShell) and run EXACTLY:
-
+```
 composer config --global --unset http-proxy
 composer config --global --unset https-proxy
-
+```
 
 ============================================================
 🔍 Check extension_dir
 ============================================================
 
 In php.ini, ensure the following line exists:
-extension_dir="C:\php\ext"
+sqlite3.extension_dir="C:\php\ext"
 
 Save the file, restart Apache,
 close all CMD windows, and open a new CMD.
