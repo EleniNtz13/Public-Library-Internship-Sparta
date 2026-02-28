@@ -264,7 +264,7 @@ Then, install frontend dependencies:
 npm install
 ```
 
-This command installs all required JavaScript packages defined in package.json.
+This command installs all required JavaScript packages defined in ```package.json```
 
 (Run Vite) you can now generate the build files using one of the following commands:
 
