@@ -67,6 +67,7 @@ By the end of the internship, the system supports:
 - 🔐 Authentication & restricted access
 - 📱 Responsive layout, usable on mobile devices
 
+❗ The entire project is located in the repository named **excel_form_app**. However, for privacy reasons, the repository has been set to private.
 
 🚀 Ready for internal library use!
 
