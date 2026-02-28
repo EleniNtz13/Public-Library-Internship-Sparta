@@ -95,22 +95,26 @@ During installation:
 - Leave all options as default
 
 After installation:
+
 Open a new CMD window and verify:
+```
 composer -V
+```
 
-
-============================================================
-📂 Create Laravel Project
-============================================================
+### 5️⃣ Create Laravel Project
 
 Navigate to your projects directory:
+```
 cd C:\Apache24\htdocs
+```
 
 Create the Laravel project:
-composer create-project laravel/laravel laravelapp
+```
+composer create-project laravel/laravel protocol_project
+```
 
-Note:
-"laravelapp" is the project name and can be changed.
+📌 Note:
+"protocol_project" is the project name and can be changed.
 
 Wait 1–2 minutes for installation to complete ⏳
 
