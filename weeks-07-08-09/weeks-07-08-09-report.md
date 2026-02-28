@@ -115,6 +115,7 @@ composer create-project laravel/laravel protocol_project
 
 📌 Note:
 
+
 **protocol_project** is the project name and can be changed.
 
 Wait 1–2 minutes for installation to complete ⏳
