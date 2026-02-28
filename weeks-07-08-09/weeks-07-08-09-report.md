@@ -277,7 +277,7 @@ npm run dev
 ```
 npm run build
 ```
-✅ Result
+#### ✅ Result
 
 After running the above commands, the following directory will be created automatically:
 ```
@@ -301,6 +301,7 @@ Run the following commands:
 php artisan config:clear
 php artisan cache:clear
 ```
-🧠 Summary
+
+#### 🧠 Summary
 
 If the build folder is missing, it means that Vite has not been executed yet. By installing ```Node.js```, running ```npm install```, and executing ```npm run dev``` or ```npm run build```, the required JSON files and assets are generated. Once the **```public/build directory```** exists, Laravel can correctly load frontend resources without errors.
