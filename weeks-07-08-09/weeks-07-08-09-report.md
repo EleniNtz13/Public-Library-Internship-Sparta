@@ -88,6 +88,7 @@ https://getcomposer.org/Composer-Setup.exe
 
 During installation:
 - When asked for PHP path, select:
+
   ```
   C:\php\php.exe
   ```
