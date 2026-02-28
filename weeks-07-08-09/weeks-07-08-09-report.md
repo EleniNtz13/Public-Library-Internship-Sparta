@@ -117,11 +117,11 @@ composer create-project laravel/laravel protocol_project
 
 ⏳ Wait 1–2 minutes for installation to complete. 
 
-#### ⚠️ Composer Proxy Issue (Common Problem)
+### ⚠️ Composer Proxy Issue (Common Problem)
 
 Sometimes Composer detects broken proxy settings and freezes.
 
-##### ✅ Guaranteed Fix:
+### ✅ Guaranteed Fix:
 
 Open Command Prompt (NOT PowerShell) and run EXACTLY:
 ```
