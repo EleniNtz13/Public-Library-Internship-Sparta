@@ -218,6 +218,7 @@ Then restart the server:
 ```
 php artisan serve
 ```
+---
 
 ### 🌐 Final Result
 
