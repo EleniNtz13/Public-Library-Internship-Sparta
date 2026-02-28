@@ -74,16 +74,15 @@ pdo_mysql
 zip
 fileinfo
 ```
-If any are missing, enable them from ```php.ini```.
+If any are missing, enable them from ```php.ini```
 
 
-============================================================
-🎼 Composer Installation
-============================================================
+### 4️⃣ Composer Installation
 
 Check if Composer is installed:
+```
 composer -v
-
+```
 If not installed, download it from:
 https://getcomposer.org/Composer-Setup.exe
 
