@@ -66,14 +66,15 @@ Run:
 php -m
 ```
 Ensure that at least the following extensions are visible:
+```
 curl
 mbstring
 openssl
 pdo_mysql
 zip
 fileinfo
-
-If any are missing, enable them from php.ini.
+```
+If any are missing, enable them from ```php.ini```.
 
 
 ============================================================
