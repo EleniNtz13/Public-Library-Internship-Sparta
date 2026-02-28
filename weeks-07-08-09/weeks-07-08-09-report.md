@@ -53,17 +53,18 @@ Save the file and restart Apache 🔄
 
 ### 3️⃣ Verify ZIP Extension 📦
 
-
 Run:
+```
 php -m | findstr zip
-
+```
 If you see:
-zip
+```zip```
 → ✅ OK
 
 Run:
+```
 php -m
-
+```
 Ensure that at least the following extensions are visible:
 curl
 mbstring
