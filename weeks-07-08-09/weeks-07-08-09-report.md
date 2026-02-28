@@ -181,48 +181,45 @@ Notes:
 - DB_PASSWORD: MySQL root password
 
 
-============================================================
-🚀 Run Laravel Commands
-============================================================
+### 9️ Run Laravel Commands 🚀
 
 Generate application key:
+```
 php artisan key:generate
-
+```
 Run database migrations:
+```
 php artisan migrate
-
+```
 Start Laravel development server:
+```
 php artisan serve
+```
 
-
-============================================================
-🌐 Browser Test
+### 🔟 Browser Test 🌐
 ============================================================
 
 Open your browser and navigate to:
-http://127.0.0.1:8000
-
+```
+http://localhost
+```
 If everything is correct, the Laravel welcome page will appear 🎉
 
-
-============================================================
-🧹 Clear Laravel Cache (If Needed)
-============================================================
+### 🗑️ Clear Laravel Cache (If Needed)
 
 Sometimes Laravel keeps old configuration values.
 
 Run:
+```
 php artisan config:clear
 php artisan cache:clear
 php artisan route:clear
-
+```
 Then restart the server:
+```
 php artisan serve
+```
 
+### 🌐 Final Result
 
-============================================================
-🌐 Final Result
-============================================================
-
-The Laravel application is now fully installed, configured,
-and running successfully 🚀✅
+The Laravel application is now fully installed, configured and running successfully 🚀✅
