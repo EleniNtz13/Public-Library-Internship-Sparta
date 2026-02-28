@@ -7,7 +7,7 @@ Below are the first steps for installing Laravel on a Windows environment.
 
 ## ✅ Laravel Installation Steps
 
-### 1️⃣ Open Command Prompt
+### 1️⃣ Open Command Prompt 🔧
 
 Open Command Prompt (preferably as Administrator) and check PHP version:
 ```
@@ -77,7 +77,7 @@ fileinfo
 If any are missing, enable them from ```php.ini```
 
 
-### 4️⃣ Composer Installation
+### 4️⃣ Composer Installation ⬇️
 
 Check if Composer is installed:
 ```
@@ -101,7 +101,7 @@ Open a new CMD window and verify:
 composer -V
 ```
 
-### 5️⃣ Create Laravel Project
+### 5️⃣ Create Laravel Project 📂
 
 Navigate to your projects directory:
 ```
@@ -117,6 +117,7 @@ composer create-project laravel/laravel protocol_project
 
 ⏳ Wait 1–2 minutes for installation to complete. 
 
+
 ### ⚠️ Composer Proxy Issue (Common Problem)
 
 Sometimes Composer detects broken proxy settings and freezes.
@@ -129,56 +130,51 @@ composer config --global --unset http-proxy
 composer config --global --unset https-proxy
 ```
 
-============================================================
-🔍 Check extension_dir
-============================================================
+###  6️⃣ Check extension_dir 🔍
 
 In php.ini, ensure the following line exists:
+```
 sqlite3.extension_dir="C:\php\ext"
+```
+Save the file ⟶ restart Apache ⟶ close all CMD windows ⟶ and open a new CMD.
 
-Save the file, restart Apache,
-close all CMD windows, and open a new CMD.
 
-
-============================================================
-🧹 Clear Composer Cache
-============================================================
+ ### 7️⃣ Clear Composer Cache 🧹
 
 Run:
+```
 composer clear-cache
+```
 
+ ### 8️ Database Configuration 🗄️
 
-============================================================
-🗄️ Database Configuration (.env)
-============================================================
-
-Open the .env file located at:
+Open the ```.env``` file located at:
+```
 C:\Apache24\htdocs\laravelapp\.env
-
+```
 Open it using Notepad, VS Code, or any editor.
-Be careful not to change unrelated settings.
 
+‼️Be careful not to change unrelated settings.
 
-============================================================
-Update Database Settings
-============================================================
-
+Update Database Settings.
 Default configuration:
+```
 DB_CONNECTION=sqlite
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=database/database.sqlite
 DB_USERNAME=root
 DB_PASSWORD=
-
+```
 Change to MySQL configuration:
+```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=your_mysql_password
-
+```
 Notes:
 - DB_DATABASE: name of the MySQL database
 - DB_USERNAME: usually root
