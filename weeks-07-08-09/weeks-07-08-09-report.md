@@ -1,26 +1,23 @@
 # 🌟 Weeks 7, 8 & 9 – Overview: Laravel Setup and Development of a Protocol Management System
-The next project implemented during my internship at the library concerned the development of a protocol management system. After setting up a development environment on Windows by installing PHP and MySQL manually (without using WAMP or XAMPP) and configuring Apache, the following section outlines the initial steps required to install Laravel.
+The next project implemented during my internship at the library concerned the development of a **Protocol Management System**. After setting up a development environment on *Windows* by installing *PHP* and *MySQL* manually (without using WAMP or XAMPP) and configuring *Apache*, the following section outlines the initial steps required to install *Laravel*.
 
-Laravel is a modern, open-source PHP web application framework designed to simplify and accelerate web development. It follows the MVC (Model–View–Controller) architectural pattern and provides elegant syntax, built-in tools, and robust features such as routing, authentication, database migrations, and security mechanisms. Its goal is to make development both efficient and maintainable while promoting clean, structured code.
+**Laravel** is a modern, open-source PHP web application framework designed to simplify and accelerate web development. It follows the MVC (Model–View–Controller) architectural pattern and provides elegant syntax, built-in tools, and robust features such as routing, authentication, database migrations, and security mechanisms. Its goal is to make development both efficient and maintainable while promoting clean, structured code.
 
 Below are the first steps for installing Laravel on a Windows environment.
 
-## ✅ Laravel Installation Steps (Clean Installation)
+## ✅ Laravel Installation Steps
 
 ### 1️⃣ Open Command Prompt
---------------------------------------------
-Open Command Prompt (preferably as Administrator).
 
-Check PHP version:
+Open Command Prompt (preferably as Administrator) and check PHP version:
+```
 php -v
+```
 
-
-============================================================
-2️⃣ Enable Required PHP Extensions ⚙️
-============================================================
+### 2️⃣ Enable Required PHP Extensions ⚙️
 
 Make sure the following extensions are enabled in php.ini:
-
+```
 - curl
 - fileinfo
 - mbstring
@@ -29,26 +26,33 @@ Make sure the following extensions are enabled in php.ini:
 - pdo_mysql
 - pdo_sqlite
 - zip
+```
 
 Open the php.ini file:
+```
 C:\php\php.ini
+```
 
 Find one of the following lines:
+```
 ;extension=zip
+```
 or
+```
 ;extension=php_zip.dll
-
+```
 Remove the semicolon (;), so it becomes:
+```
 extension=zip
+```
 or
+```
 extension=php_zip.dll
-
+```
 Save the file and restart Apache 🔄
 
+### 3️⃣ Verify ZIP Extension 📦
 
-============================================================
-3️⃣ Verify ZIP Extension 📦
-============================================================
 
 Run:
 php -m | findstr zip
