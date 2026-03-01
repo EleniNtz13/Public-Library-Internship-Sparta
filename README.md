@@ -105,12 +105,12 @@ During the internship, I worked with several technologies to build a complete we
 
 ### ⚙️ Setup Summary (High-Level)
 
-- Python / Flask: Built a lightweight server for testing HTML responses
-- PHP & Apache: Served PHP pages both locally and through Apache
-- MySQL: Created and managed local databases for book records
-- Django & PostgreSQL: Prepared environment for future development
-- Excel & CSV: Organized uncatalogued book data for import
-- RFID: Used tag identifiers to locate books efficiently
+- **Python / Flask**: Built a lightweight server for testing HTML responses
+- **PHP & Apache**: Served PHP pages both locally and through Apache
+- **MySQL**: Created and managed local databases for book records
+- **Django & PostgreSQL**: Prepared environment for future development
+- **Excel & CSV**: Organized uncatalogued book data for import
+- **RFID**: Used tag identifiers to locate books efficiently
 
 🧐 Detailed installation steps will be documented in separate files, each located in the corresponding folder
 
