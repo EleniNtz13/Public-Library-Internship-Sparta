@@ -312,6 +312,8 @@ If the build folder is missing, it means that Vite has not been executed yet. By
 <img width="1920" height="1028" alt="Στιγμιότυπο οθόνης 2026-03-01 105702" src="https://github.com/user-attachments/assets/7d4dcc39-2b47-41bd-9dc3-7b402f3a8faf" />
 </p>
 
+📢 For data protection and security reasons 🔐, only the login page of the library application is demonstrated.
+
 ❗ The entire project is located in the repository named **protocol_project**. However, for privacy reasons, the repository has been set to private.
 
 🚀 Ready for internal library use!
