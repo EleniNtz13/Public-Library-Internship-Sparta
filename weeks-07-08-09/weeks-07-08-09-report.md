@@ -306,7 +306,11 @@ php artisan cache:clear
 
 If the build folder is missing, it means that Vite has not been executed yet. By installing ```Node.js```, running ```npm install```, and executing ```npm run dev``` or ```npm run build```, the required JSON files and assets are generated. Once the **```public/build directory```** exists, Laravel can correctly load frontend resources without errors.
 
+### 🌐 Below is the final result of the application we created: 💻✨
 
+<p align="center">
+<img width="1920" height="1028" alt="Στιγμιότυπο οθόνης 2026-03-01 105702" src="https://github.com/user-attachments/assets/7d4dcc39-2b47-41bd-9dc3-7b402f3a8faf" />
+</p>
 
 ❗ The entire project is located in the repository named **protocol_project**. However, for privacy reasons, the repository has been set to private.
 
