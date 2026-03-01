@@ -314,6 +314,8 @@ If the build folder is missing, it means that Vite has not been executed yet. By
 
 📢 For data protection and security reasons 🔐, only the login page of the library application is demonstrated.
 
+📋 The form has been implemented in Greek for practical and operational reasons.
+
 ❗ The entire project is located in the repository named **protocol_project**. However, for privacy reasons, the repository has been set to private.
 
 🚀 Ready for internal library use!
