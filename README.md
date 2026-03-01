@@ -2,7 +2,7 @@
 
 ## 🏫 Internship Overview – Library System Project
 
-Welcome to the repository documenting my internship experience at the Sparta Public Library. This repository documents my 12-week internship at the Sparta Public Library, where the primary objective was the gradual design and development of internal digital tools to support library record management and workflow automation.
+Welcome to the repository documenting my **internship experience** at the **Sparta Public Library**. This repository documents my **12-week internship** at the Sparta Public Library, where the primary objective was the gradual design and development of internal digital tools to support library record management and workflow automation.
 
 The internship combined software development, database management, data organization, and real-world library operations, allowing both technical and practical experience.
 
