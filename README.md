@@ -1,12 +1,12 @@
 # 📚 Internship at Sparta Public Library
 
-### 🏫 Internship Overview – Library System Project
+## 🏫 Internship Overview – Library System Project
 
 Welcome to the repository documenting my internship experience at the Sparta Public Library. This repository documents my 12-week internship at the Sparta Public Library, where the primary objective was the gradual design and development of internal digital tools to support library record management and workflow automation.
 
 The internship combined software development, database management, data organization, and real-world library operations, allowing both technical and practical experience.
 
-### 📅 Internship Details
+## 📅 Internship Details
 
 - Organization / Company: Sparta Public Library
 - Location: Sparta, Lakonia
@@ -17,13 +17,13 @@ The internship combined software development, database management, data organiza
 
 ---
 
-### 🧭 Project Development Phases
+## 🧭 Project Development Phases
 
 The internship project was structured into **three progressive phases (Project 1, Project 2, and Project 3)**, each expanding the system’s functionality and technical complexity.
 
-#### 🧩 Project 1 – Library Book Entry Form (Weeks 1–6)
+### 🧩 Project 1 – Library Book Entry Form (Weeks 1–6)
 
-During the first six weeks, we developed a book record entry form designed to support the internal cataloging process of the library. During this phase, the work was carried out **collaboratively with fellow students**, focusing on:
+During the **first six weeks**, we developed a **book record entry form** designed to support the internal cataloging process of the library. During this phase, the work was carried out **collaboratively with fellow students**, focusing on:
 
 - ➡️ Designing and implementing a structured data entry form
 - 🐍 Creating the backend logic using Django (Python)
@@ -42,31 +42,45 @@ At the same time, we actively participated in the real cataloging process by:
 
 This practical involvement helped us understand how digital systems must align with real library workflows.
 
-#### 🧩 Project 2 – Protocol Management System (Weeks 7–9)
+### 🧩 Project 2 – Protocol Management System (Weeks 7–9)
 
-During the **next three weeks**, we developed a **Protocol Management Form**, designed to support the internal administrative processes of the library.
+During the **next three weeks**, we developed a **protocol management form**, designed to support the internal administrative processes of the library.
 
 This system focused on:
 
-Recording and managing internal protocol entries
-
-Structuring form-based administrative data
-
-Improving validation and database handling
-
-Expanding backend logic and workflow design
+- 🗃️ Recording and managing internal protocol entries
+- 📈 Structuring form-based administrative data
+- 💾 Improving validation and database handling
+- ⚙️ Expanding backend logic and workflow design
 
 This project strengthened our understanding of structured data handling beyond book cataloging and introduced more organized backend architecture.
 
 Meanwhile, we continued assisting library staff in operational roles:
 
-📖 Observing and supporting the loan and return process
-
-🔄 Understanding how transactions are reflected on the library’s official website
-
-👩‍💼 Assisting personnel when needed across different departments
+- 📖 Observing and supporting the loan and return process
+- 🔄 Understanding how transactions are reflected on the library’s official website
+- 👩‍💼 Assisting personnel when needed across different departments
 
 Through this involvement, we gained insight into how user activity, circulation data, and system records must remain synchronized.
+
+### 🧩 Project 3 – Migration to Laravel (Weeks 10–12)
+
+During the **final three weeks** of the internship, we revisited the original **book entry form (Project 1)** and rebuilt it using a different technology stack.
+
+The system was migrated:
+
+- From Django (Python) 🐍
+- To Laravel (PHP) 🐘
+
+This migration aimed to:
+
+- Recreate the original form structure using Laravel’s MVC architecture
+- Improve code organization and maintainability
+- Optimize database interaction
+- Introduce additional features such as a backup mechanism for database security and recovery
+- Enhance validation and error handling
+
+This final phase demonstrated the ability to analyze an existing system, redesign it in a new framework, and improve its reliability and structure.
 
 ---
 
