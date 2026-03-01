@@ -74,11 +74,11 @@ The system was migrated:
 
 This migration aimed to:
 
-- Recreate the original form structure using Laravel’s MVC architecture
-- Improve code organization and maintainability
-- Optimize database interaction
-- Introduce additional features such as a backup mechanism for database security and recovery
-- Enhance validation and error handling
+- 🆕 Recreate the original form structure using Laravel’s MVC architecture
+- 🆙 Improve code organization and maintainability
+- 🔄 Optimize database interaction
+- ℹ️ Introduce additional features such as a backup mechanism for database security and recovery
+- 🔁 Enhance validation and error handling
 
 This final phase demonstrated the ability to analyze an existing system, redesign it in a new framework, and improve its reliability and structure.
 
@@ -112,20 +112,22 @@ During the internship, I worked with several technologies to build a complete we
 - Excel & CSV: Organized uncatalogued book data for import
 - RFID: Used tag identifiers to locate books efficiently
 
-ℹ️ Detailed installation steps will be documented in separate files, each located in the corresponding folder
+🧐 Detailed installation steps will be documented in separate files, each located in the corresponding folder
 
 ---
 
 ### 🎯 Goals Achieved
 
-- ✔️ Built a functional development environment
-- ✔️ Created simple web servers in Python and PHP
-- ✔️ Connected the system to a MySQL database
-- ✔️ Configured Apache to serve PHP pages
-- ✔️ Prepared Django + PostgreSQL for next steps
-- ✔️ Assisted in library cataloging through Excel
-- ✔️ Worked with RFID book identification technology
+By the end of the internship:
 
+- ✔️ A functional book entry system was developed in Django
+- ✔️ A protocol management system was implemented
+- ✔️ The book entry system was successfully migrated to Laravel
+- ✔️ Database integration and backup mechanisms were implemented
+- ✔️ Real-world cataloging and RFID processes were understood
+- ✔️ Loan and return workflows were analyzed from both operational and system perspectives
+
+✨ The internship successfully combined technical development, system migration, database management, and real-world institutional workflow integration.
 
 ### 🧠 Tools Used
 
