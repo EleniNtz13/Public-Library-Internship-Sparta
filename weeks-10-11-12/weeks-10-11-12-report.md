@@ -1,4 +1,22 @@
+# 🌟 Weeks 10, 11 & 12 – Overview: Laravel Development of a Library Book Entry System
+
+The current application is an evolution of the form initially presented during the first weeks of the internship under the name **excel_form_app**. It has now been renamed to **excel_form_app_php**, reflecting its migration to a PHP-based environment.
+
+The project was developed by preserving the original structure, workflow, and logic of the initial form. Drawing from the architecture and experience of the previous **protocol_project**, the system was migrated from **Django (Python)** to **Laravel (PHP)**, following the MVC architectural pattern.
+
+During this transition, several enhancements were introduced, including:
+
+- Implementation of a structured MVC architecture
+- Improved database handling and validation mechanisms
+- Addition of a backup system for data security and recovery
+- Codebase restructuring for better maintainability and scalability
+
+While maintaining the core functionality of the original application, this version expands its technical capabilities and aligns it with a more robust and scalable PHP framework environment.
+
+## ⚜️ Final Form Appearance
 <p align="center">
 <img width="1920" height="1028" alt="Στιγμιότυπο οθόνης 2026-03-01 113958" src="https://github.com/user-attachments/assets/b0f5c068-4e06-43dc-80e5-359883beadc6" />
 
 </p>
+
+🔒 For privacy and data protection reasons, only the login page is displayed in this repository. All other pages contain internal or sensitive data and are therefore not publicly shared.
