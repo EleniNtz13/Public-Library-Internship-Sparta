@@ -21,6 +21,8 @@ While maintaining the core functionality of the original application, this versi
 
 🔒 For privacy and data protection reasons, only the login page is displayed in this repository. All other pages contain internal or sensitive data and are therefore not publicly shared.
 
+📌 The form has been developed in Greek due to operational requirements and to ensure consistency with the library’s internal workflow.
+
 ❗ The entire project is located in the repository named **excel_form_app_php**. However, for privacy reasons, the repository has been set to private.
 
 🚀 Ready for internal library use!
