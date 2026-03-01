@@ -2,7 +2,7 @@
 
 The current application is an evolution of the form initially presented during the first weeks of the internship under the name **excel_form_app**. It has now been renamed to **excel_form_app_php**, reflecting its migration to a PHP-based environment.
 
-The project was developed by preserving the original structure, workflow, and logic of the initial form. Drawing from the architecture and experience of the previous **protocol_project**, the system was migrated from **Django (Python)** 🐍 to **Laravel (PHP)** 🐘, following the MVC architectural pattern.
+The project was developed by preserving the original structure, workflow, and logic of the initial form. Drawing from the architecture and experience of the previous **protocol_project**, the system was migrated from **Django (Python)** 🐍 to **Laravel (PHP)** 🐘, following the **MVC architectural pattern**.
 
 ✨ During this transition, several enhancements were introduced, including:
 
