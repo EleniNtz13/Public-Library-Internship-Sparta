@@ -2,8 +2,9 @@
 
 ### 🏫 Internship Overview – Library System Project
 
-Welcome to the repository documenting my internship experience at the Sparta Public Library.
-This project focuses on the design, setup, and gradual development of an internal library management system, combining web technologies, databases, and data organization tools.
+Welcome to the repository documenting my internship experience at the Sparta Public Library. This repository documents my 12-week internship at the Sparta Public Library, where the primary objective was the gradual design and development of internal digital tools to support library record management and workflow automation.
+
+The internship combined software development, database management, data organization, and real-world library operations, allowing both technical and practical experience.
 
 ### 📅 Internship Details
 
@@ -16,28 +17,56 @@ This project focuses on the design, setup, and gradual development of an interna
 
 ---
 
-### 🧭 Project Overview
+### 🧭 Project Development Phases
 
-The main focus of this internship project was to set up a **complete development environment for a simple library management system**, combining multiple technologies into a unified workflow.
+The internship project was structured into **three progressive phases (Project 1, Project 2, and Project 3)**, each expanding the system’s functionality and technical complexity.
 
-**Project 1** was developed during the **first six weeks of the internship**, as documented in the corresponding folders of this repository. During this phase, the work was carried out **collaboratively with fellow students**, focusing on:
+#### 🧩 Project 1 – Library Book Entry Form (Weeks 1–6)
 
-- ⚙️ Setting up the local development environment
-- 🔗 Exploring and integrating multiple technologies
-- 🧩 Designing the core workflow of a web-based data entry system
-- 🗄️ Laying the foundation for database-backed forms and data management
+During the first six weeks, we developed a book record entry form designed to support the internal cataloging process of the library. During this phase, the work was carried out **collaboratively with fellow students**, focusing on:
 
-The technical scope of this phase included:
+- ➡️ Designing and implementing a structured data entry form
+- 🐍 Creating the backend logic using Django (Python)
+- 🗄️ Connecting the form to a relational database
+- ✏️ Testing basic CRUD functionality
+- 🌐 Establishing the initial development environment
 
-- 🐍 Creating basic web servers using **Python (Flask)** and **PHP**
-- ⚡ Running PHP through **Apache** for a stable local setup
-- 💾 Setting up and managing a **MySQL database**
-- 🧱 Working with **Django** and **PostgreSQL** for future system expansion
-- 📊 Using **Excel** to organize uncatalogued library book data
-- 📡 Learning to operate the **RFID system** for fast identification and tracking of library materials
-- 📊 Assisted in the loan and return process, ensuring accurate record-keeping and timely return of borrowed books
+This project laid the foundation for *digital book record management*.
 
-Together, these tools form the foundation of a system capable of handling book records, internal data entry, user activity, and dynamic website content, which was further expanded in the following weeks of the internship.
+At the same time, we actively participated in the real cataloging process by:
+
+- 📊 Entering uncatalogued book data into Excel files
+- 🗂️ Organizing book metadata before digital import
+- 📡 Working with the RFID system to understand book identification and tracking
+- 📚 Supporting staff in daily operations, including book classification and shelving
+
+This practical involvement helped us understand how digital systems must align with real library workflows.
+
+#### 🧩 Project 2 – Protocol Management System (Weeks 7–9)
+
+During the **next three weeks**, we developed a **Protocol Management Form**, designed to support the internal administrative processes of the library.
+
+This system focused on:
+
+Recording and managing internal protocol entries
+
+Structuring form-based administrative data
+
+Improving validation and database handling
+
+Expanding backend logic and workflow design
+
+This project strengthened our understanding of structured data handling beyond book cataloging and introduced more organized backend architecture.
+
+Meanwhile, we continued assisting library staff in operational roles:
+
+📖 Observing and supporting the loan and return process
+
+🔄 Understanding how transactions are reflected on the library’s official website
+
+👩‍💼 Assisting personnel when needed across different departments
+
+Through this involvement, we gained insight into how user activity, circulation data, and system records must remain synchronized.
 
 ---
 
