@@ -67,6 +67,8 @@ By the end of the internship, the system supports:
 - 🔐 Authentication & restricted access
 - 📱 Responsive layout, usable on mobile devices
 
+✏️ The form has been developed in Greek due to operational requirements and to ensure consistency with the library’s internal workflow.
+
 ❗ The entire project is located in the repository named **excel_form_app**. However, for privacy reasons, the repository has been set to private.
 
 🚀 Ready for internal library use!
