@@ -33,10 +33,12 @@ While maintaining the core functionality of the original application, this versi
 
 This project demonstrates the fundamental structure of a modern web application and how different technologies interact with each other.
 
-HTML provides the core structure of the web page, defining the layout and elements such as forms, inputs, and buttons. CSS is responsible for the visual presentation, improving the user interface through styling, spacing, and responsiveness. JavaScript enhances the functionality by adding dynamic behavior, validation, and user interaction on the client side.
+**HTML** provides the core structure of the web page, defining the layout and elements such as forms, inputs, and buttons. 
 
-A local development environment that supports server‑side processing can be used to run and test backend technologies on a developer’s machine. Such environments typically include the Apache web server and enable the execution of code that requires a server. Frameworks like Laravel (PHP) or Django (Python) operate on top of this server environment and manage server logic, routing, database communication and the overall application structure.
+**CSS** is responsible for the visual presentation, improving the user interface through styling, spacing, and responsiveness. 
 
-Together, these layers form a complete web development stack where the frontend (HTML, CSS, JavaScript) interacts with the backend through the web server, creating a functional and scalable web application.
+**JavaScript** enhances the functionality by adding dynamic behavior, validation, and user interaction on the client side.
 
-Understanding how these components work together is essential for building efficient and maintainable web systems.
+A local development environment that supports server‑side processing can be used to run and test backend technologies on a developer’s machine. Such environments typically include the **Apache web server** and enable the execution of code that requires a server. Frameworks like **Laravel (PHP)** or **Django (Python)** operate on top of this server environment and manage server logic, routing, database communication and the overall application structure.
+
+Together, these layers form a complete web development stack where the **frontend (HTML, CSS, JavaScript)** interacts with the **backend through the web server**, creating a functional and scalable **web application**.
